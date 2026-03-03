@@ -1,1 +1,0 @@
-# natcat-risk

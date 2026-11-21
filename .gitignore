@@ -1,4 +1,52 @@
-desktop.ini
-Capra/Capra_Project
-CLimada/Climada_Project
-OasisLMF/Oasis_Project
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Local development settings, credentials and private notes
+.vscode/
+.idea/
+*.key
+*.pem
+credentials.json
+secrets*.yml
+secrets*.yaml
+
+# Local datasets: track metadata, NOT raw data
+/data/raw/
+/data/external/
+/data/interim/
+/data/processed/
+/data/derived/
+/results/tmp/
+/results/intermediate/
+
+# Large binary GIS formats; handle via approved storage, not default Git
+*.tif
+*.tiff
+*.gpkg
+*.gdb/
+*.shp
+*.shx
+*.dbf
+*.las
+*.laz
+*.h5
+*.hdf5
+*.parquet
+*.feather
+
+# OS and temporary artifacts
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak

@@ -1,0 +1,12 @@
+# Preliminary study-area configuration; NOT a final geospatial boundary.
+study_name: "Sea-to-Sky Highway landslide risk"
+country: "Canada"
+province: "British Columbia"
+road: "Highway 99 / Sea-to-Sky Highway"
+provisional_origin: "Vancouver"
+provisional_destination: "Whistler"
+geometry_file: null  # To be generated at Step 3; use a vetted and documented source.
+analysis_crs: null   # Select a suitable projected CRS after inspecting data.
+buffer_m: null      # Requires scientific justification and supervisor approval.
+hazard_types: []   # e.g. rockfall, debris flow, landslide; decide before modelling.
+case_study_status: "provisional; pending supervisor sign-off"

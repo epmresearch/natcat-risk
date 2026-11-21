@@ -1,0 +1,18 @@
+# DRAFT environment, subject to successful local installation and version locking.
+# Prefer official CLIMADA installation instructions if Mamba encounters dependency conflicts.
+name: sea_to_sky_risk
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - climada
+  - climada-petals
+  - jupyterlab
+  - ipykernel
+  - pandas
+  - geopandas
+  - rasterio
+  - matplotlib
+  - networkx
+  - osmnx
+  - pyyaml

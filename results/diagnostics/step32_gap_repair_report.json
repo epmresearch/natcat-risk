@@ -1,0 +1,25 @@
+{
+  "generated_utc": "2026-11-22T04:02:41.142896+00:00",
+  "type": "REAL_OSM_NETWORK_GAP_REPAIR_DIAGNOSTIC",
+  "input_graph": "data\\cache\\study_area\\highway99_tiles_16km_9km_v3_combined.graphml",
+  "gap_distance_m_reported": 1315.82,
+  "gap_node_ids": [
+    8600980190,
+    320778741
+  ],
+  "patch_buffer_m": 4000,
+  "patch_cache": "data\\cache\\study_area\\highway99_osm_targeted_gap_patch_4km.graphml",
+  "base_nodes": 36971,
+  "patch_nodes": 700,
+  "shared_osm_node_ids": 427,
+  "merged_nodes": 37244,
+  "component_count_before": 23,
+  "component_count_after": 22,
+  "anchor_names": [
+    "Squamish",
+    "Whistler"
+  ],
+  "anchor_connected_undirected": true,
+  "geometry_rule": "Merge only original matching OSM node IDs; no synthetic edges",
+  "status": "CONNECTED_PROVISIONAL"
+}

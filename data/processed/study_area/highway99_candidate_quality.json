@@ -1,0 +1,86 @@
+{
+  "step": "3.2",
+  "status": "PROVISIONAL_REQUIRES_MANUAL_VALIDATION",
+  "utc_generated": "2026-11-22T04:02:56.023935+00:00",
+  "source": "OpenStreetMap via OSMnx/Overpass; © OpenStreetMap contributors",
+  "osmnx_version": "2.1.2",
+  "input": "data\\processed\\study_area\\reference_places.geojson",
+  "input_point_names": [
+    "Horseshoe Bay",
+    "Lions Bay",
+    "Britannia Beach",
+    "Squamish",
+    "Whistler"
+  ],
+  "analysis_crs": "EPSG:26910",
+  "network_download_method": "incremental overlapping OSM tiles",
+  "network_tile_axis_max_m": 16000,
+  "network_tile_buffer_m": 9000,
+  "network_tile_count": 8,
+  "network_cached_graph": "data\\cache\\study_area\\highway99_tiles_16km_9km_v3_gap_repaired.graphml",
+  "search_buffer_m": 5000,
+  "route_method": "Undirected shortest path, preferred Highway 99 OSM tags",
+  "off_highway_cost_multiplier": 3.0,
+  "candidate_length_km": 100.44,
+  "candidate_hwy99_tagged_length_percent": 100.0,
+  "snapped_waypoints": [
+    {
+      "place": "Horseshoe Bay",
+      "node": 480538338,
+      "snap_method": "highway99_tagged",
+      "distance_to_tagged_road_m": 435.7,
+      "distance_to_selected_edge_m": 435.7,
+      "distance_to_nearest_drivable_edge_m": 2.7
+    },
+    {
+      "place": "Lions Bay",
+      "node": 165513130,
+      "snap_method": "highway99_tagged",
+      "distance_to_tagged_road_m": 86.8,
+      "distance_to_selected_edge_m": 86.8,
+      "distance_to_nearest_drivable_edge_m": 23.1
+    },
+    {
+      "place": "Britannia Beach",
+      "node": 481286572,
+      "snap_method": "highway99_tagged",
+      "distance_to_tagged_road_m": 50.9,
+      "distance_to_selected_edge_m": 50.9,
+      "distance_to_nearest_drivable_edge_m": 50.9
+    },
+    {
+      "place": "Squamish",
+      "node": 481392279,
+      "snap_method": "highway99_tagged",
+      "distance_to_tagged_road_m": 849.6,
+      "distance_to_selected_edge_m": 849.6,
+      "distance_to_nearest_drivable_edge_m": 27.0
+    },
+    {
+      "place": "Whistler",
+      "node": 3236309869,
+      "snap_method": "highway99_tagged",
+      "distance_to_tagged_road_m": 386.1,
+      "distance_to_selected_edge_m": 386.1,
+      "distance_to_nearest_drivable_edge_m": 41.6
+    }
+  ],
+  "all_anchors_tagged_highway99": true,
+  "regional_reference_places": [
+    "Vancouver",
+    "Horseshoe Bay",
+    "Lions Bay",
+    "Britannia Beach",
+    "Squamish",
+    "Whistler"
+  ],
+  "limitations": [
+    "Not an authoritative government-surveyed centerline.",
+    "Can include connecting roads when highway refs are missing or ambiguous.",
+    "Some waypoints may use unverified local-road anchors; inspect QA JSON.",
+    "Undirected geometry is not a traffic/legal-access routing model.",
+    "Vancouver is a geographic reference point, not a routed segment.",
+    "5-km buffer is for data discovery, not landslide hazard/runout.",
+    "Small OSM download tiles are operational, not physical landslide hazard buffers."
+  ]
+}

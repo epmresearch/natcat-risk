@@ -1,0 +1,45 @@
+{
+  "step": "3.3",
+  "status": "PROVISIONAL_SEGMENTATION_REQUIRES_REVIEW",
+  "generated_utc": "2026-11-23T00:32:34.827493+00:00",
+  "source_file": "data/processed/study_area/highway99_candidate_centerline.geojson",
+  "source_sha256": "b7a1f5ca7d4138c72329805b7900e1e963ae8ae06ae647b0a5d40b83ef2ec351",
+  "source_quality_file": "data/processed/study_area/highway99_candidate_quality.json",
+  "source_quality_status": "PROVISIONAL_REQUIRES_MANUAL_VALIDATION",
+  "original_data_source": "OpenStreetMap via OSMnx/Overpass; © OpenStreetMap contributors",
+  "route_direction": "Horseshoe Bay -> Whistler (source line order)",
+  "chainage_crs": "EPSG:26910",
+  "output_crs": "EPSG:4326",
+  "requested_segment_length_m": 1000,
+  "source_length_m": 100443.243,
+  "source_quality_length_km": 100.44,
+  "segment_count": 101,
+  "full_length_segment_count": 100,
+  "last_segment_length_m": 443.243,
+  "min_segment_length_m": 443.243,
+  "max_segment_length_m": 1000.0,
+  "sum_of_segment_lengths_m": 100443.243,
+  "geojson_roundtrip_length_difference_m": 0.0,
+  "max_boundary_gap_m": 0.0,
+  "ids_unique": true,
+  "input_one_ordered_linestring": true,
+  "geometry_simplified": false,
+  "segment_definition": "Fixed metric chainage along provisional Highway 99 centerline",
+  "not_equivalent_to": [
+    "landslide hazard zones",
+    "slope units",
+    "traffic-routing edges"
+  ],
+  "caveats": [
+    "Source Step 3.2 centerline remains provisional, not an official surveyed road centerline.",
+    "One-kilometre segmentation is a first modelling resolution, not yet justified by hazard data.",
+    "Results do not encode carriageways, lane count, road width, or direction of legal travel.",
+    "Segmentation does not infer landslide occurrence, runout, closure, or impact."
+  ],
+  "outputs": [
+    "data/processed/study_area/highway99_segments_1000m.geojson",
+    "data/processed/study_area/highway99_segments_1000m.csv",
+    "data/processed/study_area/highway99_segments_1000m_quality.json",
+    "results/maps/highway99_segments_1000m.png"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "audit": "Step 4.1 independent corrected HRDEM vector-coverage QA",
+  "timestamp_utc": "2026-11-23T18:55:56.394712+00:00",
+  "scope": "vector coverage polygons only; not raster valid-pixel coverage, elevation accuracy or landslide hazard",
+  "working_crs_epsg": 26910,
+  "thresholds_m2": {
+    "outside_aoi": 10.0,
+    "union_symmetric_difference": 20.0,
+    "saved_area_field": 2.0
+  },
+  "sources": {
+    "study_aoi": {
+      "path": "data/processed/study_area/highway99_terrain_search_5000m.geojson",
+      "feature_count": 1,
+      "declared_crs": "EPSG:4326",
+      "area_km2_in_epsg26910": 1043.616775732
+    },
+    "hrdem_1m": {
+      "path": "data/processed/elevation/hrdem_1m_dtm_coverage_highway99.gpkg",
+      "feature_count": 1,
+      "declared_crs": "EPSG:26910",
+      "area_km2_in_epsg26910": 464.219677937
+    },
+    "hrdem_2m_corrected": {
+      "path": "data/processed/elevation/hrdem_2m_dtm_coverage_highway99_corrected.gpkg",
+      "feature_count": 1,
+      "declared_crs": "EPSG:26910",
+      "area_km2_in_epsg26910": 464.925553568
+    },
+    "combined_corrected": {
+      "path": "data/processed/elevation/hrdem_combined_dtm_coverage_highway99_corrected.gpkg",
+      "feature_count": 1,
+      "declared_crs": "EPSG:26910",
+      "area_km2_in_epsg26910": 464.925553667
+    }
+  },
+  "measurements": {
+    "aoi_km2": 1043.616775732,
+    "one_m_km2": 464.219677937,
+    "two_m_corrected_km2": 464.925553568,
+    "one_m_two_m_overlap_km2": 464.219676429,
+    "independent_union_km2": 464.925555076,
+    "independent_union_inside_aoi_km2": 464.925553667,
+    "saved_combined_km2": 464.925553667,
+    "saved_combined_pct_of_aoi": 44.549452,
+    "saved_combined_outside_aoi_m2": 0.0,
+    "one_m_outside_aoi_m2": 1.412613,
+    "two_m_outside_aoi_m2": 0.0,
+    "saved_vs_independent_union_symmetric_difference_m2": 1.412718,
+    "uncovered_aoi_km2": 578.691222068
+  },
+  "checks": [
+    {
+      "check": "study_aoi: valid polygon geometry and declared CRS",
+      "passed": true
+    },
+    {
+      "check": "hrdem_1m: valid polygon geometry and declared CRS",
+      "passed": true
+    },
+    {
+      "check": "hrdem_2m_corrected: valid polygon geometry and declared CRS",
+      "passed": true
+    },
+    {
+      "check": "combined_corrected: valid polygon geometry and declared CRS",
+      "passed": true
+    },
+    {
+      "check": "corrected 2m is within AOI (<=10 m2 outside)",
+      "passed": true,
+      "actual": 0.0
+    },
+    {
+      "check": "saved combined is within AOI (<=10 m2 outside)",
+      "passed": true,
+      "actual": 0.0
+    },
+    {
+      "check": "original 1m has no material area outside AOI (<=10 m2)",
+      "passed": true,
+      "actual": 1.412613
+    },
+    {
+      "check": "saved combined matches independent union (<=20 m2 symmetric difference)",
+      "passed": true,
+      "actual": 1.412718
+    },
+    {
+      "check": "saved combined area is <= AOI area",
+      "passed": true
+    },
+    {
+      "check": "combined has exactly one feature",
+      "passed": true,
+      "actual": 1
+    },
+    {
+      "check": "combined attribute combined_km2 matches geometry",
+      "passed": true,
+      "actual": {
+        "saved": 464.925554,
+        "recomputed": 464.925553667,
+        "delta": 3.33e-07
+      }
+    },
+    {
+      "check": "combined attribute combined_pct matches geometry",
+      "passed": true,
+      "actual": {
+        "saved": 44.5495,
+        "recomputed": 44.549451914,
+        "delta": 4.8086e-05
+      }
+    }
+  ],
+  "status": "PASSED_INTERNAL_VECTOR_COVERAGE_QA_WITH_CAVEATS"
+}

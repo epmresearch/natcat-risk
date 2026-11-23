@@ -1,0 +1,40 @@
+{
+  "step": "4.1",
+  "status": "SOURCE_REGISTRY_AND_AOI_QA_PASSED_COVERAGE_NOT_VERIFIED",
+  "generated_utc": "2026-11-23T04:28:33.418227+00:00",
+  "catalog_file": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\data\\catalog\\step4_1_source_registry.csv",
+  "catalog_sha256": "aa35dafddfd54dc85083326381a0ded4caaa52de589bc4a28ab13cf98c9bb5b4",
+  "source_count": 9,
+  "sources_by_priority": {
+    "P0": 2,
+    "P1": 5,
+    "P2": 1,
+    "REFERENCE": 1
+  },
+  "sources_with_local_corridor_coverage_verified": 0,
+  "aoi": {
+    "aoi_file": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\data\\processed\\study_area\\highway99_terrain_search_5000m.geojson",
+    "aoi_sha256": "6ffd4654a1bab09e0ec860e341250560d196a49570128b03b35ac681b895b843",
+    "aoi_input_crs": "EPSG:4326",
+    "aoi_features": 1,
+    "aoi_bounds_wgs84_west_south_east_north": [
+      -123.3384731,
+      49.326672,
+      -122.8891559,
+      50.1612351
+    ],
+    "aoi_unique_area_km2_metric_epsg26910": 1043.616776,
+    "step34_area_comparison": {
+      "reported_km2": 1043.616776,
+      "difference_km2": 0.0,
+      "matches_0_01_km2_tolerance": true
+    }
+  },
+  "required_next_steps": [
+    "Inspect NRCan HRDEM footprints and MRDEM data access within the exact AOI",
+    "Obtain coverage and local event counts for the landslide inventory",
+    "Check BC geological/TSM/DRA extent and legal reuse terms",
+    "Download a clipped MRDEM DTM in Step 4.2 only after source and coverage QA"
+  ],
+  "scientific_boundary": "This is an OFFLINE catalog/AOI consistency check. No third-party dataset was downloaded, inspected, or certified for Highway 99 coverage. The 5 km terrain search AOI is not a landslide hazard or runout zone."
+}

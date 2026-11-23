@@ -1,0 +1,56 @@
+{
+  "step": "3.5",
+  "status": "INTERNAL_QA_PASSED_WITH_CAVEATS",
+  "generated_utc": "2026-11-23T01:35:20.880330+00:00",
+  "method": "Offline, reproducible cross-stage geospatial and metadata consistency audit",
+  "independent_official_road_validation_completed": false,
+  "hazard_or_landslide_model_completed": false,
+  "readiness": "READY_FOR_TERRAIN_AND_LANDSLIDE_DATA_DISCOVERY_WITH_CAVEATS",
+  "input_sha256": {
+    "data/processed/study_area/highway99_candidate_centerline.geojson": "b7a1f5ca7d4138c72329805b7900e1e963ae8ae06ae647b0a5d40b83ef2ec351",
+    "data/processed/study_area/highway99_candidate_quality.json": "9f34cd5980820e4c3b67e2f91564f7aa9d8180ca37f60ff150e8099b9217b5ab",
+    "data/processed/study_area/highway99_segments_1000m.geojson": "1ccfa6977ec7d46c5f6e1954ef7c1b5bdb6e36f8d9437e9229ea6c81659f8f3b",
+    "data/processed/study_area/highway99_segments_1000m.csv": "69394d4c7e83f4f4d4d56cec9cb7c1b0c087977d2aa4822b0a73ade82afd7aed",
+    "data/processed/study_area/highway99_segments_1000m_quality.json": "6588ba3eeb5aed82538aa27882ebf64146abad26c5279535837dcb28522f8fad",
+    "data/processed/study_area/highway99_segment_screening_zones_1000m.geojson": "34b6f277f456b7dceb1f9026df2de580294c2e0616d2e4d47d6f78615b265802",
+    "data/processed/study_area/highway99_corridor_screening_1000m.geojson": "a52cf00962a51c2197cccae6ffba9f99aeaa26a2276a0e7641ff921448056b82",
+    "data/processed/study_area/highway99_terrain_search_5000m.geojson": "6ffd4654a1bab09e0ec860e341250560d196a49570128b03b35ac681b895b843",
+    "data/processed/study_area/highway99_spatial_preparation_quality.json": "100089837ca830a913c8edbb81ed8ff27f3c0cf27aaa1e2331ad3747d7a54512"
+  },
+  "checks_passed": [
+    "Step 3.2 -> Step 3.3 -> Step 3.4 SHA-256 provenance chain matches",
+    "All GIS files reopen, have declared geographic CRS and valid geometries",
+    "Sequential segment identifiers follow declared count and zone association",
+    "Route order, segment chainage, continuous geometry and centerline overlay verified",
+    "CSV table matches GIS segment order and chainage",
+    "Per-segment 1 km buffers, unique 1 km union and 5 km terrain buffer reproduced",
+    "Unique areas match recorded QA; per-segment overlaps counted separately",
+    "Disconnected 5 km search polygon components measured and documented"
+  ],
+  "measurements": {
+    "segment_count": 101,
+    "centerline_length_km": 100.443243,
+    "max_segment_boundary_gap_m": 0.0,
+    "reconstructed_line_hausdorff_m": 2e-09,
+    "near_screening_distance_m": 1000,
+    "terrain_search_distance_m": 5000,
+    "sum_overlapping_segment_zones_km2": 516.105017,
+    "unique_near_screening_area_km2": 201.678044,
+    "overlap_not_to_double_count_km2": 314.426974,
+    "unique_terrain_search_area_km2": 1043.616776,
+    "terrain_search_polygon_parts": 2,
+    "smallest_polygon_part_area_m2": 142.682,
+    "smallest_polygon_part_centroid_lonlat": [
+      -123.0801995,
+      49.6776418
+    ]
+  },
+  "unresolved_items": [
+    "The Step 3.2 OSM highway centerline remains provisional and has not been independently checked against an official BC road centerline.",
+    "The 1 km segmentation and 1 km/5 km buffers are analysis/data-screening choices; conduct resolution and buffer sensitivity analyses later.",
+    "The disconnected terrain-search polygon part was retained; inspect in QGIS and do not interpret it as a separate hazard.",
+    "Per-segment buffers overlap: risk events intersecting multiple zones need explicit assignment/deduplication.",
+    "No slope, landslide inventory, susceptibility, runout, road closure, loss, or CLIMADA risk outputs exist yet."
+  ],
+  "attribution": "© OpenStreetMap contributors; OSM-derived provisional road geometry"
+}

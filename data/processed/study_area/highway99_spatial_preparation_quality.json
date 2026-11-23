@@ -1,0 +1,46 @@
+{
+  "step": "3.4",
+  "status": "PROVISIONAL_SPATIAL_SCREENING_NOT_A_HAZARD_MODEL",
+  "generated_utc": "2026-11-23T01:04:44.085846+00:00",
+  "input_step33_geojson": "data/processed/study_area/highway99_segments_1000m.geojson",
+  "input_step33_sha256": "1ccfa6977ec7d46c5f6e1954ef7c1b5bdb6e36f8d9437e9229ea6c81659f8f3b",
+  "input_step33_quality": "data/processed/study_area/highway99_segments_1000m_quality.json",
+  "step33_source_status": "PROVISIONAL_SEGMENTATION_REQUIRES_REVIEW",
+  "original_data_source": "OpenStreetMap via OSMnx/Overpass; © OpenStreetMap contributors",
+  "metric_crs": "EPSG:26910",
+  "geojson_crs": "EPSG:4326",
+  "near_road_screening_distance_m": 1000,
+  "terrain_data_search_distance_m": 5000,
+  "input_total_segment_length_m": 100443.243,
+  "segment_count": 101,
+  "terrain_search_polygon_part_count": 2,
+  "terrain_search_smallest_part_area_m2": 142.682,
+  "sum_individual_segment_zone_areas_km2": 516.105017,
+  "unique_near_road_corridor_area_km2": 201.678044,
+  "overlapping_area_counted_more_than_once_km2": 314.426974,
+  "unique_terrain_data_search_area_km2": 1043.616776,
+  "uncovered_near_area_m2": 0.0,
+  "qa_flags": {
+    "segment_ids_preserved": true,
+    "near_corridor_inside_search_corridor": true,
+    "no_route_geometry_changes": true,
+    "exports_reopened_and_validated": true
+  },
+  "limitations": [
+    "Buffers are distance-based GIS screening regions, not landslide hazard or runout boundaries.",
+    "A landslide initiated outside either buffer may still reach or disrupt the highway.",
+    "Overlapping per-segment polygons MUST NOT be summed for unique area or counted as independent exposures.",
+    "Future hazard points/polygons may intersect multiple adjacent segment zones: explicit assignment/deduplication is required.",
+    "Buffer widths are provisional methodological parameters and require sensitivity checks.",
+    "The terrain search area can include tiny disconnected GIS polygon parts; inspect part-count QA and do not infer isolated hazards.",
+    "Source road geometry is a provisional OSM-derived centerline, not official surveyed geometry.",
+    "No DEM, landslide inventory, susceptibility, physical damage, or CLIMADA hazard has been modelled."
+  ],
+  "outputs": [
+    "data/processed/study_area/highway99_segment_screening_zones_1000m.geojson",
+    "data/processed/study_area/highway99_corridor_screening_1000m.geojson",
+    "data/processed/study_area/highway99_terrain_search_5000m.geojson",
+    "data/processed/study_area/highway99_spatial_preparation_quality.json",
+    "results/maps/highway99_spatial_screening_corridors.png"
+  ]
+}

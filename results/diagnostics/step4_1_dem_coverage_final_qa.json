@@ -1,0 +1,108 @@
+{
+  "status": "FAILED_INTERNAL_VECTOR_COVERAGE_QA",
+  "checked_at_utc": "2026-11-23T17:21:52.150171+00:00",
+  "inputs": {
+    "aoi": {
+      "relative_path": "data/processed/study_area/highway99_terrain_search_5000m.geojson",
+      "source_epsg": 4326,
+      "features": 1,
+      "geometry_type": "MultiPolygon",
+      "area_km2": 1043.616775732,
+      "columns": [
+        "distance_m",
+        "purpose"
+      ]
+    },
+    "hrdem_1m": {
+      "relative_path": "data/processed/elevation/hrdem_1m_dtm_coverage_highway99.gpkg",
+      "source_epsg": 26910,
+      "features": 1,
+      "geometry_type": "MultiPolygon",
+      "area_km2": 464.219677937,
+      "columns": [
+        "layer",
+        "path",
+        "coverage_km2coverage_km2coverage_km2coverage_km2",
+        "coverage_pct"
+      ]
+    },
+    "hrdem_2m": {
+      "relative_path": "data/processed/elevation/hrdem_2m_dtm_coverage_highway99.gpkg",
+      "source_epsg": 26910,
+      "features": 1,
+      "geometry_type": "MultiPolygon",
+      "area_km2": 462.717825205,
+      "columns": [
+        "layer",
+        "path",
+        "coverage_km2",
+        "coverage_pct"
+      ]
+    },
+    "combined": {
+      "relative_path": "data/processed/elevation/hrdem_combined_dtm_coverage_highway99.gpkg",
+      "source_epsg": 26910,
+      "features": 1,
+      "geometry_type": "MultiPolygon",
+      "area_km2": 926.937503142,
+      "columns": [
+        "layer",
+        "path",
+        "coverage_km2coverage_km2coverage_km2coverage_km2",
+        "coverage_pct",
+        "coverage_km2",
+        "combined_km2",
+        "combined_pct"
+      ]
+    }
+  },
+  "metrics": {
+    "aoi_km2": 1043.616775732,
+    "hrdem_1m_km2": 464.219677937,
+    "hrdem_2m_km2": 462.717825205,
+    "independent_union_km2": 926.937503142,
+    "saved_combined_km2": 926.937503142,
+    "overlap_km2": 0.0,
+    "only_1m_km2": 464.219677937,
+    "only_2m_km2": 462.717825205,
+    "uncovered_km2": 579.397099208,
+    "pct_1m": 44.481814468,
+    "pct_2m": 44.337906017,
+    "pct_combined": 88.819720485,
+    "independent_union_vs_saved_symmetric_difference_km2": 0.0,
+    "coverage_outside_aoi_km2": 462.717826618,
+    "saved_combined_outside_aoi_km2": 462.717826618,
+    "union_minus_sum_identity_error_km2": 0.0
+  },
+  "attribute_checks": {
+    "hrdem_1m_pct": {
+      "passed": true,
+      "detail": "Field 'coverage_pct'=44.4818, geometry-based=44.481814"
+    },
+    "hrdem_2m_pct": {
+      "passed": true,
+      "detail": "Field 'coverage_pct'=44.3379, geometry-based=44.337906"
+    },
+    "hrdem_2m_area": {
+      "passed": true,
+      "detail": "Field 'coverage_km2'=462.717825, geometry-based=462.717825"
+    },
+    "combined_area": {
+      "passed": true,
+      "detail": "Field 'combined_km2'=926.937503, geometry-based=926.937503"
+    },
+    "combined_pct": {
+      "passed": true,
+      "detail": "Field 'combined_pct'=88.8197, geometry-based=88.819720"
+    }
+  },
+  "errors": [
+    "Coverage contains unexpected area outside the 5km study AOI (>0.001 km2)"
+  ],
+  "warnings": [
+    "1m summary has no exact 'coverage_km2' field (likely a naming typo in QGIS); numeric geometry is validated separately",
+    "1m/2m polygons show zero overlap at reported precision; visually similar mosaics may be adjacent, but this applies to vector coverage polygons only"
+  ],
+  "scientific_scope": "STAC-derived DTM vector coverage only; not a DEM raster NoData, vertical accuracy, landslide hazard, or official roadway validation",
+  "project_root_name": "natcat-risk"
+}

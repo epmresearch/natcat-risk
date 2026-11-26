@@ -1,0 +1,54 @@
+{
+  "step": "4.2 — MRDEM-30 local GeoTIFF pixel-mask QA",
+  "generated_utc": "2026-11-24T00:59:40.211521+00:00",
+  "status": "NEEDS_REVIEW_MRDEM30_AOI_PIXEL_QA",
+  "inputs": {
+    "dem": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\data\\processed\\elevation\\mrdem30_dtm_highway99_aoi_utm10.tif",
+    "aoi": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\data\\processed\\study_area\\highway99_terrain_search_5000m.geojson"
+  },
+  "raster": {
+    "width_pixels": 1084,
+    "height_pixels": 3093,
+    "epsg_expected": 26910,
+    "pixel_size_m": [
+      30.0,
+      -30.0
+    ],
+    "nodata_value": -32767.0,
+    "pixel_area_m2": 900.0
+  },
+  "pixel_counts": {
+    "total_rectangle": 3352812,
+    "valid_rectangle": 1159601,
+    "aoi_pixel_centres": 1159588,
+    "valid_inside_aoi": 1158668,
+    "missing_inside_aoi": 920,
+    "valid_outside_aoi_pixel_centres": 933
+  },
+  "coverage": {
+    "rectangle_valid_pct": 34.585924,
+    "aoi_valid_pct": 99.920661,
+    "aoi_missing_km2_on_30m_grid": 0.828,
+    "aoi_rasterized_km2_pixel_centres": 1043.6292,
+    "valid_outside_aoi_km2_pixel_centres": 0.8397
+  },
+  "elevation_inside_aoi_m": {
+    "min": -13.335494995117188,
+    "median": 583.9688720703125,
+    "max": 2171.345947265625
+  },
+  "checks": {
+    "raster_crs_is_epsg_26910": true,
+    "raster_pixel_size_is_30m_and_north_up": true,
+    "nodata_is_minus_32767": true,
+    "aoi_contains_raster_pixel_centres": true,
+    "aoi_has_valid_elevation_pixels": true,
+    "all_aoi_pixel_centres_have_valid_elevation": false,
+    "no_valid_pixels_outside_aoi_pixel_centres": false
+  },
+  "caveats": [
+    "AOI rasterization uses pixel-centre inclusion; boundary pixels can differ from exact vector area.",
+    "This checks pixel masking/coverage, not vertical elevation accuracy, terrain artefacts, or landslide suitability.",
+    "Values slightly below 0 m near coastal areas are not automatically errors and need spatial assessment."
+  ]
+}

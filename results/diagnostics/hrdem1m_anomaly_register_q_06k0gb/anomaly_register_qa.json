@@ -1,0 +1,139 @@
+{
+  "configuration": {
+    "method_id": "HRDEM1M_FIXED_BILINEAR_V1",
+    "warp_options": [
+      "-of",
+      "GTiff",
+      "-t_srs",
+      "EPSG:26910",
+      "-tr",
+      "1",
+      "1",
+      "-tap",
+      "-r",
+      "bilinear",
+      "-et",
+      "0",
+      "-ovr",
+      "NONE",
+      "-wo",
+      "XSCALE=1",
+      "-wo",
+      "YSCALE=1",
+      "-ot",
+      "Float32",
+      "-srcnodata",
+      "-32767",
+      "-dstnodata",
+      "-32767",
+      "-co",
+      "TILED=YES",
+      "-co",
+      "COMPRESS=DEFLATE",
+      "-co",
+      "PREDICTOR=3",
+      "-co",
+      "BIGTIFF=IF_SAFER"
+    ],
+    "gdal_python_version": "3.10.3",
+    "gdal_cli_version": "GDAL 3.10.3, released 2025/04/01",
+    "vrt_sha256": "7b33674e35b05e2c3b5caf7ac5927a8f27b6d86ef8f0a37133d3fa66f275901c",
+    "footprint_sha256": "fb39323cb4af0098308b9869d619178ea0349bc326c9066306c76534db5b7e35",
+    "legacy_extraction_sha256": "e19d6e9223fb06cb2393723347879f97a4e30ec2dc8e3a72419a1496604b30d5",
+    "fixed_extraction_sha256": "77739e4f6a347616a2db12c2a33750a18f2213df045771f904cd9cb5b83188e4"
+  },
+  "report_chain_sha256": {
+    "results\\diagnostics\\hrdem1m_terrain_sensitivity_u4w4q9l1\\terrain_sensitivity_qa.json": "c08d08799d17d8a6f9a72282d1e94cf7a258efd7185f55b8c1c7fa36fdd6135b",
+    "results\\diagnostics\\hrdem1m_targeted_source_qa_eobrsvvs\\targeted_source_qa.json": "a49c22819b02e6dcdfce44126cd88d56e55d305ccd32db026e13ff1e0c221ce3",
+    "results\\diagnostics\\hrdem1m_seam_local_context_p_79r4to\\seam_local_context_qa.json": "7a81d787c5698aa0abfce71ebda0baae4d404097a0541ac26915555134aa4edb",
+    "results\\diagnostics\\hrdem1m_global_fixed_seam_qa_9rfgcq9o\\global_fixed_seam_qa.json": "149904c853f0029bd48586f1d6403f3a9199800585698fabb44fbf4c2e41c153",
+    "results\\diagnostics\\hrdem1m_global_masking_qa_t3koqz9w\\global_masking_qa.json": "48fd11c5b885823de3f4924e42242ef2654f16b1e803c0f23c0913f76fa5e73c",
+    "results\\diagnostics\\hrdem1m_global_extraction_qa_v0n9af73\\global_extraction_qa.json": "3b191e1e4f32f0b6a33e3cdd53c6ced4ce4d8f693f235751bbefc60b2ed5ee0d"
+  },
+  "script_sha256": "c24eb87d7920caa1bab33cbca59a2940960d69327d1b09dcea292f13e634fd57",
+  "summary": {
+    "raster_pairs_hash_verified": 655,
+    "selected_extreme_tiles": 89,
+    "extreme_counts": {
+      "slope_gt20": 1154,
+      "slope_gt10": 7250,
+      "aspect_gt90": 233,
+      "elevation_gt10": 45
+    },
+    "layer_counts": {
+      "insufficient_seams": 52,
+      "flagged_seams": 41,
+      "tiles_with_internal_nodata": 265,
+      "slope_change_gt10deg": 7250,
+      "aspect_change_gt90deg": 233,
+      "elevation_change_gt10m": 45
+    },
+    "localization_classes": {
+      "strong": 17,
+      "no_dominant_peak": 7,
+      "moderate": 8,
+      "insufficient_support": 9
+    },
+    "maximum_locations": {
+      "slope_gt10": {
+        "tile": [
+          484000,
+          5505000
+        ],
+        "center_epsg26910": [
+          484986.5,
+          5505461.5
+        ],
+        "original": 68.47550854528735,
+        "fixed": 5.928802620707201,
+        "signed_delta": -62.54670592458015,
+        "abs_delta": 62.54670592458015
+      },
+      "aspect_gt90": {
+        "tile": [
+          484000,
+          5503000
+        ],
+        "center_epsg26910": [
+          484464.5,
+          5503947.5
+        ],
+        "original": 82.74171888184499,
+        "fixed": 263.04437506412324,
+        "signed_delta": -179.69734381772173,
+        "abs_delta": 179.69734381772173
+      },
+      "elevation_gt10": {
+        "tile": [
+          490000,
+          5503000
+        ],
+        "center_epsg26910": [
+          490453.5,
+          5503923.5
+        ],
+        "original": 476.8200988769531,
+        "fixed": 457.8222961425781,
+        "signed_delta": -18.997802734375,
+        "abs_delta": 18.997802734375
+      }
+    },
+    "register_sha256": "e2e8840013db83074fc614d3a12d299ee6d199e09465172bf59ffb9e489c76ae",
+    "register_completed": true,
+    "final_dem_approved": false
+  },
+  "decision": {
+    "preferred_resampling": "fixed_scale_bilinear",
+    "retain_elevations_unchanged": true,
+    "exclude_flagged_pixels_automatically": false,
+    "source_artifact_origin": "unresolved",
+    "physical_model_validation": "pending"
+  },
+  "limitations": [
+    "Point layers indicate sensitivity between processing methods, not measured error. Thresholds are descriptive and omit smaller differences.",
+    "Seam lines depict full nominal tile edges, not confirmed artifact lengths or exact crossing locations.",
+    "NoData polygons depict full tiles containing internal NoData, not the actual missing-pixel geometry.",
+    "Layers may overlap; feature counts cannot be added as unique affected pixels.",
+    "No raster edited; no exclusion, smoothing, filling or final DEM approval."
+  ]
+}

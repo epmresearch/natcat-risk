@@ -1,0 +1,19 @@
+# ============================================================
+# Scientific reproducibility and SHA-256 integrity
+# Preserve exact file bytes for Step 4 research artifacts
+# ============================================================
+
+# HRDEM production and validation scripts
+/step4_2_hrdem1m_*.py -text
+
+# HRDEM diagnostic evidence
+/results/diagnostics/hrdem1m_*/** -text
+
+# Step 4 source assessment and diagnostic artifacts
+/results/diagnostics/step4_* -text
+
+# Published HRDEM release and provenance
+/data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/** -text
+
+# HRDEM coverage footprint used in processing provenance
+/data/processed/elevation/hrdem_1m_dtm_coverage_highway99.gpkg -text

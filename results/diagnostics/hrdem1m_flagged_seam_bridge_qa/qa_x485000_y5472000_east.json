@@ -1,0 +1,27 @@
+{
+  "x": 485000,
+  "y": 5472000,
+  "direction": "east",
+  "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x485000_y5472000_east_60m_utm10.tif",
+  "common_valid_pixels": 14333,
+  "old_seam": {
+    "crossings": 247,
+    "p50_abs_m": 0.11322021484375,
+    "p95_abs_m": 1.5102966308593748,
+    "max_abs_m": 2.61248779296875,
+    "signed_mean_m": -0.2822090179814018
+  },
+  "bridge_seam": {
+    "crossings": 247,
+    "p50_abs_m": 0.00848388671875,
+    "p95_abs_m": 0.04774169921874999,
+    "max_abs_m": 0.0965576171875,
+    "signed_mean_m": -0.007848824566675102
+  },
+  "delta_abs_p50_m": 0.0960693359375,
+  "delta_abs_p95_m": 0.5122070312499998,
+  "delta_abs_max_m": 4.9530029296875,
+  "old_flagged_on_common_rows": true,
+  "bridge_flagged_on_common_rows": false,
+  "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+}

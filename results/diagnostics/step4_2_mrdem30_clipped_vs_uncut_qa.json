@@ -1,0 +1,39 @@
+{
+  "step": "4.2 — MRDEM-30 clipped vs uncut reference comparison",
+  "generated_utc": "2026-11-24T01:08:34.688982+00:00",
+  "status": "UNCUT_REFERENCE_COMPARISON_NEEDS_REVIEW",
+  "inputs": {
+    "clipped": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\data\\processed\\elevation\\mrdem30_dtm_highway99_aoi_utm10.tif",
+    "uncut": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\results\\diagnostics\\step4_2_mrdem30_uncut_bbox_diagnostic.tif",
+    "aoi": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\data\\processed\\study_area\\highway99_terrain_search_5000m.geojson"
+  },
+  "grid_checks": {
+    "same_dimensions": true,
+    "same_crs": true,
+    "same_geotransform": true,
+    "same_nodata": true
+  },
+  "previous_qa_counts_reproduced": true,
+  "pixel_metrics": {
+    "aoi_pixel_centres": 1159588,
+    "clipped_valid_inside_aoi": 1158668,
+    "clipped_missing_inside_aoi": 920,
+    "of_clipped_missing_inside_valid_in_uncut": 920,
+    "of_clipped_missing_inside_also_missing_in_uncut": 0,
+    "uncut_valid_inside_aoi": 1159588,
+    "uncut_missing_inside_aoi": 0,
+    "clipped_valid_outside_aoi": 933,
+    "of_clipped_valid_outside_valid_in_uncut": 933,
+    "of_clipped_valid_outside_missing_in_uncut": 0,
+    "clipped_valid_but_uncut_missing_anywhere": 0,
+    "shared_valid_pixels": 1159601,
+    "shared_valid_max_absolute_elevation_difference_m": 25.7218017578125,
+    "shared_valid_pixels_differing_over_1mm": 1009538
+  },
+  "interpretation_limits": [
+    "Uncut reference is another warp of the same remote MRDEM-30 COG, not ground truth or an independent elevation product.",
+    "If clipped AOI gaps are valid in the uncut raster, this supports a cutline/masking-boundary explanation, not vertical accuracy.",
+    "AOI inclusion is determined by GDAL's default rasterization, not all-touched coverage.",
+    "Elevation ranges and values must be reviewed separately for scientific use."
+  ]
+}

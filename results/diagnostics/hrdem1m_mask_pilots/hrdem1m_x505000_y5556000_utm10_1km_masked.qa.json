@@ -1,0 +1,23 @@
+{
+  "status": "DIAGNOSTIC_MASK_PILOT_NOT_FINAL",
+  "tile_x": 505000,
+  "tile_y": 5556000,
+  "crs": "EPSG:26910",
+  "pixel_size_m": 1,
+  "source_tile": "results\\diagnostics\\hrdem1m_batch_staging\\hrdem1m_x505000_y5556000_utm10_1km.tif",
+  "mask_source": "data\\processed\\elevation\\hrdem_1m_dtm_coverage_highway99.gpkg",
+  "mask_rule": "pixel-center rasterization of AOI-clipped 1m DTM coverage",
+  "source_valid_pixels": 902850,
+  "footprint_pixels": 9474,
+  "valid_inside_footprint": 9474,
+  "nodata_inside_footprint": 0,
+  "valid_outside_footprint_removed": 893376,
+  "masked_valid_pixels": 9474,
+  "masked_nodata_pixels": 990526,
+  "retained_original_pixel_values_unchanged": true,
+  "caveats": [
+    "Footprint is AOI-clipped; unmasked source may contain genuine elevation beyond AOI",
+    "NoData inside footprint remains NoData; no interpolation or gap filling",
+    "This is not a final DEM or elevation accuracy validation"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "step": "4.2 — MRDEM-30 exact warp control comparison",
+  "generated_utc": "2026-11-24T01:18:44.368700+00:00",
+  "status": "EXACT_PAIR_VALUES_DIFFER_NEEDS_REVIEW",
+  "inputs": {
+    "original_cutline": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\data\\processed\\elevation\\mrdem30_dtm_highway99_aoi_utm10.tif",
+    "original_bbox": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\results\\diagnostics\\step4_2_mrdem30_uncut_bbox_diagnostic.tif",
+    "exact_bbox": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\results\\diagnostics\\step4_2_mrdem30_exact_bbox.tif",
+    "exact_cutline": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\results\\diagnostics\\step4_2_mrdem30_exact_cutline.tif",
+    "aoi": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\data\\processed\\study_area\\highway99_terrain_search_5000m.geojson"
+  },
+  "method": "GDAL mask validity and pixel-centre AOI rasterization; paired absolute elevation differences",
+  "grid_checks": {
+    "original_cutline": {
+      "same_shape": true,
+      "same_crs": true,
+      "same_geotransform": true,
+      "same_nodata": true
+    },
+    "original_bbox": {
+      "same_shape": true,
+      "same_crs": true,
+      "same_geotransform": true,
+      "same_nodata": true
+    },
+    "exact_bbox": {
+      "same_shape": true,
+      "same_crs": true,
+      "same_geotransform": true,
+      "same_nodata": true
+    },
+    "exact_cutline": {
+      "same_shape": true,
+      "same_crs": true,
+      "same_geotransform": true,
+      "same_nodata": true
+    }
+  },
+  "pixel_counts": {
+    "aoi_pixel_centres": 1159588,
+    "original_cutline": {
+      "valid_inside_aoi": 1158668,
+      "missing_inside_aoi": 920,
+      "valid_outside_aoi": 933
+    },
+    "original_bbox": {
+      "valid_inside_aoi": 1159588,
+      "missing_inside_aoi": 0,
+      "valid_outside_aoi": 2193224
+    },
+    "exact_bbox": {
+      "valid_inside_aoi": 1159588,
+      "missing_inside_aoi": 0,
+      "valid_outside_aoi": 2193224
+    },
+    "exact_cutline": {
+      "valid_inside_aoi": 1158659,
+      "missing_inside_aoi": 929,
+      "valid_outside_aoi": 932
+    }
+  },
+  "comparisons": {
+    "exact_cutline_vs_exact_bbox_all_shared": {
+      "shared_valid_pixels": 1159591,
+      "identical_float32_values": 114,
+      "different_over_0_001m": 1009408,
+      "different_over_0_1m": 811622,
+      "different_over_1m": 186190,
+      "different_over_5m": 1273,
+      "mean_absolute_difference_m": 0.511177656,
+      "median_absolute_difference_m": 0.32434082,
+      "p95_absolute_difference_m": 1.642700195,
+      "max_absolute_difference_m": 26.346679688
+    },
+    "exact_cutline_vs_exact_bbox_inside_aoi": {
+      "shared_valid_pixels": 1158659,
+      "identical_float32_values": 114,
+      "different_over_0_001m": 1008582,
+      "different_over_0_1m": 810838,
+      "different_over_1m": 185538,
+      "different_over_5m": 992,
+      "mean_absolute_difference_m": 0.508522231,
+      "median_absolute_difference_m": 0.324066162,
+      "p95_absolute_difference_m": 1.638000488,
+      "max_absolute_difference_m": 19.042236328
+    },
+    "original_cutline_vs_original_bbox_all_shared": {
+      "shared_valid_pixels": 1159601,
+      "identical_float32_values": 130,
+      "different_over_0_001m": 1009538,
+      "different_over_0_1m": 812048,
+      "different_over_1m": 185890,
+      "different_over_5m": 1269,
+      "mean_absolute_difference_m": 0.511155018,
+      "median_absolute_difference_m": 0.32421875,
+      "p95_absolute_difference_m": 1.64251709,
+      "max_absolute_difference_m": 25.721801758
+    },
+    "original_cutline_vs_exact_cutline_all_shared": {
+      "shared_valid_pixels": 1159519,
+      "identical_float32_values": 4433,
+      "different_over_0_001m": 963405,
+      "different_over_0_1m": 480247,
+      "different_over_1m": 9976,
+      "different_over_5m": 0,
+      "mean_absolute_difference_m": 0.149366025,
+      "median_absolute_difference_m": 0.063171387,
+      "p95_absolute_difference_m": 0.57832489,
+      "max_absolute_difference_m": 3.74206543
+    },
+    "original_bbox_vs_exact_bbox_all_shared": {
+      "shared_valid_pixels": 3352812,
+      "identical_float32_values": 25555,
+      "different_over_0_001m": 3061570,
+      "different_over_0_1m": 1762273,
+      "different_over_1m": 27704,
+      "different_over_5m": 0,
+      "mean_absolute_difference_m": 0.186694387,
+      "median_absolute_difference_m": 0.111694336,
+      "p95_absolute_difference_m": 0.613891602,
+      "max_absolute_difference_m": 4.815307617
+    }
+  },
+  "limits": [
+    "Both exact outputs are resampled from the same MRDEM-30 product, not independent ground truth.",
+    "An identical shared-pixel value is not proof of vertical accuracy or suitable slope estimates.",
+    "The cutline pixel inclusion rule may differ from the default AOI rasterization pixel-centre rule.",
+    "The uncut rectangular DEM is a diagnostic; it includes valid pixels outside AOI.",
+    "Outputs only a JSON report. Input rasters and AOI are not modified."
+  ]
+}

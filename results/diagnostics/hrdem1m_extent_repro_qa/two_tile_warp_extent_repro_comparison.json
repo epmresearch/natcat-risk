@@ -1,0 +1,55 @@
+{
+  "source": "checked_two_source_official_HRDEM_1m_VRT",
+  "tile_comparisons": [
+    {
+      "tile": [
+        485000,
+        5490000
+      ],
+      "common_valid_pixels": 973670,
+      "validity_masks_equal": true,
+      "all_common_height_values_exactly_equal": true,
+      "fully_reproduced": true,
+      "abs_diff_p50_p95_max_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pixels_differing_over_0_01m": 0,
+      "pixels_differing_over_0_5m": 0
+    },
+    {
+      "tile": [
+        486000,
+        5490000
+      ],
+      "common_valid_pixels": 190691,
+      "validity_masks_equal": true,
+      "all_common_height_values_exactly_equal": true,
+      "fully_reproduced": true,
+      "abs_diff_p50_p95_max_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pixels_differing_over_0_01m": 0,
+      "pixels_differing_over_0_5m": 0
+    }
+  ],
+  "old_pair_seam_crossings_p95_mean": [
+    750,
+    6.455726623535155,
+    -0.6493423665364584
+  ],
+  "regenerated_pair_seam_crossings_p95_mean": [
+    750,
+    6.455726623535155,
+    -0.6493423665364584
+  ],
+  "existing_60m_bridge_seam_crossings_p95_mean": [
+    750,
+    0.22251892089843694,
+    -0.022243550618489583
+  ],
+  "note": "Diagnostic reproduction only; no original files modified; not a vertical accuracy test"
+}

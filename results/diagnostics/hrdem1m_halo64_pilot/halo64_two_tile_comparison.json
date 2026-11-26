@@ -1,0 +1,63 @@
+{
+  "halo_m": 64,
+  "source": "official_checked_two_source_1m_VRT",
+  "tile_comparisons": [
+    {
+      "tile": [
+        485000,
+        5490000
+      ],
+      "old_valid_pixels": 973670,
+      "halo_valid_pixels": 973670,
+      "common_valid_pixels": 973670,
+      "halo_newly_valid_pixels": 0,
+      "halo_newly_nodata_pixels": 0,
+      "old_vs_halo_abs_diff_p50_p95_max_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pixels_differing_over_0_5m": 0
+    },
+    {
+      "tile": [
+        486000,
+        5490000
+      ],
+      "old_valid_pixels": 190691,
+      "halo_valid_pixels": 190691,
+      "common_valid_pixels": 190691,
+      "halo_newly_valid_pixels": 0,
+      "halo_newly_nodata_pixels": 0,
+      "old_vs_halo_abs_diff_p50_p95_max_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pixels_differing_over_0_5m": 0
+    }
+  ],
+  "common_seam_rows_all_three": 750,
+  "old_pair_seam_count_p95_mean": [
+    750,
+    6.455726623535155,
+    -0.6493423665364584
+  ],
+  "halo64_pair_seam_count_p95_mean": [
+    750,
+    6.455726623535155,
+    -0.6493423665364584
+  ],
+  "continuous_bridge_seam_count_p95_mean": [
+    750,
+    0.22251892089843694,
+    -0.022243550618489583
+  ],
+  "halo64_bridge_common_valid_pixels": 45462,
+  "halo64_bridge_abs_diff_p50_p95_max_m": [
+    0.15277099609375,
+    0.9873413085937486,
+    19.7025146484375
+  ],
+  "notes": "Diagnostic only; no staging/masked rasters modified, no vertical accuracy certification"
+}

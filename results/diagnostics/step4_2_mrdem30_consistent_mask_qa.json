@@ -1,0 +1,38 @@
+{
+  "step": "4.2 — deterministic AOI mask from single exact-bbox MRDEM-30 warp",
+  "generated_utc": "2026-11-24T01:22:00.201822+00:00",
+  "status": "PASSED_INTERNAL_MRDEM30_CONSISTENT_MASK_QA_WITH_CAVEATS",
+  "source_exact_bbox": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\results\\diagnostics\\step4_2_mrdem30_exact_bbox.tif",
+  "aoi_polygon": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\data\\processed\\study_area\\highway99_terrain_search_5000m.geojson",
+  "output_masked": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\data\\processed\\elevation\\mrdem30_dtm_highway99_aoi_utm10_masked_exact.tif",
+  "method": "Reproject AOI to DEM CRS, rasterize onto exact grid with pixel-centre rule, and mask Float32 pixels without resampling",
+  "source_aoi_feature_count": 1,
+  "counts": {
+    "raster_pixels_total": 3352812,
+    "aoi_pixel_centres": 1159588,
+    "source_valid_inside_aoi": 1159588,
+    "source_missing_inside_aoi": 0,
+    "output_valid_inside_aoi": 1159588,
+    "output_missing_inside_aoi": 0,
+    "output_valid_outside_aoi": 0,
+    "inside_values_differing_from_source": 0
+  },
+  "checks": {
+    "source_crs_epsg_26910_and_30m": true,
+    "aoi_mask_matches_previous_qa": true,
+    "source_has_no_missing_inside_aoi": true,
+    "output_grid_matches_source": true,
+    "output_nodata_is_minus_32767": true,
+    "all_aoi_centres_have_valid_elevation": true,
+    "no_valid_pixels_outside_aoi_centres": true,
+    "all_inside_elevation_values_identical_to_source": true,
+    "valid_pixel_count_matches_aoi_pixel_centres": true
+  },
+  "caveats": [
+    "The selected reference is the uncut exact-bbox warp; its absolute elevation and vertical datum are not ground-truth validated.",
+    "100% pixel-centre coverage follows from valid exact-bbox pixels and an explicit deterministic mask; it is not independent vertical accuracy evidence.",
+    "Rasterized AOI pixel-centre area differs slightly from continuous polygon area at 30m resolution.",
+    "For slope and other neighborhood terrain derivatives, use the uncut/buffered DEM as input and mask derivatives afterward to avoid AOI boundary artifacts.",
+    "The underlying cause of different bilinear values from separately warped cutline and bbox inputs has not been conclusively established."
+  ]
+}

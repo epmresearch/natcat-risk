@@ -1,0 +1,255 @@
+{
+  "configuration": {
+    "method_id": "HRDEM1M_FIXED_BILINEAR_V1",
+    "warp_options": [
+      "-of",
+      "GTiff",
+      "-t_srs",
+      "EPSG:26910",
+      "-tr",
+      "1",
+      "1",
+      "-tap",
+      "-r",
+      "bilinear",
+      "-et",
+      "0",
+      "-ovr",
+      "NONE",
+      "-wo",
+      "XSCALE=1",
+      "-wo",
+      "YSCALE=1",
+      "-ot",
+      "Float32",
+      "-srcnodata",
+      "-32767",
+      "-dstnodata",
+      "-32767",
+      "-co",
+      "TILED=YES",
+      "-co",
+      "COMPRESS=DEFLATE",
+      "-co",
+      "PREDICTOR=3",
+      "-co",
+      "BIGTIFF=IF_SAFER"
+    ],
+    "gdal_python_version": "3.10.3",
+    "gdal_cli_version": "GDAL 3.10.3, released 2025/04/01",
+    "vrt_sha256": "7b33674e35b05e2c3b5caf7ac5927a8f27b6d86ef8f0a37133d3fa66f275901c",
+    "footprint_sha256": "fb39323cb4af0098308b9869d619178ea0349bc326c9066306c76534db5b7e35",
+    "legacy_extraction_sha256": "e19d6e9223fb06cb2393723347879f97a4e30ec2dc8e3a72419a1496604b30d5",
+    "fixed_extraction_sha256": "77739e4f6a347616a2db12c2a33750a18f2213df045771f904cd9cb5b83188e4"
+  },
+  "script_sha256": "0f7c70fa8030784cdd7054949bb45dd698398892652cf1502f3f8da8b2f7eab1",
+  "prior_final_report": "results\\diagnostics\\hrdem1m_final_validation_ebk_g0f9\\final_validation_qa.json",
+  "prior_final_report_sha256": "efbf26b917b46e551552a106293f5c49a4635959380a3eb8b94b1b22543cc6f2",
+  "summary": {
+    "sites": 3,
+    "sites_numerically_consistent": 3,
+    "deep_negative_pixels": 2432,
+    "deep_negative_strict": 2432,
+    "deep_negative_without_strict": 0,
+    "deep_negative_over_0_001m": 0,
+    "all_sites_numerically_consistent": true,
+    "absolute_vertical_accuracy_validated": false,
+    "negative_source_physical_validity_resolved": false,
+    "final_dem_published": false
+  },
+  "sites": [
+    {
+      "tile": [
+        489000,
+        5506000
+      ],
+      "kind": "deep",
+      "bbox": [
+        489086,
+        5506003,
+        489133,
+        5506064
+      ],
+      "source_window": [
+        40312,
+        480594,
+        69,
+        76
+      ],
+      "source_region": "2_4",
+      "direct_source_audit": [
+        {
+          "region": "2_4",
+          "common_valid": 5244,
+          "validity_mismatch": 0,
+          "exact_equal": true
+        }
+      ],
+      "direct_source_equal": true,
+      "negative_comparison": {
+        "selected": 1806,
+        "strict": 1806,
+        "without_strict": 0,
+        "max_abs_m": 9.529964657417622e-07,
+        "over_0_001m": 0
+      },
+      "unmasked_context_comparison": {
+        "selected": 2867,
+        "strict": 2867,
+        "without_strict": 0,
+        "max_abs_m": 9.529964657417622e-07,
+        "over_0_001m": 0
+      },
+      "strict_missing_from_unmasked": 0,
+      "minimum": {
+        "center_epsg26910": [
+          489111.5,
+          5506029.5
+        ],
+        "fixed_m": -30.402355194091797,
+        "strict": true,
+        "native_reference_m": -30.402355647224848,
+        "fixed_minus_reference_m": 4.5313305108152235e-07
+      },
+      "numerical_fidelity_passed": true
+    },
+    {
+      "tile": [
+        479000,
+        5468000
+      ],
+      "kind": "deep",
+      "bbox": [
+        479366,
+        5468369,
+        479394,
+        5468415
+      ],
+      "source_window": [
+        15506,
+        510449,
+        46,
+        55
+      ],
+      "source_region": "2_3",
+      "direct_source_audit": [
+        {
+          "region": "2_3",
+          "common_valid": 2530,
+          "validity_mismatch": 0,
+          "exact_equal": true
+        }
+      ],
+      "direct_source_equal": true,
+      "negative_comparison": {
+        "selected": 626,
+        "strict": 626,
+        "without_strict": 0,
+        "max_abs_m": 9.520855002165263e-07,
+        "over_0_001m": 0
+      },
+      "unmasked_context_comparison": {
+        "selected": 1288,
+        "strict": 1288,
+        "without_strict": 0,
+        "max_abs_m": 1.8975365634332775e-06,
+        "over_0_001m": 0
+      },
+      "strict_missing_from_unmasked": 0,
+      "minimum": {
+        "center_epsg26910": [
+          479378.5,
+          5468390.5
+        ],
+        "fixed_m": -19.878623962402344,
+        "strict": true,
+        "native_reference_m": -19.87862407589302,
+        "fixed_minus_reference_m": 1.1349067463584106e-07
+      },
+      "numerical_fidelity_passed": true
+    },
+    {
+      "tile": [
+        477000,
+        5473000
+      ],
+      "kind": "shallow_control",
+      "bbox": [
+        477888,
+        5473850,
+        477953,
+        5473915
+      ],
+      "source_window": [
+        16508,
+        504851,
+        87,
+        87
+      ],
+      "source_region": "2_3",
+      "direct_source_audit": [
+        {
+          "region": "2_3",
+          "common_valid": 7569,
+          "validity_mismatch": 0,
+          "exact_equal": true
+        }
+      ],
+      "direct_source_equal": true,
+      "negative_comparison": {
+        "selected": 4225,
+        "strict": 4225,
+        "without_strict": 0,
+        "max_abs_m": 1.1920117559682808e-07,
+        "over_0_001m": 0
+      },
+      "unmasked_context_comparison": {
+        "selected": 4225,
+        "strict": 4225,
+        "without_strict": 0,
+        "max_abs_m": 1.1920117559682808e-07,
+        "over_0_001m": 0
+      },
+      "strict_missing_from_unmasked": 0,
+      "minimum": {
+        "center_epsg26910": [
+          477920.5,
+          5473882.5
+        ],
+        "fixed_m": -2.4924166202545166,
+        "strict": true,
+        "native_reference_m": -2.492416709405348,
+        "fixed_minus_reference_m": 8.915083160587756e-08
+      },
+      "numerical_fidelity_passed": true
+    }
+  ],
+  "source_metadata": [
+    {
+      "url": "/vsicurl/https://canelevation-dem.s3.ca-central-1.amazonaws.com/hrdem-mosaic-1m/2_3-mosaic-1m-dtm.tif",
+      "crs_wkt": "PROJCS[\"NAD83(CSRS) / Canada Atlas Lambert\",GEOGCS[\"NAD83(CSRS)\",DATUM[\"NAD83_Canadian_Spatial_Reference_System\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6140\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4617\"]],PROJECTION[\"Lambert_Conformal_Conic_2SP\"],PARAMETER[\"latitude_of_origin\",49],PARAMETER[\"central_meridian\",-95],PARAMETER[\"standard_parallel_1\",49],PARAMETER[\"standard_parallel_2\",77],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"3979\"]]",
+      "band_unit": "",
+      "dataset_metadata": {
+        "TIFFTAG_DATETIME": "2023:08:13 12:00:00",
+        "AREA_OR_POINT": "Area"
+      },
+      "band_metadata": {}
+    },
+    {
+      "url": "/vsicurl/https://canelevation-dem.s3.ca-central-1.amazonaws.com/hrdem-mosaic-1m/2_4-mosaic-1m-dtm.tif",
+      "crs_wkt": "PROJCS[\"NAD83(CSRS) / Canada Atlas Lambert\",GEOGCS[\"NAD83(CSRS)\",DATUM[\"NAD83_Canadian_Spatial_Reference_System\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6140\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4617\"]],PROJECTION[\"Lambert_Conformal_Conic_2SP\"],PARAMETER[\"latitude_of_origin\",49],PARAMETER[\"central_meridian\",-95],PARAMETER[\"standard_parallel_1\",49],PARAMETER[\"standard_parallel_2\",77],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"3979\"]]",
+      "band_unit": "",
+      "dataset_metadata": {
+        "TIFFTAG_DATETIME": "2025:10:16 12:00:00",
+        "AREA_OR_POINT": "Area"
+      },
+      "band_metadata": {}
+    }
+  ],
+  "limitations": [
+    "Strict reference uses four valid native neighbors; partial stencils remain unverified.",
+    "Native source fidelity is not independent physical validation.",
+    "Shallow control is a targeted patch, not a representative sample.",
+    "No elevation modification or publication."
+  ]
+}

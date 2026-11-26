@@ -1,0 +1,4 @@
+filename,source_epsg,source_nodata,pixel_size_x_m,pixel_size_y_m,source_mask_flags,step11_valid_30m_samples,step11_30m_centres_in_tile_window,native_1m_aoi_pixel_centres_in_tile,native_1m_valid_pixel_centres_in_aoi,native_1m_missing_pixel_centres_in_aoi,native_valid_pct_of_native_aoi_centres,native_valid_km2_before_tile_overlap_dedup,native_aoi_grid_km2_before_tile_overlap_dedup,nonfinite_aoi_pixel_centres,examined_blocks,aoi_intersecting_blocks,status
+bc_092g085_xli1m_utm10_2018_2.tif,3157,-32767.0,1.0,1.0,8,111216,117560,103350451,100051398,3299053,96.807897,100.051398,103.350451,0,143,107,NATIVE_PIXEL_AOI_SCAN_COMPLETE
+bc_092g044_xl1m_utm10_2019_2.tif,3157,-9999.0,1.0,1.0,8,30211,95594,84143892,27207656,56936236,32.334677,27.207656,84.143892,0,110,97,NATIVE_PIXEL_AOI_SCAN_COMPLETE
+bc_092g084_xli1m_utm10_2020_2.tif,3157,-32767.0,1.0,1.0,8,0,19364,16562555,0,16562555,0.0,0.0,16.562555,0,110,24,NATIVE_PIXEL_AOI_SCAN_COMPLETE

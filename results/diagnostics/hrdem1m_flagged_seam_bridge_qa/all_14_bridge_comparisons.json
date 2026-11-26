@@ -1,0 +1,389 @@
+{
+  "seams_tested": 14,
+  "common_assessable_20plus": 14,
+  "old_flagged_on_common_rows": 14,
+  "bridge_flagged_on_common_rows": 0,
+  "bridge_still_flagged": [],
+  "no_completed_source_tiles_modified": true,
+  "not_final_DEM_or_vertical_accuracy": true,
+  "results": [
+    {
+      "x": 485000,
+      "y": 5490000,
+      "direction": "east",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x485000_y5490000_east_60m_utm10.tif",
+      "common_valid_pixels": 45354,
+      "old_seam": {
+        "crossings": 748,
+        "p50_abs_m": 0.0403900146484375,
+        "p95_abs_m": 6.332518005371092,
+        "max_abs_m": 12.456207275390625,
+        "signed_mean_m": -0.6175601979627966
+      },
+      "bridge_seam": {
+        "crossings": 748,
+        "p50_abs_m": 0.00763702392578125,
+        "p95_abs_m": 0.20728912353515594,
+        "max_abs_m": 1.076141357421875,
+        "signed_mean_m": -0.019371338706603024
+      },
+      "delta_abs_p50_m": 0.152374267578125,
+      "delta_abs_p95_m": 0.9741882324218745,
+      "delta_abs_max_m": 14.2596435546875,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 484000,
+      "y": 5488000,
+      "direction": "east",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x484000_y5488000_east_60m_utm10.tif",
+      "common_valid_pixels": 55032,
+      "old_seam": {
+        "crossings": 999,
+        "p50_abs_m": 0.07342529296875,
+        "p95_abs_m": 5.721728515624998,
+        "max_abs_m": 8.4564208984375,
+        "signed_mean_m": -0.8772598281875625
+      },
+      "bridge_seam": {
+        "crossings": 999,
+        "p50_abs_m": 0.00927734375,
+        "p95_abs_m": 0.19930419921874998,
+        "max_abs_m": 0.59490966796875,
+        "signed_mean_m": -0.031903607709271774
+      },
+      "delta_abs_p50_m": 0.16455078125,
+      "delta_abs_p95_m": 1.0639526367187493,
+      "delta_abs_max_m": 12.4151611328125,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 483000,
+      "y": 5503000,
+      "direction": "east",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x483000_y5503000_east_60m_utm10.tif",
+      "common_valid_pixels": 60000,
+      "old_seam": {
+        "crossings": 1000,
+        "p50_abs_m": 0.0551910400390625,
+        "p95_abs_m": 2.8163337707519527,
+        "max_abs_m": 9.875335693359375,
+        "signed_mean_m": 0.27670780181884763
+      },
+      "bridge_seam": {
+        "crossings": 1000,
+        "p50_abs_m": 0.00786590576171875,
+        "p95_abs_m": 0.12582168579101552,
+        "max_abs_m": 0.976715087890625,
+        "signed_mean_m": 0.012275314331054688
+      },
+      "delta_abs_p50_m": 0.1533203125,
+      "delta_abs_p95_m": 1.0312652587890612,
+      "delta_abs_max_m": 16.061477661132812,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 485000,
+      "y": 5489000,
+      "direction": "north",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x485000_y5489000_north_60m_utm10.tif",
+      "common_valid_pixels": 48636,
+      "old_seam": {
+        "crossings": 810,
+        "p50_abs_m": 0.0513153076171875,
+        "p95_abs_m": 2.639624023437492,
+        "max_abs_m": 9.880126953125,
+        "signed_mean_m": -0.30506723662953317
+      },
+      "bridge_seam": {
+        "crossings": 810,
+        "p50_abs_m": 0.006622314453125,
+        "p95_abs_m": 0.05563964843749969,
+        "max_abs_m": 0.755645751953125,
+        "signed_mean_m": -0.008057092737268519
+      },
+      "delta_abs_p50_m": 0.1075439453125,
+      "delta_abs_p95_m": 0.42596435546875,
+      "delta_abs_max_m": 8.46624755859375,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 485000,
+      "y": 5474000,
+      "direction": "north",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x485000_y5474000_north_60m_utm10.tif",
+      "common_valid_pixels": 47835,
+      "old_seam": {
+        "crossings": 797,
+        "p50_abs_m": 0.04107666015625,
+        "p95_abs_m": 2.5033264160156237,
+        "max_abs_m": 6.7823486328125,
+        "signed_mean_m": 0.27457917140448557
+      },
+      "bridge_seam": {
+        "crossings": 797,
+        "p50_abs_m": 0.0076904296875,
+        "p95_abs_m": 0.10763549804687422,
+        "max_abs_m": 0.304779052734375,
+        "signed_mean_m": 0.010178397261213928
+      },
+      "delta_abs_p50_m": 0.1226806640625,
+      "delta_abs_p95_m": 0.5285217285156247,
+      "delta_abs_max_m": 8.03314208984375,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 483000,
+      "y": 5467000,
+      "direction": "north",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x483000_y5467000_north_60m_utm10.tif",
+      "common_valid_pixels": 39653,
+      "old_seam": {
+        "crossings": 661,
+        "p50_abs_m": 0.033538818359375,
+        "p95_abs_m": 2.198394775390625,
+        "max_abs_m": 5.03631591796875,
+        "signed_mean_m": 0.23108540360397362
+      },
+      "bridge_seam": {
+        "crossings": 661,
+        "p50_abs_m": 0.0048675537109375,
+        "p95_abs_m": 0.064666748046875,
+        "max_abs_m": 0.2220611572265625,
+        "signed_mean_m": 0.006829289192511347
+      },
+      "delta_abs_p50_m": 0.1087646484375,
+      "delta_abs_p95_m": 0.6318603515625001,
+      "delta_abs_max_m": 8.45635986328125,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 484000,
+      "y": 5505000,
+      "direction": "east",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x484000_y5505000_east_60m_utm10.tif",
+      "common_valid_pixels": 60000,
+      "old_seam": {
+        "crossings": 1000,
+        "p50_abs_m": 0.0599822998046875,
+        "p95_abs_m": 2.194989013671875,
+        "max_abs_m": 16.9119873046875,
+        "signed_mean_m": 0.23363323974609376
+      },
+      "bridge_seam": {
+        "crossings": 1000,
+        "p50_abs_m": 0.014373779296875,
+        "p95_abs_m": 0.13011474609374998,
+        "max_abs_m": 1.482177734375,
+        "signed_mean_m": 0.007383026123046875
+      },
+      "delta_abs_p50_m": 0.223297119140625,
+      "delta_abs_p95_m": 1.623791503906249,
+      "delta_abs_max_m": 22.03912353515625,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 483000,
+      "y": 5470000,
+      "direction": "east",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x483000_y5470000_east_60m_utm10.tif",
+      "common_valid_pixels": 32258,
+      "old_seam": {
+        "crossings": 528,
+        "p50_abs_m": 0.042724609375,
+        "p95_abs_m": 1.84952392578125,
+        "max_abs_m": 2.106689453125,
+        "signed_mean_m": 0.23928070068359375
+      },
+      "bridge_seam": {
+        "crossings": 528,
+        "p50_abs_m": 0.009033203125,
+        "p95_abs_m": 0.07337036132812495,
+        "max_abs_m": 0.11956787109375,
+        "signed_mean_m": 0.011783253062855114
+      },
+      "delta_abs_p50_m": 0.133544921875,
+      "delta_abs_p95_m": 0.6350463867187495,
+      "delta_abs_max_m": 3.4263916015625,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 485000,
+      "y": 5472000,
+      "direction": "east",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x485000_y5472000_east_60m_utm10.tif",
+      "common_valid_pixels": 14333,
+      "old_seam": {
+        "crossings": 247,
+        "p50_abs_m": 0.11322021484375,
+        "p95_abs_m": 1.5102966308593748,
+        "max_abs_m": 2.61248779296875,
+        "signed_mean_m": -0.2822090179814018
+      },
+      "bridge_seam": {
+        "crossings": 247,
+        "p50_abs_m": 0.00848388671875,
+        "p95_abs_m": 0.04774169921874999,
+        "max_abs_m": 0.0965576171875,
+        "signed_mean_m": -0.007848824566675102
+      },
+      "delta_abs_p50_m": 0.0960693359375,
+      "delta_abs_p95_m": 0.5122070312499998,
+      "delta_abs_max_m": 4.9530029296875,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 485000,
+      "y": 5475000,
+      "direction": "north",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x485000_y5475000_north_60m_utm10.tif",
+      "common_valid_pixels": 32071,
+      "old_seam": {
+        "crossings": 534,
+        "p50_abs_m": 0.032501220703125,
+        "p95_abs_m": 1.0056579589843737,
+        "max_abs_m": 4.1021728515625,
+        "signed_mean_m": 0.14297256755471677
+      },
+      "bridge_seam": {
+        "crossings": 534,
+        "p50_abs_m": 0.00567626953125,
+        "p95_abs_m": 0.04542846679687496,
+        "max_abs_m": 0.21453857421875,
+        "signed_mean_m": 0.005607690704002809
+      },
+      "delta_abs_p50_m": 0.0850830078125,
+      "delta_abs_p95_m": 0.302490234375,
+      "delta_abs_max_m": 5.35986328125,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 484000,
+      "y": 5487000,
+      "direction": "east",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x484000_y5487000_east_60m_utm10.tif",
+      "common_valid_pixels": 6863,
+      "old_seam": {
+        "crossings": 90,
+        "p50_abs_m": 0.332061767578125,
+        "p95_abs_m": 0.98658447265625,
+        "max_abs_m": 1.10595703125,
+        "signed_mean_m": -0.37144232855902776
+      },
+      "bridge_seam": {
+        "crossings": 90,
+        "p50_abs_m": 0.016510009765625,
+        "p95_abs_m": 0.05305175781249999,
+        "max_abs_m": 0.07427978515625,
+        "signed_mean_m": -0.016746012369791667
+      },
+      "delta_abs_p50_m": 0.1240234375,
+      "delta_abs_p95_m": 0.7559082031249997,
+      "delta_abs_max_m": 1.68701171875,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 489000,
+      "y": 5503000,
+      "direction": "east",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x489000_y5503000_east_60m_utm10.tif",
+      "common_valid_pixels": 60000,
+      "old_seam": {
+        "crossings": 1000,
+        "p50_abs_m": 0.074371337890625,
+        "p95_abs_m": 0.7871704101562498,
+        "max_abs_m": 5.8373870849609375,
+        "signed_mean_m": 0.0030930099487304686
+      },
+      "bridge_seam": {
+        "crossings": 1000,
+        "p50_abs_m": 0.01141357421875,
+        "p95_abs_m": 0.18939361572265595,
+        "max_abs_m": 1.717620849609375,
+        "signed_mean_m": -0.0013575210571289062
+      },
+      "delta_abs_p50_m": 0.1526641845703125,
+      "delta_abs_p95_m": 1.7254058837890622,
+      "delta_abs_max_m": 28.82366943359375,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 490000,
+      "y": 5536000,
+      "direction": "north",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x490000_y5536000_north_60m_utm10.tif",
+      "common_valid_pixels": 60000,
+      "old_seam": {
+        "crossings": 1000,
+        "p50_abs_m": 0.13780975341796875,
+        "p95_abs_m": 0.6099624633789061,
+        "max_abs_m": 0.95611572265625,
+        "signed_mean_m": 0.08706544494628907
+      },
+      "bridge_seam": {
+        "crossings": 1000,
+        "p50_abs_m": 0.0064849853515625,
+        "p95_abs_m": 0.02235107421874999,
+        "max_abs_m": 0.129119873046875,
+        "signed_mean_m": 0.0021393280029296875
+      },
+      "delta_abs_p50_m": 0.053436279296875,
+      "delta_abs_p95_m": 0.38654022216796835,
+      "delta_abs_max_m": 1.449127197265625,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    },
+    {
+      "x": 486000,
+      "y": 5506000,
+      "direction": "east",
+      "bridge_file": "results\\diagnostics\\hrdem1m_flagged_seam_bridge_qa\\bridge_x486000_y5506000_east_60m_utm10.tif",
+      "common_valid_pixels": 56010,
+      "old_seam": {
+        "crossings": 930,
+        "p50_abs_m": 0.029429972171783447,
+        "p95_abs_m": 0.5583191871643057,
+        "max_abs_m": 2.2701797485351562,
+        "signed_mean_m": 0.009129275301451325
+      },
+      "bridge_seam": {
+        "crossings": 930,
+        "p50_abs_m": 0.005691409111022949,
+        "p95_abs_m": 0.08161888122558576,
+        "max_abs_m": 0.3761711120605469,
+        "signed_mean_m": 0.002538190157182755
+      },
+      "delta_abs_p50_m": 0.08243322372436523,
+      "delta_abs_p95_m": 2.0970890045165986,
+      "delta_abs_max_m": 13.585159301757812,
+      "old_flagged_on_common_rows": true,
+      "bridge_flagged_on_common_rows": false,
+      "method": "60m continuous VRT gdalwarp vs existing two 1km masked tiles; same resampling/target grid; common valid pixels only; diagnostic not vertical accuracy"
+    }
+  ]
+}

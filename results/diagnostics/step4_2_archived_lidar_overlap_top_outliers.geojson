@@ -1,0 +1,1325 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.14390141887695,
+          49.80333595245441
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 1,
+        "absolute_difference_m": 15.949997,
+        "signed_difference_a_minus_b_m": -15.949997,
+        "elevation_a_m": 98.760002,
+        "elevation_b_m": 114.709999,
+        "utm10_easting_m": 489645.0,
+        "utm10_northing_m": 5516775.0,
+        "pixel_row": 1326,
+        "pixel_col": 474
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.18426631179099,
+          49.89340166841376
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 2,
+        "absolute_difference_m": 15.059998,
+        "signed_difference_a_minus_b_m": -15.059998,
+        "elevation_a_m": 137.309998,
+        "elevation_b_m": 152.369995,
+        "utm10_easting_m": 486765.0,
+        "utm10_northing_m": 5526795.0,
+        "pixel_row": 992,
+        "pixel_col": 378
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.15431883818076,
+          49.80170356347404
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 3,
+        "absolute_difference_m": 12.269997,
+        "signed_difference_a_minus_b_m": -12.269997,
+        "elevation_a_m": 80.980003,
+        "elevation_b_m": 93.25,
+        "utm10_easting_m": 488895.0,
+        "utm10_northing_m": 5516595.0,
+        "pixel_row": 1332,
+        "pixel_col": 449
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.19144846528872,
+          49.808393950437925
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 4,
+        "absolute_difference_m": 11.91,
+        "signed_difference_a_minus_b_m": -11.91,
+        "elevation_a_m": 50.18,
+        "elevation_b_m": 62.09,
+        "utm10_easting_m": 486225.0,
+        "utm10_northing_m": 5517345.0,
+        "pixel_row": 1307,
+        "pixel_col": 360
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.18100873157917,
+          49.80409343086224
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 5,
+        "absolute_difference_m": 10.599998,
+        "signed_difference_a_minus_b_m": -10.599998,
+        "elevation_a_m": 48.310001,
+        "elevation_b_m": 58.91,
+        "utm10_easting_m": 486975.0,
+        "utm10_northing_m": 5516865.0,
+        "pixel_row": 1323,
+        "pixel_col": 385
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.147683094581,
+          49.81304510150063
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 6,
+        "absolute_difference_m": 10.030003,
+        "signed_difference_a_minus_b_m": -10.030003,
+        "elevation_a_m": 59.939999,
+        "elevation_b_m": 69.970001,
+        "utm10_easting_m": 489375.0,
+        "utm10_northing_m": 5517855.0,
+        "pixel_row": 1290,
+        "pixel_col": 465
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.184270421523,
+          49.894480969095014
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 7,
+        "absolute_difference_m": 10.0,
+        "signed_difference_a_minus_b_m": -10.0,
+        "elevation_a_m": 151.339996,
+        "elevation_b_m": 161.339996,
+        "utm10_easting_m": 486765.0,
+        "utm10_northing_m": 5526915.0,
+        "pixel_row": 988,
+        "pixel_col": 378
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.14348212373126,
+          49.802526979412065
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 8,
+        "absolute_difference_m": 7.260002,
+        "signed_difference_a_minus_b_m": -7.260002,
+        "elevation_a_m": 70.5,
+        "elevation_b_m": 77.760002,
+        "utm10_easting_m": 489675.0,
+        "utm10_northing_m": 5516685.0,
+        "pixel_row": 1329,
+        "pixel_col": 475
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.17459354266832,
+          49.87506838382946
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 9,
+        "absolute_difference_m": 6.979996,
+        "signed_difference_a_minus_b_m": 6.979996,
+        "elevation_a_m": 136.679993,
+        "elevation_b_m": 129.699997,
+        "utm10_easting_m": 487455.0,
+        "utm10_northing_m": 5524755.0,
+        "pixel_row": 1060,
+        "pixel_col": 401
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.15857322423447,
+          49.827871373472334
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 10,
+        "absolute_difference_m": 6.879997,
+        "signed_difference_a_minus_b_m": -6.879997,
+        "elevation_a_m": 63.209999,
+        "elevation_b_m": 70.089996,
+        "utm10_easting_m": 488595.0,
+        "utm10_northing_m": 5519505.0,
+        "pixel_row": 1235,
+        "pixel_col": 439
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.16746585310575,
+          49.86644440667594
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 11,
+        "absolute_difference_m": 6.619995,
+        "signed_difference_a_minus_b_m": -6.619995,
+        "elevation_a_m": 255.100006,
+        "elevation_b_m": 261.720001,
+        "utm10_easting_m": 487965.0,
+        "utm10_northing_m": 5523795.0,
+        "pixel_row": 1092,
+        "pixel_col": 418
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.17301024209755,
+          49.89935519524066
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 12,
+        "absolute_difference_m": 6.320007,
+        "signed_difference_a_minus_b_m": -6.320007,
+        "elevation_a_m": 331.779999,
+        "elevation_b_m": 338.100006,
+        "utm10_easting_m": 487575.0,
+        "utm10_northing_m": 5527455.0,
+        "pixel_row": 970,
+        "pixel_col": 405
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.17501106203683,
+          49.875067754370264
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 13,
+        "absolute_difference_m": 6.290001,
+        "signed_difference_a_minus_b_m": -6.290001,
+        "elevation_a_m": 126.459999,
+        "elevation_b_m": 132.75,
+        "utm10_easting_m": 487425.0,
+        "utm10_northing_m": 5524755.0,
+        "pixel_row": 1060,
+        "pixel_col": 400
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.18100772552947,
+          49.80382360143204
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 14,
+        "absolute_difference_m": 5.440002,
+        "signed_difference_a_minus_b_m": -5.440002,
+        "elevation_a_m": 38.919998,
+        "elevation_b_m": 44.360001,
+        "utm10_easting_m": 486975.0,
+        "utm10_northing_m": 5516835.0,
+        "pixel_row": 1324,
+        "pixel_col": 385
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1809480986441,
+          49.89961290730116
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 15,
+        "absolute_difference_m": 5.420006,
+        "signed_difference_a_minus_b_m": -5.420006,
+        "elevation_a_m": 115.769997,
+        "elevation_b_m": 121.190002,
+        "utm10_easting_m": 487005.0,
+        "utm10_northing_m": 5527485.0,
+        "pixel_row": 969,
+        "pixel_col": 386
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.16404680473453,
+          49.842974207626526
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 16,
+        "absolute_difference_m": 5.300003,
+        "signed_difference_a_minus_b_m": -5.300003,
+        "elevation_a_m": 73.639999,
+        "elevation_b_m": 78.940002,
+        "utm10_easting_m": 488205.0,
+        "utm10_northing_m": 5521185.0,
+        "pixel_row": 1179,
+        "pixel_col": 426
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.18050822187705,
+          49.89367740616962
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 17,
+        "absolute_difference_m": 5.25,
+        "signed_difference_a_minus_b_m": 5.25,
+        "elevation_a_m": 120.099998,
+        "elevation_b_m": 114.849998,
+        "utm10_easting_m": 487035.0,
+        "utm10_northing_m": 5526825.0,
+        "pixel_row": 991,
+        "pixel_col": 387
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.16999514541595,
+          49.87345625085841
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 18,
+        "absolute_difference_m": 5.100006,
+        "signed_difference_a_minus_b_m": 5.100006,
+        "elevation_a_m": 260.529999,
+        "elevation_b_m": 255.429993,
+        "utm10_easting_m": 487785.0,
+        "utm10_northing_m": 5524575.0,
+        "pixel_row": 1066,
+        "pixel_col": 412
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.15723880549369,
+          49.80223930070169
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 19,
+        "absolute_difference_m": 4.840004,
+        "signed_difference_a_minus_b_m": -4.840004,
+        "elevation_a_m": 90.669998,
+        "elevation_b_m": 95.510002,
+        "utm10_easting_m": 488685.0,
+        "utm10_northing_m": 5516655.0,
+        "pixel_row": 1330,
+        "pixel_col": 442
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.16914882512928,
+          49.87021955502994
+        ]
+      },
+      "properties": {
+        "pair": "092g085_2017_vs_2018",
+        "rank": 20,
+        "absolute_difference_m": 4.730011,
+        "signed_difference_a_minus_b_m": -4.730011,
+        "elevation_a_m": 265.079987,
+        "elevation_b_m": 269.809998,
+        "utm10_easting_m": 487845.0,
+        "utm10_northing_m": 5524215.0,
+        "pixel_row": 1078,
+        "pixel_col": 414
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2095547207864,
+          49.6561760088825
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 1,
+        "absolute_difference_m": 16.011738,
+        "signed_difference_a_minus_b_m": 16.011738,
+        "elevation_a_m": 75.881737,
+        "elevation_b_m": 59.869999,
+        "utm10_easting_m": 484875.0,
+        "utm10_northing_m": 5500425.0,
+        "pixel_row": 1871,
+        "pixel_col": 315
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.20332344951787,
+          49.65699663189584
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 2,
+        "absolute_difference_m": 15.979958,
+        "signed_difference_a_minus_b_m": -15.979958,
+        "elevation_a_m": 33.370041,
+        "elevation_b_m": 49.349998,
+        "utm10_easting_m": 485325.0,
+        "utm10_northing_m": 5500515.0,
+        "pixel_row": 1868,
+        "pixel_col": 330
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2045138645597,
+          49.643502622914276
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 3,
+        "absolute_difference_m": 15.8741,
+        "signed_difference_a_minus_b_m": 15.8741,
+        "elevation_a_m": 226.744095,
+        "elevation_b_m": 210.869995,
+        "utm10_easting_m": 485235.0,
+        "utm10_northing_m": 5499015.0,
+        "pixel_row": 1918,
+        "pixel_col": 327
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.21160602606305,
+          49.64996600121796
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 4,
+        "absolute_difference_m": 12.866592,
+        "signed_difference_a_minus_b_m": -12.866592,
+        "elevation_a_m": 191.973404,
+        "elevation_b_m": 204.839996,
+        "utm10_easting_m": 484725.0,
+        "utm10_northing_m": 5499735.0,
+        "pixel_row": 1894,
+        "pixel_col": 310
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.21119277109683,
+          49.65050643224478
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 5,
+        "absolute_difference_m": 11.467789,
+        "signed_difference_a_minus_b_m": 11.467789,
+        "elevation_a_m": 193.317795,
+        "elevation_b_m": 181.850006,
+        "utm10_easting_m": 484755.0,
+        "utm10_northing_m": 5499795.0,
+        "pixel_row": 1892,
+        "pixel_col": 311
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.21285161895123,
+          49.64969387990759
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 6,
+        "absolute_difference_m": 11.327103,
+        "signed_difference_a_minus_b_m": -11.327103,
+        "elevation_a_m": 190.4729,
+        "elevation_b_m": 201.800003,
+        "utm10_easting_m": 484635.0,
+        "utm10_northing_m": 5499705.0,
+        "pixel_row": 1895,
+        "pixel_col": 307
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.21202161591486,
+          49.64996524098348
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 7,
+        "absolute_difference_m": 11.151993,
+        "signed_difference_a_minus_b_m": -11.151993,
+        "elevation_a_m": 189.138,
+        "elevation_b_m": 200.289993,
+        "utm10_easting_m": 484695.0,
+        "utm10_northing_m": 5499735.0,
+        "pixel_row": 1894,
+        "pixel_col": 309
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.21077717661517,
+          49.650507189510414
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 8,
+        "absolute_difference_m": 8.050095,
+        "signed_difference_a_minus_b_m": 8.050095,
+        "elevation_a_m": 199.910095,
+        "elevation_b_m": 191.860001,
+        "utm10_easting_m": 484785.0,
+        "utm10_northing_m": 5499795.0,
+        "pixel_row": 1892,
+        "pixel_col": 312
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.20992393978752,
+          49.64538181041584
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 9,
+        "absolute_difference_m": 7.957993,
+        "signed_difference_a_minus_b_m": 7.957993,
+        "elevation_a_m": 209.067993,
+        "elevation_b_m": 201.110001,
+        "utm10_easting_m": 484845.0,
+        "utm10_northing_m": 5499225.0,
+        "pixel_row": 1911,
+        "pixel_col": 314
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.20828360935796,
+          49.65051170177994
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 10,
+        "absolute_difference_m": 7.899597,
+        "signed_difference_a_minus_b_m": 7.899597,
+        "elevation_a_m": 220.359604,
+        "elevation_b_m": 212.460007,
+        "utm10_easting_m": 484965.0,
+        "utm10_northing_m": 5499795.0,
+        "pixel_row": 1892,
+        "pixel_col": 318
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2111904361936,
+          49.64996675996085
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 11,
+        "absolute_difference_m": 7.672897,
+        "signed_difference_a_minus_b_m": -7.672897,
+        "elevation_a_m": 204.2771,
+        "elevation_b_m": 211.949997,
+        "utm10_easting_m": 484755.0,
+        "utm10_northing_m": 5499735.0,
+        "pixel_row": 1894,
+        "pixel_col": 311
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.20909399364925,
+          49.64565315063405
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 12,
+        "absolute_difference_m": 7.602295,
+        "signed_difference_a_minus_b_m": 7.602295,
+        "elevation_a_m": 203.902298,
+        "elevation_b_m": 196.300003,
+        "utm10_easting_m": 484905.0,
+        "utm10_northing_m": 5499255.0,
+        "pixel_row": 1910,
+        "pixel_col": 316
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.20531770282109,
+          49.63702507097031
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 13,
+        "absolute_difference_m": 7.569199,
+        "signed_difference_a_minus_b_m": 7.569199,
+        "elevation_a_m": 224.139206,
+        "elevation_b_m": 216.570007,
+        "utm10_easting_m": 485175.0,
+        "utm10_northing_m": 5498295.0,
+        "pixel_row": 1942,
+        "pixel_col": 325
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.20828476075434,
+          49.65078153795289
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 14,
+        "absolute_difference_m": 7.412598,
+        "signed_difference_a_minus_b_m": 7.412598,
+        "elevation_a_m": 222.632599,
+        "elevation_b_m": 215.220001,
+        "utm10_easting_m": 484965.0,
+        "utm10_northing_m": 5499825.0,
+        "pixel_row": 1891,
+        "pixel_col": 318
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.209529234794,
+          49.65023961619327
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 15,
+        "absolute_difference_m": 7.233093,
+        "signed_difference_a_minus_b_m": -7.233093,
+        "elevation_a_m": 211.436905,
+        "elevation_b_m": 218.669998,
+        "utm10_easting_m": 484875.0,
+        "utm10_northing_m": 5499765.0,
+        "pixel_row": 1893,
+        "pixel_col": 315
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.21077484630658,
+          49.64996751721212
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 16,
+        "absolute_difference_m": 6.192703,
+        "signed_difference_a_minus_b_m": -6.192703,
+        "elevation_a_m": 207.757294,
+        "elevation_b_m": 213.949997,
+        "utm10_easting_m": 484785.0,
+        "utm10_northing_m": 5499735.0,
+        "pixel_row": 1894,
+        "pixel_col": 312
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.20951070482869,
+          49.645922235842704
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 17,
+        "absolute_difference_m": 6.159698,
+        "signed_difference_a_minus_b_m": 6.159698,
+        "elevation_a_m": 231.509705,
+        "elevation_b_m": 225.350006,
+        "utm10_easting_m": 484875.0,
+        "utm10_northing_m": 5499285.0,
+        "pixel_row": 1909,
+        "pixel_col": 315
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.21194195875051,
+          49.63161635417043
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 18,
+        "absolute_difference_m": 5.4734,
+        "signed_difference_a_minus_b_m": -5.4734,
+        "elevation_a_m": -2.5334,
+        "elevation_b_m": 2.94,
+        "utm10_easting_m": 484695.0,
+        "utm10_northing_m": 5497695.0,
+        "pixel_row": 1962,
+        "pixel_col": 309
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.212436031432,
+          49.649694643118046
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 19,
+        "absolute_difference_m": 5.428101,
+        "signed_difference_a_minus_b_m": -5.428101,
+        "elevation_a_m": 199.621902,
+        "elevation_b_m": 205.050003,
+        "utm10_easting_m": 484665.0,
+        "utm10_northing_m": 5499705.0,
+        "pixel_row": 1895,
+        "pixel_col": 308
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.2116036866356,
+          49.649426328897746
+        ]
+      },
+      "properties": {
+        "pair": "092g064_2019_vs_2018",
+        "rank": 20,
+        "absolute_difference_m": 5.149292,
+        "signed_difference_a_minus_b_m": -5.149292,
+        "elevation_a_m": 214.330704,
+        "elevation_b_m": 219.479996,
+        "utm10_easting_m": 484725.0,
+        "utm10_northing_m": 5499675.0,
+        "pixel_row": 1896,
+        "pixel_col": 310
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.19204143819586,
+          49.64190494990052
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 1,
+        "absolute_difference_m": 35.301117,
+        "signed_difference_a_minus_b_m": 35.301117,
+        "elevation_a_m": 459.761108,
+        "elevation_b_m": 424.459991,
+        "utm10_easting_m": 486135.0,
+        "utm10_northing_m": 5498835.0,
+        "pixel_row": 1924,
+        "pixel_col": 357
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1928682182994,
+          49.64082422109493
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 2,
+        "absolute_difference_m": 21.281403,
+        "signed_difference_a_minus_b_m": 21.281403,
+        "elevation_a_m": 438.781403,
+        "elevation_b_m": 417.5,
+        "utm10_easting_m": 486075.0,
+        "utm10_northing_m": 5498715.0,
+        "pixel_row": 1928,
+        "pixel_col": 355
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1675932489899,
+          49.66164109920206
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 3,
+        "absolute_difference_m": 19.545303,
+        "signed_difference_a_minus_b_m": 19.545303,
+        "elevation_a_m": 179.045303,
+        "elevation_b_m": 159.5,
+        "utm10_easting_m": 487905.0,
+        "utm10_northing_m": 5501025.0,
+        "pixel_row": 1851,
+        "pixel_col": 416
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.16675541306599,
+          49.65975344506358
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 4,
+        "absolute_difference_m": 11.411011,
+        "signed_difference_a_minus_b_m": 11.411011,
+        "elevation_a_m": 409.601013,
+        "elevation_b_m": 398.190002,
+        "utm10_easting_m": 487965.0,
+        "utm10_northing_m": 5500815.0,
+        "pixel_row": 1858,
+        "pixel_col": 418
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.17047197283705,
+          49.65273224824254
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 5,
+        "absolute_difference_m": 10.664001,
+        "signed_difference_a_minus_b_m": 10.664001,
+        "elevation_a_m": 605.314026,
+        "elevation_b_m": 594.650024,
+        "utm10_easting_m": 487695.0,
+        "utm10_northing_m": 5500035.0,
+        "pixel_row": 1884,
+        "pixel_col": 409
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.16551479706649,
+          49.66164408866434
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 6,
+        "absolute_difference_m": 9.748077,
+        "signed_difference_a_minus_b_m": -9.748077,
+        "elevation_a_m": 304.081909,
+        "elevation_b_m": 313.829987,
+        "utm10_easting_m": 488055.0,
+        "utm10_northing_m": 5501025.0,
+        "pixel_row": 1851,
+        "pixel_col": 421
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.16800522298115,
+          49.66056115160574
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 7,
+        "absolute_difference_m": 8.867798,
+        "signed_difference_a_minus_b_m": 8.867798,
+        "elevation_a_m": 271.747803,
+        "elevation_b_m": 262.880005,
+        "utm10_easting_m": 487875.0,
+        "utm10_northing_m": 5500905.0,
+        "pixel_row": 1855,
+        "pixel_col": 415
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.19079381850163,
+          49.641637173875296
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 8,
+        "absolute_difference_m": 8.614288,
+        "signed_difference_a_minus_b_m": 8.614288,
+        "elevation_a_m": 440.924286,
+        "elevation_b_m": 432.309998,
+        "utm10_easting_m": 486225.0,
+        "utm10_northing_m": 5498805.0,
+        "pixel_row": 1925,
+        "pixel_col": 360
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.19519953823175,
+          49.60034437175867
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 9,
+        "absolute_difference_m": 8.573914,
+        "signed_difference_a_minus_b_m": 8.573914,
+        "elevation_a_m": 628.293884,
+        "elevation_b_m": 619.719971,
+        "utm10_easting_m": 485895.0,
+        "utm10_northing_m": 5494215.0,
+        "pixel_row": 2078,
+        "pixel_col": 349
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.16633605958803,
+          49.658674697243804
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 10,
+        "absolute_difference_m": 8.379211,
+        "signed_difference_a_minus_b_m": 8.379211,
+        "elevation_a_m": 528.889221,
+        "elevation_b_m": 520.51001,
+        "utm10_easting_m": 487995.0,
+        "utm10_northing_m": 5500695.0,
+        "pixel_row": 1862,
+        "pixel_col": 419
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.19730151126974,
+          49.606816978164204
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 11,
+        "absolute_difference_m": 8.210602,
+        "signed_difference_a_minus_b_m": 8.210602,
+        "elevation_a_m": 311.040588,
+        "elevation_b_m": 302.829987,
+        "utm10_easting_m": 485745.0,
+        "utm10_northing_m": 5494935.0,
+        "pixel_row": 2054,
+        "pixel_col": 344
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.19452059401877,
+          49.63839290832932
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 12,
+        "absolute_difference_m": 8.015411,
+        "signed_difference_a_minus_b_m": 8.015411,
+        "elevation_a_m": 326.225403,
+        "elevation_b_m": 318.209991,
+        "utm10_easting_m": 485955.0,
+        "utm10_northing_m": 5498445.0,
+        "pixel_row": 1937,
+        "pixel_col": 351
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.15225395829599,
+          49.674884310576005
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 13,
+        "absolute_difference_m": 7.8022,
+        "signed_difference_a_minus_b_m": -7.8022,
+        "elevation_a_m": 214.967804,
+        "elevation_b_m": 222.770004,
+        "utm10_easting_m": 489015.0,
+        "utm10_northing_m": 5502495.0,
+        "pixel_row": 1802,
+        "pixel_col": 453
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.17089609045745,
+          49.65516016503548
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 14,
+        "absolute_difference_m": 7.721283,
+        "signed_difference_a_minus_b_m": -7.721283,
+        "elevation_a_m": 457.078705,
+        "elevation_b_m": 464.799988,
+        "utm10_easting_m": 487665.0,
+        "utm10_northing_m": 5500305.0,
+        "pixel_row": 1875,
+        "pixel_col": 408
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.15804897464072,
+          49.66678143143207
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 15,
+        "absolute_difference_m": 7.661499,
+        "signed_difference_a_minus_b_m": 7.661499,
+        "elevation_a_m": 256.291504,
+        "elevation_b_m": 248.630005,
+        "utm10_easting_m": 488595.0,
+        "utm10_northing_m": 5501595.0,
+        "pixel_row": 1832,
+        "pixel_col": 439
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.17590316209537,
+          49.660549423513835
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 16,
+        "absolute_difference_m": 7.462002,
+        "signed_difference_a_minus_b_m": -7.462002,
+        "elevation_a_m": 31.827999,
+        "elevation_b_m": 39.290001,
+        "utm10_easting_m": 487305.0,
+        "utm10_northing_m": 5500905.0,
+        "pixel_row": 1855,
+        "pixel_col": 396
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.16094398172712,
+          49.662190206893264
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 17,
+        "absolute_difference_m": 7.221497,
+        "signed_difference_a_minus_b_m": 7.221497,
+        "elevation_a_m": 443.441498,
+        "elevation_b_m": 436.220001,
+        "utm10_easting_m": 488385.0,
+        "utm10_northing_m": 5501085.0,
+        "pixel_row": 1849,
+        "pixel_col": 432
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.1568035061636,
+          49.66732279928315
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 18,
+        "absolute_difference_m": 6.873474,
+        "signed_difference_a_minus_b_m": 6.873474,
+        "elevation_a_m": 311.323486,
+        "elevation_b_m": 304.450012,
+        "utm10_easting_m": 488685.0,
+        "utm10_northing_m": 5501655.0,
+        "pixel_row": 1830,
+        "pixel_col": 442
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.15928824831825,
+          49.66435119656888
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 19,
+        "absolute_difference_m": 6.865173,
+        "signed_difference_a_minus_b_m": 6.865173,
+        "elevation_a_m": 359.005188,
+        "elevation_b_m": 352.140015,
+        "utm10_easting_m": 488505.0,
+        "utm10_northing_m": 5501325.0,
+        "pixel_row": 1841,
+        "pixel_col": 436
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -123.19658936274531,
+          49.63623070351076
+        ]
+      },
+      "properties": {
+        "pair": "092g065_2019_vs_2018",
+        "rank": 20,
+        "absolute_difference_m": 6.587585,
+        "signed_difference_a_minus_b_m": 6.587585,
+        "elevation_a_m": 337.277588,
+        "elevation_b_m": 330.690002,
+        "utm10_easting_m": 485805.0,
+        "utm10_northing_m": 5498205.0,
+        "pixel_row": 1945,
+        "pixel_col": 346
+      }
+    }
+  ]
+}

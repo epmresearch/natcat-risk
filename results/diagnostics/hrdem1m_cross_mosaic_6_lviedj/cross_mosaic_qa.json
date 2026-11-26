@@ -1,0 +1,301 @@
+{
+  "gdal_version": "GDAL 3.10.3, released 2025/04/01",
+  "tolerance_m": 0.001,
+  "min_reference": 1000,
+  "min_cross_source_stencils": 20,
+  "min_each_side": 100,
+  "candidate_screen": "Up to three locally high-coverage 128m patches per candidate; not exhaustive",
+  "screened_patches": [
+    {
+      "tile": [
+        481000,
+        5481000
+      ],
+      "bbox": [
+        481746,
+        5481073,
+        481874,
+        5481201
+      ],
+      "source_window": [
+        23071,
+        499915,
+        171,
+        170
+      ],
+      "source_region": "crosses_VRT_boundary",
+      "strict_reference_valid": 16384,
+      "strict_cross_source_stencils": 143,
+      "strict_2_4_only": 8120,
+      "strict_2_3_only": 8121
+    }
+  ],
+  "commands": [
+    [
+      "gdalwarp",
+      "-q",
+      "-of",
+      "GTiff",
+      "-t_srs",
+      "EPSG:26910",
+      "-te",
+      "480936",
+      "5480936",
+      "482064",
+      "5482064",
+      "-tr",
+      "1",
+      "1",
+      "-tap",
+      "-r",
+      "bilinear",
+      "-et",
+      "0",
+      "-ovr",
+      "NONE",
+      "-srcnodata",
+      "-32767",
+      "-dstnodata",
+      "-32767",
+      "-wo",
+      "XSCALE=1",
+      "-wo",
+      "YSCALE=1",
+      "-co",
+      "TILED=YES",
+      "-co",
+      "COMPRESS=DEFLATE",
+      "-co",
+      "PREDICTOR=3",
+      "-co",
+      "BIGTIFF=IF_SAFER",
+      "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\results\\diagnostics\\step4_2_hrdem1m_boundary_virtual.vrt",
+      "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\results\\diagnostics\\hrdem1m_cross_mosaic_6_lviedj\\wide_fixed.tif"
+    ],
+    [
+      "gdalwarp",
+      "-q",
+      "-of",
+      "GTiff",
+      "-t_srs",
+      "EPSG:26910",
+      "-te",
+      "481746",
+      "5481073",
+      "481874",
+      "5481201",
+      "-tr",
+      "1",
+      "1",
+      "-tap",
+      "-r",
+      "bilinear",
+      "-et",
+      "0",
+      "-ovr",
+      "NONE",
+      "-srcnodata",
+      "-32767",
+      "-dstnodata",
+      "-32767",
+      "-wo",
+      "XSCALE=1",
+      "-wo",
+      "YSCALE=1",
+      "-co",
+      "TILED=YES",
+      "-co",
+      "COMPRESS=DEFLATE",
+      "-co",
+      "PREDICTOR=3",
+      "-co",
+      "BIGTIFF=IF_SAFER",
+      "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\results\\diagnostics\\step4_2_hrdem1m_boundary_virtual.vrt",
+      "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\results\\diagnostics\\hrdem1m_cross_mosaic_6_lviedj\\narrow_fixed.tif"
+    ]
+  ],
+  "passed": true,
+  "selected_patch": {
+    "tile": [
+      481000,
+      5481000
+    ],
+    "bbox": [
+      481746,
+      5481073,
+      481874,
+      5481201
+    ],
+    "source_window": [
+      23071,
+      499915,
+      171,
+      170
+    ],
+    "source_region": "crosses_VRT_boundary",
+    "strict_reference_valid": 16384,
+    "strict_cross_source_stencils": 143,
+    "strict_2_4_only": 8120,
+    "strict_2_3_only": 8121
+  },
+  "direct_source_audit": [
+    {
+      "region": "2_4",
+      "common_valid": 12595,
+      "validity_mismatch": 0,
+      "exact_equal": true
+    },
+    {
+      "region": "2_3",
+      "common_valid": 14454,
+      "validity_mismatch": 0,
+      "exact_equal": true
+    }
+  ],
+  "wide_bbox": [
+    480936,
+    5480936,
+    482064,
+    5482064
+  ],
+  "wide_vs_narrow": {
+    "common_valid": 16384,
+    "validity_mismatch": 0,
+    "first_only_valid": 0,
+    "second_only_valid": 0,
+    "abs_diff_p50_p95_max_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "over_0_001m": 0,
+    "over_0_5m": 0
+  },
+  "reference_comparisons": {
+    "all_strict": {
+      "strict_count": 16384,
+      "missing_wide": 0,
+      "missing_narrow": 0,
+      "wide_vs_native": {
+        "common_valid": 16384,
+        "validity_mismatch": 0,
+        "first_only_valid": 0,
+        "second_only_valid": 0,
+        "abs_diff_p50_p95_max_m": [
+          2.691376399521772e-08,
+          5.795890747339882e-08,
+          1.1873847105547952e-07
+        ],
+        "over_0_001m": 0,
+        "over_0_5m": 0
+      },
+      "narrow_vs_native": {
+        "common_valid": 16384,
+        "validity_mismatch": 0,
+        "first_only_valid": 0,
+        "second_only_valid": 0,
+        "abs_diff_p50_p95_max_m": [
+          2.691376399521772e-08,
+          5.795890747339882e-08,
+          1.1873847105547952e-07
+        ],
+        "over_0_001m": 0,
+        "over_0_5m": 0
+      }
+    },
+    "cross_source": {
+      "strict_count": 143,
+      "missing_wide": 0,
+      "missing_narrow": 0,
+      "wide_vs_native": {
+        "common_valid": 143,
+        "validity_mismatch": 0,
+        "first_only_valid": 0,
+        "second_only_valid": 0,
+        "abs_diff_p50_p95_max_m": [
+          2.8432758369945077e-08,
+          5.4174422592367934e-08,
+          5.954304005406641e-08
+        ],
+        "over_0_001m": 0,
+        "over_0_5m": 0
+      },
+      "narrow_vs_native": {
+        "common_valid": 143,
+        "validity_mismatch": 0,
+        "first_only_valid": 0,
+        "second_only_valid": 0,
+        "abs_diff_p50_p95_max_m": [
+          2.8432758369945077e-08,
+          5.4174422592367934e-08,
+          5.954304005406641e-08
+        ],
+        "over_0_001m": 0,
+        "over_0_5m": 0
+      }
+    },
+    "2_4_only": {
+      "strict_count": 8120,
+      "missing_wide": 0,
+      "missing_narrow": 0,
+      "wide_vs_native": {
+        "common_valid": 8120,
+        "validity_mismatch": 0,
+        "first_only_valid": 0,
+        "second_only_valid": 0,
+        "abs_diff_p50_p95_max_m": [
+          2.2082788819766108e-08,
+          5.60105431590685e-08,
+          5.960049453967997e-08
+        ],
+        "over_0_001m": 0,
+        "over_0_5m": 0
+      },
+      "narrow_vs_native": {
+        "common_valid": 8120,
+        "validity_mismatch": 0,
+        "first_only_valid": 0,
+        "second_only_valid": 0,
+        "abs_diff_p50_p95_max_m": [
+          2.2082788819766108e-08,
+          5.60105431590685e-08,
+          5.960049453967997e-08
+        ],
+        "over_0_001m": 0,
+        "over_0_5m": 0
+      }
+    },
+    "2_3_only": {
+      "strict_count": 8121,
+      "missing_wide": 0,
+      "missing_narrow": 0,
+      "wide_vs_native": {
+        "common_valid": 8121,
+        "validity_mismatch": 0,
+        "first_only_valid": 0,
+        "second_only_valid": 0,
+        "abs_diff_p50_p95_max_m": [
+          3.138408644076662e-08,
+          6.472670666113345e-08,
+          1.1873847105547952e-07
+        ],
+        "over_0_001m": 0,
+        "over_0_5m": 0
+      },
+      "narrow_vs_native": {
+        "common_valid": 8121,
+        "validity_mismatch": 0,
+        "first_only_valid": 0,
+        "second_only_valid": 0,
+        "abs_diff_p50_p95_max_m": [
+          3.138408644076662e-08,
+          6.472670666113345e-08,
+          1.1873847105547952e-07
+        ],
+        "over_0_001m": 0,
+        "over_0_5m": 0
+      }
+    }
+  },
+  "note": "Numerical source fidelity only, not independent vertical accuracy."
+}

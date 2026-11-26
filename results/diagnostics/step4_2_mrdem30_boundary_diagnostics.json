@@ -1,0 +1,42 @@
+{
+  "step": "4.2 — MRDEM-30 AOI boundary mismatch location diagnostics",
+  "generated_utc": "2026-11-24T01:02:35.074490+00:00",
+  "status": "MISMATCHES_CONFINED_TO_60M_BOUNDARY_ZONE",
+  "inputs": {
+    "aoi": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\data\\processed\\study_area\\highway99_terrain_search_5000m.geojson",
+    "dem": "F:\\Projects\\University of Calgary\\Thesis\\natcat-risk\\data\\processed\\elevation\\mrdem30_dtm_highway99_aoi_utm10.tif"
+  },
+  "method": {
+    "grid_crs": "EPSG:26910",
+    "pixel_size_metres": 30,
+    "aoi_buffers_metres": [
+      -60,
+      -30,
+      0,
+      30,
+      60
+    ],
+    "rasterization": "GDAL default polygon pixel-centre inclusion, no ALL_TOUCHED"
+  },
+  "baseline_matches_previous_report_920_and_933": true,
+  "metrics": {
+    "reference_aoi_pixel_centres": 1159588,
+    "reference_missing_inside": 920,
+    "reference_valid_outside": 933,
+    "missing_inside_30m_eroded_aoi": 0,
+    "missing_inside_60m_eroded_aoi": 0,
+    "missing_within_first_30m_boundary_strip": 920,
+    "missing_in_30m_to_60m_interior_strip": 0,
+    "valid_beyond_30m_expanded_aoi": 0,
+    "valid_beyond_60m_expanded_aoi": 0,
+    "valid_within_first_30m_exterior_strip": 933,
+    "valid_in_30m_to_60m_exterior_strip": 0,
+    "missing_inside_60m_core_km2_30m_grid": 0.0,
+    "valid_beyond_60m_km2_30m_grid": 0.0
+  },
+  "interpretation_limits": [
+    "Buffer-zone confinement suggests, but does not prove, a cutline rasterization boundary effect.",
+    "This does not certify complete source DEM coverage or elevation accuracy.",
+    "No input raster or source AOI was modified. No gaps were filled."
+  ]
+}

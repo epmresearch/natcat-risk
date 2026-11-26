@@ -1,0 +1,381 @@
+{
+  "release_id": "hrdem_1m_dtm_highway99_fixed_v1",
+  "created_utc": "2026-11-25T08:23:10.437345+00:00",
+  "status": "technically_validated_research_input",
+  "configuration": {
+    "method_id": "HRDEM1M_FIXED_BILINEAR_V1",
+    "warp_options": [
+      "-of",
+      "GTiff",
+      "-t_srs",
+      "EPSG:26910",
+      "-tr",
+      "1",
+      "1",
+      "-tap",
+      "-r",
+      "bilinear",
+      "-et",
+      "0",
+      "-ovr",
+      "NONE",
+      "-wo",
+      "XSCALE=1",
+      "-wo",
+      "YSCALE=1",
+      "-ot",
+      "Float32",
+      "-srcnodata",
+      "-32767",
+      "-dstnodata",
+      "-32767",
+      "-co",
+      "TILED=YES",
+      "-co",
+      "COMPRESS=DEFLATE",
+      "-co",
+      "PREDICTOR=3",
+      "-co",
+      "BIGTIFF=IF_SAFER"
+    ],
+    "gdal_python_version": "3.10.3",
+    "gdal_cli_version": "GDAL 3.10.3, released 2025/04/01",
+    "vrt_sha256": "7b33674e35b05e2c3b5caf7ac5927a8f27b6d86ef8f0a37133d3fa66f275901c",
+    "footprint_sha256": "fb39323cb4af0098308b9869d619178ea0349bc326c9066306c76534db5b7e35",
+    "legacy_extraction_sha256": "e19d6e9223fb06cb2393723347879f97a4e30ec2dc8e3a72419a1496604b30d5",
+    "fixed_extraction_sha256": "77739e4f6a347616a2db12c2a33750a18f2213df045771f904cd9cb5b83188e4"
+  },
+  "source": {
+    "publisher": "Natural Resources Canada",
+    "product": "High Resolution Digital Elevation Model Mosaic (HRDEM Mosaic) - CanElevation Series, DTM",
+    "product_documentation": "https://open.canada.ca/data/en/dataset/0fe65119-e96e-4a57-8bfe-9d9245fba06b",
+    "licence": "Open Government Licence - Canada",
+    "native_metadata": [
+      {
+        "url": "/vsicurl/https://canelevation-dem.s3.ca-central-1.amazonaws.com/hrdem-mosaic-1m/2_3-mosaic-1m-dtm.tif",
+        "crs_wkt": "PROJCS[\"NAD83(CSRS) / Canada Atlas Lambert\",GEOGCS[\"NAD83(CSRS)\",DATUM[\"NAD83_Canadian_Spatial_Reference_System\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6140\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4617\"]],PROJECTION[\"Lambert_Conformal_Conic_2SP\"],PARAMETER[\"latitude_of_origin\",49],PARAMETER[\"central_meridian\",-95],PARAMETER[\"standard_parallel_1\",49],PARAMETER[\"standard_parallel_2\",77],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"3979\"]]",
+        "band_unit": "",
+        "dataset_metadata": {
+          "TIFFTAG_DATETIME": "2023:08:13 12:00:00",
+          "AREA_OR_POINT": "Area"
+        },
+        "band_metadata": {}
+      },
+      {
+        "url": "/vsicurl/https://canelevation-dem.s3.ca-central-1.amazonaws.com/hrdem-mosaic-1m/2_4-mosaic-1m-dtm.tif",
+        "crs_wkt": "PROJCS[\"NAD83(CSRS) / Canada Atlas Lambert\",GEOGCS[\"NAD83(CSRS)\",DATUM[\"NAD83_Canadian_Spatial_Reference_System\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6140\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4617\"]],PROJECTION[\"Lambert_Conformal_Conic_2SP\"],PARAMETER[\"latitude_of_origin\",49],PARAMETER[\"central_meridian\",-95],PARAMETER[\"standard_parallel_1\",49],PARAMETER[\"standard_parallel_2\",77],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"3979\"]]",
+        "band_unit": "",
+        "dataset_metadata": {
+          "TIFFTAG_DATETIME": "2025:10:16 12:00:00",
+          "AREA_OR_POINT": "Area"
+        },
+        "band_metadata": {}
+      }
+    ],
+    "remote_assets_version_pinned": false
+  },
+  "horizontal_crs": "EPSG:26910",
+  "native_horizontal_crs": "EPSG:3979",
+  "vertical_datum": "CGVD2013 (official product documentation; not encoded in audited source WKT)",
+  "height_type": "orthometric",
+  "elevation_unit": "m (product convention; source band unit empty)",
+  "vertical_transformation_applied": false,
+  "raster": {
+    "bounds_epsg26910": [
+      475000,
+      5464000,
+      506000,
+      5557000
+    ],
+    "width": 31000,
+    "height": 93000,
+    "geotransform": [
+      475000,
+      1,
+      0,
+      5557000,
+      0,
+      -1
+    ],
+    "dtype": "Float32",
+    "nodata": -32767.0,
+    "total_grid_pixels": 2883000000,
+    "valid_pixels": 464090223,
+    "nodata_pixels": 2418909777,
+    "minimum_elevation_m": -30.402355194091797,
+    "maximum_elevation_m": 1752.6998291015625
+  },
+  "footprint": {
+    "project_path": "data/processed/elevation/hrdem_1m_dtm_coverage_highway99.gpkg",
+    "sha256": "fb39323cb4af0098308b9869d619178ea0349bc326c9066306c76534db5b7e35",
+    "rasterized_pixels": 464219963,
+    "missing_pixels": 129740,
+    "coverage_percent": 99.97205204206179
+  },
+  "negative_elevations": {
+    "pixels": 20054860,
+    "counts_below_m": {
+      "-1": 18408762,
+      "-5": 2432,
+      "-10": 1685,
+      "-20": 484
+    },
+    "deep_pixels_native_reference_verified": 2432,
+    "deep_review_sites": [
+      {
+        "tile": [
+          489000,
+          5506000
+        ],
+        "kind": "deep",
+        "bbox": [
+          489086,
+          5506003,
+          489133,
+          5506064
+        ],
+        "source_window": [
+          40312,
+          480594,
+          69,
+          76
+        ],
+        "source_region": "2_4",
+        "direct_source_audit": [
+          {
+            "region": "2_4",
+            "common_valid": 5244,
+            "validity_mismatch": 0,
+            "exact_equal": true
+          }
+        ],
+        "direct_source_equal": true,
+        "negative_comparison": {
+          "selected": 1806,
+          "strict": 1806,
+          "without_strict": 0,
+          "max_abs_m": 9.529964657417622e-07,
+          "over_0_001m": 0
+        },
+        "unmasked_context_comparison": {
+          "selected": 2867,
+          "strict": 2867,
+          "without_strict": 0,
+          "max_abs_m": 9.529964657417622e-07,
+          "over_0_001m": 0
+        },
+        "strict_missing_from_unmasked": 0,
+        "minimum": {
+          "center_epsg26910": [
+            489111.5,
+            5506029.5
+          ],
+          "fixed_m": -30.402355194091797,
+          "strict": true,
+          "native_reference_m": -30.402355647224848,
+          "fixed_minus_reference_m": 4.5313305108152235e-07
+        },
+        "numerical_fidelity_passed": true
+      },
+      {
+        "tile": [
+          479000,
+          5468000
+        ],
+        "kind": "deep",
+        "bbox": [
+          479366,
+          5468369,
+          479394,
+          5468415
+        ],
+        "source_window": [
+          15506,
+          510449,
+          46,
+          55
+        ],
+        "source_region": "2_3",
+        "direct_source_audit": [
+          {
+            "region": "2_3",
+            "common_valid": 2530,
+            "validity_mismatch": 0,
+            "exact_equal": true
+          }
+        ],
+        "direct_source_equal": true,
+        "negative_comparison": {
+          "selected": 626,
+          "strict": 626,
+          "without_strict": 0,
+          "max_abs_m": 9.520855002165263e-07,
+          "over_0_001m": 0
+        },
+        "unmasked_context_comparison": {
+          "selected": 1288,
+          "strict": 1288,
+          "without_strict": 0,
+          "max_abs_m": 1.8975365634332775e-06,
+          "over_0_001m": 0
+        },
+        "strict_missing_from_unmasked": 0,
+        "minimum": {
+          "center_epsg26910": [
+            479378.5,
+            5468390.5
+          ],
+          "fixed_m": -19.878623962402344,
+          "strict": true,
+          "native_reference_m": -19.87862407589302,
+          "fixed_minus_reference_m": 1.1349067463584106e-07
+        },
+        "numerical_fidelity_passed": true
+      }
+    ]
+  },
+  "anomaly_register_layer_counts": {
+    "slope_change_gt10deg": 7250,
+    "aspect_change_gt90deg": 233,
+    "elevation_change_gt10m": 45,
+    "flagged_seams": 41,
+    "insufficient_seams": 52,
+    "tiles_with_internal_nodata": 265
+  },
+  "file_inventory": {
+    "hrdem_1m_dtm_highway99_fixed_v1.tif": {
+      "sha256": "eedd95b99c4c0a56067a1c15dcce413cd8ef64b56d68b7145ec159a94643ffb6",
+      "bytes": 1036426613,
+      "original_project_path": "results/diagnostics/hrdem1m_mosaic_candidate_hjcps_iq/hrdem1m_fixed_masked_mosaic_candidate.tif"
+    },
+    "hrdem_1m_dtm_highway99_anomaly_register.gpkg": {
+      "sha256": "e2e8840013db83074fc614d3a12d299ee6d199e09465172bf59ffb9e489c76ae",
+      "bytes": 1409024,
+      "original_project_path": "results/diagnostics/hrdem1m_anomaly_register_q_06k0gb/anomaly_register.gpkg"
+    },
+    "qa/terrain_sensitivity_qa.json": {
+      "sha256": "c08d08799d17d8a6f9a72282d1e94cf7a258efd7185f55b8c1c7fa36fdd6135b",
+      "bytes": 2063462,
+      "original_project_path": "results/diagnostics/hrdem1m_terrain_sensitivity_u4w4q9l1/terrain_sensitivity_qa.json"
+    },
+    "qa/targeted_source_qa.json": {
+      "sha256": "a49c22819b02e6dcdfce44126cd88d56e55d305ccd32db026e13ff1e0c221ce3",
+      "bytes": 26142,
+      "original_project_path": "results/diagnostics/hrdem1m_targeted_source_qa_eobrsvvs/targeted_source_qa.json"
+    },
+    "qa/seam_local_context_qa.json": {
+      "sha256": "7a81d787c5698aa0abfce71ebda0baae4d404097a0541ac26915555134aa4edb",
+      "bytes": 1519736,
+      "original_project_path": "results/diagnostics/hrdem1m_seam_local_context_p_79r4to/seam_local_context_qa.json"
+    },
+    "qa/global_fixed_seam_qa.json": {
+      "sha256": "149904c853f0029bd48586f1d6403f3a9199800585698fabb44fbf4c2e41c153",
+      "bytes": 1084156,
+      "original_project_path": "results/diagnostics/hrdem1m_global_fixed_seam_qa_9rfgcq9o/global_fixed_seam_qa.json"
+    },
+    "qa/global_masking_qa.json": {
+      "sha256": "48fd11c5b885823de3f4924e42242ef2654f16b1e803c0f23c0913f76fa5e73c",
+      "bytes": 718508,
+      "original_project_path": "results/diagnostics/hrdem1m_global_masking_qa_t3koqz9w/global_masking_qa.json"
+    },
+    "qa/global_extraction_qa.json": {
+      "sha256": "3b191e1e4f32f0b6a33e3cdd53c6ced4ce4d8f693f235751bbefc60b2ed5ee0d",
+      "bytes": 590783,
+      "original_project_path": "results/diagnostics/hrdem1m_global_extraction_qa_v0n9af73/global_extraction_qa.json"
+    },
+    "qa/negative_source_qa.json": {
+      "sha256": "f22f54c56163c0c5ebf8ef0b344771a5dd41ed3f25fa8d6fcb54fb0555ae0161",
+      "bytes": 8335,
+      "original_project_path": "results/diagnostics/hrdem1m_negative_source_qa__cuibs6i/negative_source_qa.json"
+    },
+    "qa/final_validation_qa.json": {
+      "sha256": "efbf26b917b46e551552a106293f5c49a4635959380a3eb8b94b1b22543cc6f2",
+      "bytes": 55758,
+      "original_project_path": "results/diagnostics/hrdem1m_final_validation_ebk_g0f9/final_validation_qa.json"
+    },
+    "qa/mosaic_candidate_qa.json": {
+      "sha256": "c31c986551bba43b3edfb437c51a6b1bf5c0156f31e9d1c35233d4e1d1390c38",
+      "bytes": 109043,
+      "original_project_path": "results/diagnostics/hrdem1m_mosaic_candidate_hjcps_iq/mosaic_candidate_qa.json"
+    },
+    "qa/anomaly_register_qa.json": {
+      "sha256": "eda052ac7ce29f1f314c5b8b3f814cd53dee4759a458c2bd01fa6e2419af136a",
+      "bytes": 4904,
+      "original_project_path": "results/diagnostics/hrdem1m_anomaly_register_q_06k0gb/anomaly_register_qa.json"
+    },
+    "provenance/source_vrt_snapshot.vrt": {
+      "sha256": "7b33674e35b05e2c3b5caf7ac5927a8f27b6d86ef8f0a37133d3fa66f275901c",
+      "bytes": 2244,
+      "original_project_path": "results/diagnostics/step4_2_hrdem1m_boundary_virtual.vrt"
+    }
+  },
+  "publication_script_sha256": "55312d602781ded08a1b607b4e6f5110e8c1521387842ad4572b30ed6dfb3c45",
+  "qa_script_hashes": {
+    "global_extraction_qa.json": {
+      "path": "step4_2_hrdem1m_global_extraction_qa.py",
+      "current_sha256": "e00d405e3542606e4592e0513e6c52638749910c03cd51d8cd033819cbde4d4c",
+      "historical_hash_available": false
+    },
+    "global_masking_qa.json": {
+      "path": "step4_2_hrdem1m_global_masking_qa.py",
+      "current_sha256": "67f4bb87af8fa9fca70b10e239a7832a1a64f81cbce48863dde3175b15d57e4e",
+      "historical_hash_available": true
+    },
+    "global_fixed_seam_qa.json": {
+      "path": "step4_2_hrdem1m_global_fixed_seam_qa.py",
+      "current_sha256": "394f87495dee88c9dab0361934dd6bf9b56326075153f906e66146af8c61c439",
+      "historical_hash_available": true
+    },
+    "seam_local_context_qa.json": {
+      "path": "step4_2_hrdem1m_seam_local_context_qa.py",
+      "current_sha256": "40fcbaa8daa8987f1bbdde10bb3a0ccaee2b2953a36886a49816b7094bbd7116",
+      "historical_hash_available": true
+    },
+    "targeted_source_qa.json": {
+      "path": "step4_2_hrdem1m_targeted_source_qa.py",
+      "current_sha256": "9745376c3c17fa075a2d29ab934456ba4a55bf21929bf457966a0deb37b307c6",
+      "historical_hash_available": true
+    },
+    "terrain_sensitivity_qa.json": {
+      "path": "step4_2_hrdem1m_terrain_sensitivity_qa.py",
+      "current_sha256": "42ce15cdda8209021859788f0408bcefa757a20b0377f35f16488e0686c2d840",
+      "historical_hash_available": true
+    },
+    "anomaly_register_qa.json": {
+      "path": "step4_2_hrdem1m_anomaly_register.py",
+      "current_sha256": "c24eb87d7920caa1bab33cbca59a2940960d69327d1b09dcea292f13e634fd57",
+      "historical_hash_available": true
+    },
+    "mosaic_candidate_qa.json": {
+      "path": "step4_2_hrdem1m_build_mosaic_candidate.py",
+      "current_sha256": "68fa90e37da7c6556d2c930e75ef7054a52fb38bd7016a3f5ca8d4675aa4b26d",
+      "historical_hash_available": true
+    },
+    "final_validation_qa.json": {
+      "path": "step4_2_hrdem1m_final_validation.py",
+      "current_sha256": "31782eacdf64be6cc9671606ff7cf0525a06c219e8225d9ed8f257f356a4e58c",
+      "historical_hash_available": true
+    },
+    "negative_source_qa.json": {
+      "path": "step4_2_hrdem1m_negative_source_qa.py",
+      "current_sha256": "0f7c70fa8030784cdd7054949bb45dd698398892652cf1502f3f8da8b2f7eab1",
+      "historical_hash_available": true
+    }
+  },
+  "limits": [
+    "Technical validation and numerical source fidelity are not independent vertical accuracy validation.",
+    "The physical origin of source anomalies and negative elevations remains unresolved.",
+    "Spatial register is diagnostic, not an exclusion mask or measured-error map; seam lines and NoData tile polygons are nominal geometries.",
+    "Physical landslide model and risk sensitivity remain unvalidated.",
+    "Coverage is relative to the rasterized HRDEM footprint, not necessarily the complete AOI.",
+    "Native-source audit is targeted; remote source assets were not version-pinned.",
+    "Historical QA JSON paths refer to the original project paths; copied evidence is indexed here.",
+    "The global extraction QA report did not record its own script hash; its report hash is verified through the downstream chain."
+  ],
+  "elevation_values_modified_during_publication": false,
+  "absolute_vertical_accuracy_validated": false,
+  "negative_source_physical_validity_resolved": false,
+  "hazard_model_validated": false,
+  "publication_qa_passed": true,
+  "readme_sha256": "810f8a307aef6661eac381a58d5bea116a3504c47787870c0d2f33aba15f6cd1"
+}

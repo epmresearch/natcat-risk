@@ -1,0 +1,438 @@
+{
+  "method_id": "MULTIRES_STRICT_COMMON_SUPPORT_OVERLAP_QA_V1",
+  "script_sha256": "2f0112e5ad7b641918d50de0d16a373e9e6b2df6837a13cdf5f2e3ca25d85426",
+  "created_utc": "2026-11-26T07:46:39.364871+00:00",
+  "input_paths": {
+    "hrdem1m": "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/hrdem_1m_dtm_highway99_fixed_v1.tif",
+    "hrdem2m": "data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/hrdem_2m_dtm_highway99_fixed_v1.tif",
+    "mrdem30_masked": "data/processed/elevation/mrdem30_dtm_highway99_aoi_utm10_masked_exact.tif",
+    "mrdem30_uncut": "results/diagnostics/step4_2_mrdem30_exact_bbox.tif",
+    "mrdem30_qa": "results/diagnostics/step4_2_mrdem30_consistent_mask_qa.json",
+    "aoi": "data/processed/study_area/highway99_terrain_search_5000m.geojson",
+    "coverage_qa": "results/diagnostics/dem_multires_coverage_qa_xce4r42_/multires_coverage_qa.json",
+    "coverage_script": "step4_2_dem_multires_coverage_qa.py"
+  },
+  "input_sha256": {
+    "hrdem1m": "eedd95b99c4c0a56067a1c15dcce413cd8ef64b56d68b7145ec159a94643ffb6",
+    "hrdem2m": "5ce4ffa9e13af91a72d19a799ac8dce2dfe1d1b9dea184eeb3908670aa27d6ae",
+    "mrdem30_masked": "b8085012ab7d85a1f2028098345c579e20ee025f24b2189bd300fb2d90c1520d",
+    "mrdem30_uncut": "699db6fb323101e6a845cc44d06418e9e0e0d166a207eff707f115f4edec9084",
+    "mrdem30_qa": "2d047d8cf4678520672cc1160943acbc160e514775d90e8f4135047d57a3efc2",
+    "aoi": "6ffd4654a1bab09e0ec860e341250560d196a49570128b03b35ac681b895b843",
+    "coverage_qa": "60b726149550cc3f50e01cad1f0e146228afcf0b40b20b931a48a423f4e7bf18",
+    "coverage_script": "a4fa78f3760c9f446f8bf6670e1efdb06eb79294948ff8174bf0176152c585e2"
+  },
+  "documented_source_vertical_reference": {
+    "hrdem_1m": "CGVD2013",
+    "hrdem_2m": "CGVD2013",
+    "mrdem_30m": "CGVD2013",
+    "evidence_urls": {
+      "hrdem_mosaic": "https://open.canada.ca/data/en/dataset/0fe65119-e96e-4a57-8bfe-9d9245fba06b",
+      "mrdem": "https://open.canada.ca/data/en/dataset/18752265-bda3-498c-a4ba-9dfe68cb98da"
+    },
+    "product_metadata_compatible": true,
+    "local_vertical_crs_or_height_realization_independently_verified": false,
+    "vertical_datum_conversion_applied": false
+  },
+  "comparison_2m": {
+    "support": {
+      "geometric_candidate_cells": 720750000,
+      "valid_2m": 116196795,
+      "valid_2m_with_partial_1m": 106612,
+      "valid_2m_with_no_1m": 126359
+    },
+    "statistics": {
+      "comparison": "HRDEM2m minus mean(HRDEM1m 2x2)",
+      "comparison_grid_resolution_m": 2,
+      "strict_common_cells": 115963824,
+      "strict_common_area_km2": 463.855296,
+      "mean_signed_difference_m": 0.018270045995352067,
+      "mae_m": 0.22248452603219712,
+      "rmse_m": 0.38925898633655176,
+      "minimum_signed_difference_m": -93.40525817871094,
+      "maximum_signed_difference_m": 32.72179126739502,
+      "maximum_absolute_difference": {
+        "center_epsg26910": [
+          490457.0,
+          5503925.0
+        ],
+        "higher_resolution_area_mean_m": 544.0386810302734,
+        "lower_resolution_elevation_or_mean_m": 450.6334228515625,
+        "signed_difference_m": -93.40525817871094,
+        "abs_difference_m": 93.40525817871094
+      },
+      "absolute_difference_p50_interval_m": [
+        0.1,
+        0.25
+      ],
+      "absolute_difference_p95_interval_m": [
+        0.5,
+        1
+      ],
+      "absolute_difference_p99_interval_m": [
+        1,
+        2
+      ],
+      "counts_over_m": {
+        "0.01": 101598509,
+        "0.05": 79604283,
+        "0.1": 63982521,
+        "0.25": 35614935,
+        "0.5": 14232414,
+        "1": 2495352,
+        "2": 345432,
+        "5": 19256,
+        "10": 4422,
+        "20": 969,
+        "50": 50,
+        "100": 0
+      },
+      "percent_over_m": {
+        "0.01": 87.61224448755674,
+        "0.05": 68.64578991462027,
+        "0.1": 55.17455253976447,
+        "0.25": 30.712108113992514,
+        "0.5": 12.273149943727278,
+        "1": 2.1518365934534893,
+        "2": 0.2978791040902549,
+        "5": 0.01660517852533045,
+        "10": 0.00381325817610154,
+        "20": 0.0008356054212217079,
+        "50": 4.311689479988173e-05,
+        "100": 0.0
+      }
+    }
+  },
+  "comparison_30m": {
+    "support": {
+      "geometric_candidate_cells": 3143615,
+      "valid_30m": 1146573,
+      "valid_30m_with_partial_1m": 12556,
+      "valid_30m_with_no_1m": 625290,
+      "valid_30m_with_partial_2m": 12049,
+      "valid_30m_with_no_2m": 624643
+    },
+    "statistics": [
+      {
+        "comparison": "MRDEM30m minus mean(HRDEM1m 30x30)",
+        "comparison_grid_resolution_m": 30,
+        "strict_common_cells": 508727,
+        "strict_common_area_km2": 457.8543,
+        "mean_signed_difference_m": 0.8719379003820985,
+        "mae_m": 3.6896283637905554,
+        "rmse_m": 5.331225629998339,
+        "minimum_signed_difference_m": -58.16000684102376,
+        "maximum_signed_difference_m": 90.59316531711153,
+        "maximum_absolute_difference": {
+          "center_epsg26910": [
+            490125.0,
+            5503905.0
+          ],
+          "higher_resolution_area_mean_m": 336.4233446926541,
+          "lower_resolution_elevation_or_mean_m": 427.0165100097656,
+          "signed_difference_m": 90.59316531711153,
+          "abs_difference_m": 90.59316531711153
+        },
+        "absolute_difference_p50_interval_m": [
+          2,
+          5
+        ],
+        "absolute_difference_p95_interval_m": [
+          10,
+          20
+        ],
+        "absolute_difference_p99_interval_m": [
+          10,
+          20
+        ],
+        "counts_over_m": {
+          "0.01": 497452,
+          "0.05": 477340,
+          "0.1": 462587,
+          "0.25": 431362,
+          "0.5": 397867,
+          "1": 353473,
+          "2": 287979,
+          "5": 147248,
+          "10": 33585,
+          "20": 2065,
+          "50": 40,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.01": 97.78368358667812,
+          "0.05": 93.83028618492826,
+          "0.1": 90.93030250016217,
+          "0.25": 84.7924328765723,
+          "0.5": 78.20835143406974,
+          "1": 69.48186355353657,
+          "2": 56.60776801703074,
+          "5": 28.944404366192476,
+          "10": 6.601772659992491,
+          "20": 0.40591515685229995,
+          "50": 0.007862763328858111,
+          "100": 0.0
+        }
+      },
+      {
+        "comparison": "MRDEM30m minus mean(HRDEM2m 15x15)",
+        "comparison_grid_resolution_m": 30,
+        "strict_common_cells": 509881,
+        "strict_common_area_km2": 458.8929,
+        "mean_signed_difference_m": 0.8507797270713301,
+        "mae_m": 3.5734120613813385,
+        "rmse_m": 5.178520315069996,
+        "minimum_signed_difference_m": -57.70867109510634,
+        "maximum_signed_difference_m": 90.08400336371528,
+        "maximum_absolute_difference": {
+          "center_epsg26910": [
+            490125.0,
+            5503905.0
+          ],
+          "higher_resolution_area_mean_m": 336.93250664605034,
+          "lower_resolution_elevation_or_mean_m": 427.0165100097656,
+          "signed_difference_m": 90.08400336371528,
+          "abs_difference_m": 90.08400336371528
+        },
+        "absolute_difference_p50_interval_m": [
+          2,
+          5
+        ],
+        "absolute_difference_p95_interval_m": [
+          10,
+          20
+        ],
+        "absolute_difference_p99_interval_m": [
+          10,
+          20
+        ],
+        "counts_over_m": {
+          "0.01": 498639,
+          "0.05": 478384,
+          "0.1": 463220,
+          "0.25": 431422,
+          "0.5": 397406,
+          "1": 351948,
+          "2": 284446,
+          "5": 140810,
+          "10": 30762,
+          "20": 1884,
+          "50": 37,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.01": 97.79517181459988,
+          "0.05": 93.82267627152218,
+          "0.1": 90.84864899849181,
+          "0.25": 84.61229188771497,
+          "0.5": 77.94093131534613,
+          "1": 69.02551771884028,
+          "2": 55.78674239675532,
+          "5": 27.61624771270159,
+          "10": 6.033172446119781,
+          "20": 0.369497980901426,
+          "50": 0.007256595166323122,
+          "100": 0.0
+        }
+      },
+      {
+        "comparison": "MRDEM30m minus mean(HRDEM1m 30x30), triple common",
+        "comparison_grid_resolution_m": 30,
+        "strict_common_cells": 508727,
+        "strict_common_area_km2": 457.8543,
+        "mean_signed_difference_m": 0.8719379003820985,
+        "mae_m": 3.6896283637905554,
+        "rmse_m": 5.331225629998339,
+        "minimum_signed_difference_m": -58.16000684102376,
+        "maximum_signed_difference_m": 90.59316531711153,
+        "maximum_absolute_difference": {
+          "center_epsg26910": [
+            490125.0,
+            5503905.0
+          ],
+          "higher_resolution_area_mean_m": 336.4233446926541,
+          "lower_resolution_elevation_or_mean_m": 427.0165100097656,
+          "signed_difference_m": 90.59316531711153,
+          "abs_difference_m": 90.59316531711153
+        },
+        "absolute_difference_p50_interval_m": [
+          2,
+          5
+        ],
+        "absolute_difference_p95_interval_m": [
+          10,
+          20
+        ],
+        "absolute_difference_p99_interval_m": [
+          10,
+          20
+        ],
+        "counts_over_m": {
+          "0.01": 497452,
+          "0.05": 477340,
+          "0.1": 462587,
+          "0.25": 431362,
+          "0.5": 397867,
+          "1": 353473,
+          "2": 287979,
+          "5": 147248,
+          "10": 33585,
+          "20": 2065,
+          "50": 40,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.01": 97.78368358667812,
+          "0.05": 93.83028618492826,
+          "0.1": 90.93030250016217,
+          "0.25": 84.7924328765723,
+          "0.5": 78.20835143406974,
+          "1": 69.48186355353657,
+          "2": 56.60776801703074,
+          "5": 28.944404366192476,
+          "10": 6.601772659992491,
+          "20": 0.40591515685229995,
+          "50": 0.007862763328858111,
+          "100": 0.0
+        }
+      },
+      {
+        "comparison": "MRDEM30m minus mean(HRDEM2m 15x15), triple common",
+        "comparison_grid_resolution_m": 30,
+        "strict_common_cells": 508727,
+        "strict_common_area_km2": 457.8543,
+        "mean_signed_difference_m": 0.8531852680321279,
+        "mae_m": 3.575511232056604,
+        "rmse_m": 5.180055732818329,
+        "minimum_signed_difference_m": -57.70867109510634,
+        "maximum_signed_difference_m": 90.08400336371528,
+        "maximum_absolute_difference": {
+          "center_epsg26910": [
+            490125.0,
+            5503905.0
+          ],
+          "higher_resolution_area_mean_m": 336.93250664605034,
+          "lower_resolution_elevation_or_mean_m": 427.0165100097656,
+          "signed_difference_m": 90.08400336371528,
+          "abs_difference_m": 90.08400336371528
+        },
+        "absolute_difference_p50_interval_m": [
+          2,
+          5
+        ],
+        "absolute_difference_p95_interval_m": [
+          10,
+          20
+        ],
+        "absolute_difference_p99_interval_m": [
+          10,
+          20
+        ],
+        "counts_over_m": {
+          "0.01": 497503,
+          "0.05": 477330,
+          "0.1": 462268,
+          "0.25": 430630,
+          "0.5": 396754,
+          "1": 351373,
+          "2": 283972,
+          "5": 140586,
+          "10": 30707,
+          "20": 1881,
+          "50": 37,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.01": 97.79370860992242,
+          "0.05": 93.82832049409605,
+          "0.1": 90.86759696261453,
+          "0.25": 84.6485443076542,
+          "0.5": 77.98957004444426,
+          "1": 69.06906847877153,
+          "2": 55.82011570056238,
+          "5": 27.634861133771157,
+          "10": 6.03604683848115,
+          "20": 0.36974644553955266,
+          "50": 0.007273056079193752,
+          "100": 0.0
+        }
+      },
+      {
+        "comparison": "mean(HRDEM2m 15x15) minus mean(HRDEM1m 30x30), triple common",
+        "comparison_grid_resolution_m": 30,
+        "strict_common_cells": 508727,
+        "strict_common_area_km2": 457.8543,
+        "mean_signed_difference_m": 0.018752632349970398,
+        "mae_m": 0.18958901357391442,
+        "rmse_m": 0.2928035327187978,
+        "minimum_signed_difference_m": -5.3125227186413895,
+        "maximum_signed_difference_m": 3.5662919786242355,
+        "maximum_absolute_difference": {
+          "center_epsg26910": [
+            484905.0,
+            5505315.0
+          ],
+          "higher_resolution_area_mean_m": 733.2301415337456,
+          "lower_resolution_elevation_or_mean_m": 727.9176188151042,
+          "signed_difference_m": -5.3125227186413895,
+          "abs_difference_m": 5.3125227186413895
+        },
+        "absolute_difference_p50_interval_m": [
+          0.1,
+          0.25
+        ],
+        "absolute_difference_p95_interval_m": [
+          0.5,
+          1
+        ],
+        "absolute_difference_p99_interval_m": [
+          0.5,
+          1
+        ],
+        "counts_over_m": {
+          "0.01": 428839,
+          "0.05": 338778,
+          "0.1": 271879,
+          "0.25": 140505,
+          "0.5": 47461,
+          "1": 4303,
+          "2": 230,
+          "5": 1,
+          "10": 0,
+          "20": 0,
+          "50": 0,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.01": 84.29648907960458,
+          "0.05": 66.59328087559733,
+          "0.1": 53.443005777165354,
+          "0.25": 27.61893903803022,
+          "0.5": 9.32936525877337,
+          "1": 0.8458367651019112,
+          "2": 0.045210889140934137,
+          "5": 0.00019656908322145277,
+          "10": 0.0,
+          "20": 0.0,
+          "50": 0.0,
+          "100": 0.0
+        }
+      }
+    ]
+  },
+  "input_files_unchanged": true,
+  "overlap_diagnostic_completed": true,
+  "cross_source_elevation_agreement_accepted": false,
+  "absolute_vertical_accuracy_validated": false,
+  "final_integrated_dem_created": false,
+  "limitations": [
+    "Lower-resolution values minus strict aligned higher-resolution area means; no interpolation.",
+    "30 m comparisons use previously QA-verified AOI-masked MRDEM cells and require full higher-resolution support.",
+    "30 m comparison extent is common to both HRDEM raster bounding boxes; pair statistics use separate full-valid masks; triple statistics share exactly the same support.",
+    "MRDEM cells may partly intersect the AOI: membership uses the existing native centre mask.",
+    "The area mean is a comparison convention, not a reproduction of the provider's resampling algorithm.",
+    "Shared LiDAR inputs make agreement non-independent; residuals can reflect resolution, acquisition date and processing.",
+    "Threshold counts are descriptive only; no acceptance tolerances, corrections, smoothing, or hazard validation are asserted.",
+    "Percentile intervals are derived from exact threshold counts, not exact interpolated quantiles."
+  ]
+}

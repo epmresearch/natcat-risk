@@ -1,0 +1,132 @@
+{
+  "method_id": "MULTIRES_PRIORITY_REFERENCE_CANDIDATE_V1",
+  "script_sha256": "e2ee6dd8261811d7cfb8dfd1a9748f7a8f98e4d72d5e0e4a2df6855d79c65d46",
+  "created_utc": "2026-11-26T08:02:12.916316+00:00",
+  "crs": "EPSG:26910",
+  "accounting_resolution_m": 1,
+  "bounds_epsg26910": [
+    475000,
+    5463000,
+    508000,
+    5557000
+  ],
+  "width": 33000,
+  "height": 94000,
+  "geotransform": [
+    475000,
+    1,
+    0,
+    5557000,
+    0,
+    -1
+  ],
+  "total_grid_pixels": 3102000000,
+  "aoi_pixels": 1043616657,
+  "valid_pixels": 1043616657,
+  "outside_aoi_nodata_pixels": 2058383343,
+  "uncovered_aoi_pixels": 0,
+  "coverage_percent": 100.0,
+  "source_codes": {
+    "0": "Outside AOI / NoData",
+    "1": "HRDEM 1 m",
+    "2": "HRDEM 2 m",
+    "30": "MRDEM 30 m uncut"
+  },
+  "source_pixel_counts": {
+    "0": 2058383343,
+    "1": 464090223,
+    "2": 698372,
+    "30": 578828062
+  },
+  "source_elevation_statistics": {
+    "1": {
+      "count": 464090223,
+      "minimum_m": -30.402355194091797,
+      "maximum_m": 1752.6998291015625,
+      "negative_pixels": 20054860
+    },
+    "2": {
+      "count": 698372,
+      "minimum_m": -2.4448559284210205,
+      "maximum_m": 1598.323486328125,
+      "negative_pixels": 129852
+    },
+    "30": {
+      "count": 578828062,
+      "minimum_m": -11.730072975158691,
+      "maximum_m": 2170.8447265625,
+      "negative_pixels": 77660138
+    }
+  },
+  "reference_dem_dtype": "Float32",
+  "reference_dem_nodata": -32767.0,
+  "source_provenance_dtype": "Byte",
+  "source_provenance_nodata": 0,
+  "input_paths": {
+    "hrdem1m": "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/hrdem_1m_dtm_highway99_fixed_v1.tif",
+    "hrdem2m": "data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/hrdem_2m_dtm_highway99_fixed_v1.tif",
+    "mrdem30_masked": "data/processed/elevation/mrdem30_dtm_highway99_aoi_utm10_masked_exact.tif",
+    "mrdem30_uncut": "results/diagnostics/step4_2_mrdem30_exact_bbox.tif",
+    "mrdem30_qa": "results/diagnostics/step4_2_mrdem30_consistent_mask_qa.json",
+    "aoi": "data/processed/study_area/highway99_terrain_search_5000m.geojson",
+    "coverage_qa": "results/diagnostics/dem_multires_coverage_qa_xce4r42_/multires_coverage_qa.json",
+    "overlap_qa": "results/diagnostics/dem_multires_overlap_qa_cp_t07sl/multires_overlap_qa.json",
+    "transition_qa": "results/diagnostics/dem_multires_transition_qa_weczzfdj/multires_transition_qa.json",
+    "coverage_script": "step4_2_dem_multires_coverage_qa.py",
+    "overlap_script": "step4_2_dem_multires_overlap_qa.py",
+    "transition_script": "step4_2_dem_multires_transition_qa.py",
+    "hrdem1m_register": "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/hrdem_1m_dtm_highway99_anomaly_register.gpkg",
+    "hrdem2m_register": "data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/hrdem_2m_dtm_highway99_anomaly_register.gpkg"
+  },
+  "input_sha256": {
+    "hrdem1m": "eedd95b99c4c0a56067a1c15dcce413cd8ef64b56d68b7145ec159a94643ffb6",
+    "hrdem2m": "5ce4ffa9e13af91a72d19a799ac8dce2dfe1d1b9dea184eeb3908670aa27d6ae",
+    "mrdem30_masked": "b8085012ab7d85a1f2028098345c579e20ee025f24b2189bd300fb2d90c1520d",
+    "mrdem30_uncut": "699db6fb323101e6a845cc44d06418e9e0e0d166a207eff707f115f4edec9084",
+    "mrdem30_qa": "2d047d8cf4678520672cc1160943acbc160e514775d90e8f4135047d57a3efc2",
+    "aoi": "6ffd4654a1bab09e0ec860e341250560d196a49570128b03b35ac681b895b843",
+    "coverage_qa": "60b726149550cc3f50e01cad1f0e146228afcf0b40b20b931a48a423f4e7bf18",
+    "overlap_qa": "1fb278da43959fbbb7452daf3e692cef9d3e30f6a56a2be9e3107790e3c009f4",
+    "transition_qa": "5a1f067715ee190d9487b9b0d2be50b5d20b47e0152fecc1f6e72063e8dfb1f5",
+    "coverage_script": "a4fa78f3760c9f446f8bf6670e1efdb06eb79294948ff8174bf0176152c585e2",
+    "overlap_script": "2f0112e5ad7b641918d50de0d16a373e9e6b2df6837a13cdf5f2e3ca25d85426",
+    "transition_script": "a323793382cb77236bd5b2f68db684ad91fb107fbf222bd5a81cde0b502400bb",
+    "hrdem1m_register": "e2e8840013db83074fc614d3a12d299ee6d199e09465172bf59ffb9e489c76ae",
+    "hrdem2m_register": "e516be189e73f4b8c4b6c48d2905baad857d02fe7dd103fe0ddf09069b8d164d"
+  },
+  "files": {
+    "reference_dem": {
+      "path": "results/diagnostics/dem_multires_mosaic_candidate_7ed8t26a/dem_highway99_multires_reference_candidate.tif",
+      "sha256": "54ab737d96fe940e70cb607ea75899a19830ec4fbce92f1bf6784974d0765063",
+      "bytes": 1054828661
+    },
+    "source_provenance": {
+      "path": "results/diagnostics/dem_multires_mosaic_candidate_7ed8t26a/dem_highway99_multires_source_candidate.tif",
+      "sha256": "775e42da007c5a5d6b23e043610c37d3f9a2644d74ffa35524b1724e435b8393",
+      "bytes": 9956761
+    }
+  },
+  "source_transition_edges": 772181,
+  "source_transition_qa_completed": true,
+  "source_transitions_accepted_for_terrain_derivatives": false,
+  "cross_source_elevation_agreement_accepted": false,
+  "documented_vertical_reference": "CGVD2013",
+  "local_height_realization_independently_verified": false,
+  "source_priority_exactly_verified": true,
+  "native_selected_elevation_bitwise_equal": true,
+  "all_grid_pixels_readback_verified": true,
+  "input_files_unchanged": true,
+  "mosaic_candidate_qa_passed": true,
+  "final_integrated_dem_published": false,
+  "absolute_vertical_accuracy_validated": false,
+  "hazard_model_validated": false,
+  "limitations": [
+    "Reference elevation only: 1 m grid spacing is not uniform native resolution.",
+    "Coarse source values repeated without interpolation; source code raster is required.",
+    "Substantial source-transition jumps have been recorded; no correction or smoothing applied.",
+    "Do not compute terrain derivatives directly on this mixed-resolution mosaic.",
+    "Derivatives require source-native, valid neighbourhood processing and separate QA.",
+    "Original source anomaly registers remain applicable; no negative elevations changed.",
+    "Complete AOI coverage is not proof of accurate or hazard-ready elevation."
+  ]
+}

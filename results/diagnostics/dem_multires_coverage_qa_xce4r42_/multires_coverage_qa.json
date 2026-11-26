@@ -1,0 +1,127 @@
+{
+  "method_id": "MULTIRES_NATIVE_CELL_COVERAGE_QA_V1",
+  "script_sha256": "a4fa78f3760c9f446f8bf6670e1efdb06eb79294948ff8174bf0176152c585e2",
+  "created_utc": "2026-11-26T07:41:06.997132+00:00",
+  "crs": "EPSG:26910",
+  "accounting_resolution_m": 1,
+  "accounting_bounds": [
+    475000,
+    5463000,
+    508000,
+    5557000
+  ],
+  "accounting_grid_pixels": 3102000000,
+  "aoi_polygon_area_km2": 1043.6167757320943,
+  "aoi_pixel_centre_area_km2": 1043.616657,
+  "counts": {
+    "aoi": 1043616657,
+    "hrdem1m_inside": 464090223,
+    "hrdem2m_inside": 464773711,
+    "hrdem_overlap_inside": 464075339,
+    "hrdem1m_total": 464090223,
+    "hrdem2m_total": 464787284,
+    "hrdem1m_outside_aoi": 0,
+    "hrdem2m_outside_aoi": 13573,
+    "mrdem30_masked_inside": 1042809815,
+    "mrdem30_uncut_inside": 1043616657,
+    "selected_1m": 464090223,
+    "selected_2m": 698372,
+    "selected_30m_masked": 578241334,
+    "uncovered_masked": 586728,
+    "selected_30m_uncut": 578828062,
+    "uncovered_uncut": 0,
+    "extra_uncut_boundary_support": 586728,
+    "hrdem_gap": 578828062
+  },
+  "scenarios": {
+    "masked": {
+      "hrdem_1m": {
+        "accounting_pixels_1m": 464090223,
+        "area_km2": 464.090223,
+        "percent_of_aoi": 44.469415075654545
+      },
+      "hrdem_2m": {
+        "accounting_pixels_1m": 698372,
+        "area_km2": 0.698372,
+        "percent_of_aoi": 0.06691844129889161
+      },
+      "mrdem_30m": {
+        "accounting_pixels_1m": 578241334,
+        "area_km2": 578.241334,
+        "percent_of_aoi": 55.40744583956943
+      },
+      "uncovered": {
+        "accounting_pixels_1m": 586728,
+        "area_km2": 0.586728,
+        "percent_of_aoi": 0.05622064347713837
+      },
+      "covered_percent": 99.94377935652287
+    },
+    "uncut": {
+      "hrdem_1m": {
+        "accounting_pixels_1m": 464090223,
+        "area_km2": 464.090223,
+        "percent_of_aoi": 44.469415075654545
+      },
+      "hrdem_2m": {
+        "accounting_pixels_1m": 698372,
+        "area_km2": 0.698372,
+        "percent_of_aoi": 0.06691844129889161
+      },
+      "mrdem_30m": {
+        "accounting_pixels_1m": 578828062,
+        "area_km2": 578.828062,
+        "percent_of_aoi": 55.46366648304656
+      },
+      "uncovered": {
+        "accounting_pixels_1m": 0,
+        "area_km2": 0.0,
+        "percent_of_aoi": 0.0
+      },
+      "covered_percent": 100.0
+    }
+  },
+  "mrdem30_mask_reference_qa": {
+    "raster_pixels_total": 3352812,
+    "aoi_pixel_centres": 1159588,
+    "source_valid_inside_aoi": 1159588,
+    "source_missing_inside_aoi": 0,
+    "output_valid_inside_aoi": 1159588,
+    "output_missing_inside_aoi": 0,
+    "output_valid_outside_aoi": 0,
+    "inside_values_differing_from_source": 0,
+    "uncut_valid_native_cells": 3352812,
+    "masked_retained_values_bitwise_equal": true
+  },
+  "input_paths": {
+    "hrdem1m": "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/hrdem_1m_dtm_highway99_fixed_v1.tif",
+    "hrdem2m": "data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/hrdem_2m_dtm_highway99_fixed_v1.tif",
+    "mrdem30_masked": "data/processed/elevation/mrdem30_dtm_highway99_aoi_utm10_masked_exact.tif",
+    "mrdem30_uncut": "results/diagnostics/step4_2_mrdem30_exact_bbox.tif",
+    "mrdem30_qa": "results/diagnostics/step4_2_mrdem30_consistent_mask_qa.json",
+    "aoi": "data/processed/study_area/highway99_terrain_search_5000m.geojson"
+  },
+  "input_sha256": {
+    "hrdem1m": "eedd95b99c4c0a56067a1c15dcce413cd8ef64b56d68b7145ec159a94643ffb6",
+    "hrdem2m": "5ce4ffa9e13af91a72d19a799ac8dce2dfe1d1b9dea184eeb3908670aa27d6ae",
+    "mrdem30_masked": "b8085012ab7d85a1f2028098345c579e20ee025f24b2189bd300fb2d90c1520d",
+    "mrdem30_uncut": "699db6fb323101e6a845cc44d06418e9e0e0d166a207eff707f115f4edec9084",
+    "mrdem30_qa": "2d047d8cf4678520672cc1160943acbc160e514775d90e8f4135047d57a3efc2",
+    "aoi": "6ffd4654a1bab09e0ec860e341250560d196a49570128b03b35ac681b895b843"
+  },
+  "input_files_unchanged": true,
+  "coverage_qa_completed": true,
+  "full_coverage_achieved_masked": false,
+  "full_coverage_achieved_uncut": true,
+  "vertical_datum_compatibility_validated": false,
+  "cross_source_elevation_agreement_validated": false,
+  "absolute_vertical_accuracy_validated": false,
+  "final_integrated_dem_created": false,
+  "limitations": [
+    "Coverage only: a 1 m accounting pixel represents containing native-cell support, not 1 m elevation information.",
+    "MRDEM uncut support is evaluated only inside the final AOI; no extrapolation is permitted.",
+    "Coarse-cell support can cross the exact polygon boundary even when the coarse cell centre is outside.",
+    "No source elevations are merged and no cross-source elevation adjustment is made.",
+    "Source-specific anomaly registers and terrain derivative limitations still apply."
+  ]
+}

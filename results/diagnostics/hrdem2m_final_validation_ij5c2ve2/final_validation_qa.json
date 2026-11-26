@@ -1,0 +1,88 @@
+{
+  "grid_pixels": 728500000,
+  "candidate_cells": 671,
+  "valid_pixels": 116196821,
+  "nodata_pixels": 612303179,
+  "footprint_pixels": 116231518,
+  "nodata_inside_footprint": 34697,
+  "valid_outside_footprint": 0,
+  "footprint_pixels_in_noncandidate_tiles": 0,
+  "valid_pixels_in_noncandidate_tiles": 0,
+  "footprint_coverage_percent": 99.97014837232015,
+  "minimum": {
+    "value_m": -29.66854476928711,
+    "center_epsg26910": [
+      489111,
+      5506031
+    ],
+    "tile": [
+      489000,
+      5506000
+    ]
+  },
+  "maximum": {
+    "value_m": 1752.513427734375,
+    "center_epsg26910": [
+      494867,
+      5522391
+    ],
+    "tile": [
+      494000,
+      5522000
+    ]
+  },
+  "negative_pixels": 5045476,
+  "negative_tiles": 119,
+  "negative_counts_below_m": {
+    "-1": 4633262,
+    "-5": 606,
+    "-10": 415,
+    "-20": 119
+  },
+  "deep_negative_points_matching_mosaic": 606,
+  "all_pixels_scanned": true,
+  "method_id": "HRDEM2M_FINAL_TECHNICAL_VALIDATION_V1",
+  "script_sha256": "dd5721d192ad778946b2742190704f88655234e9bd792c265ccf5a69b85570e1",
+  "extraction_configuration_sha256": "6e3e412e3d81794d69ce0ab7257445ae8a966ccbd0c6c9054cfa3e25442da30f",
+  "mask_configuration_sha256": "d7e7d5608bc5a0b3ad0685ffe157cc5029561eed470845262f59d706d154e3c5",
+  "crs": "EPSG:26910",
+  "resolution_m": 2,
+  "candidate_path": "results/diagnostics/hrdem2m_mosaic_candidate_b2mzrrzw/hrdem2m_fixed_masked_mosaic_candidate.tif",
+  "candidate_qa_path": "results/diagnostics/hrdem2m_mosaic_candidate_b2mzrrzw/mosaic_candidate_qa.json",
+  "candidate_qa_sha256": "cdbfb5b1673e1d674da76ed5b9066661acf1adaae4c5693cdd9a0c6d61ef199f",
+  "register_path": "results/diagnostics/hrdem2m_anomaly_register_erxmut33/anomaly_register.gpkg",
+  "register_qa_path": "results/diagnostics/hrdem2m_anomaly_register_erxmut33/anomaly_register_qa.json",
+  "register_qa_sha256": "0fc0954e89a5757c38232b89ef0855a52b1618839d989970193cdb3955c1af67",
+  "register_layer_counts": {
+    "flagged_seams": 20,
+    "insufficient_seams": 92,
+    "tiles_with_internal_nodata": 273,
+    "negative_elevation_tiles": 119,
+    "deep_negative_pixels": 606
+  },
+  "mosaic_sha256": "5ce4ffa9e13af91a72d19a799ac8dce2dfe1d1b9dea184eeb3908670aa27d6ae",
+  "register_sha256": "e516be189e73f4b8c4b6c48d2905baad857d02fe7dd103fe0ddf09069b8d164d",
+  "input_sha256": {
+    "results/diagnostics/hrdem2m_global_masking_qa_opn0z04b/global_masking_qa.json": "e1e7a19327013e5a8117f14a0a6029162533e218c5173f09acefa25d95a670d1",
+    "results/diagnostics/hrdem2m_global_seam_qa_lp3mi24_/global_seam_qa.json": "8ad3e101092df5e49f63697cb42b1febea3e42d1f061f8c7c02d0c4858d72b4a",
+    "results/diagnostics/hrdem2m_targeted_seam_bridge_mjlpoefq/targeted_seam_bridge_qa.json": "e574c11f64013960062162fb476885d7f5c5e8acde973426e759c1ab3b55e3b9",
+    "results/diagnostics/hrdem2m_targeted_native_source_x08sit7j/targeted_native_source_qa.json": "eead7d311482ce9a70179d0f54fa316ae008f73e3d0367360bd1e8955e146fcf",
+    "results/diagnostics/hrdem2m_negative_source_qa_7f428dzp/negative_source_qa.json": "7f803d604250d734506ae6a5c54b28bc90f705ee2e2003e5d64869c0112cb637",
+    "results/diagnostics/hrdem2m_mosaic_candidate_b2mzrrzw/hrdem2m_fixed_masked_mosaic_candidate.tif": "5ce4ffa9e13af91a72d19a799ac8dce2dfe1d1b9dea184eeb3908670aa27d6ae",
+    "results/diagnostics/hrdem2m_anomaly_register_erxmut33/anomaly_register.gpkg": "e516be189e73f4b8c4b6c48d2905baad857d02fe7dd103fe0ddf09069b8d164d",
+    "results/diagnostics/hrdem2m_mosaic_candidate_b2mzrrzw/mosaic_candidate_qa.json": "cdbfb5b1673e1d674da76ed5b9066661acf1adaae4c5693cdd9a0c6d61ef199f",
+    "results/diagnostics/hrdem2m_anomaly_register_erxmut33/anomaly_register_qa.json": "0fc0954e89a5757c38232b89ef0855a52b1618839d989970193cdb3955c1af67",
+    "data/processed/elevation/hrdem_2m_dtm_coverage_highway99_corrected.gpkg": "f49fa31dfc9ff0e78c504897465a1b50348939f256950c092d474024c979d2e2",
+    "results/diagnostics/step4_2_hrdem2m_boundary_virtual.vrt": "a2e81830c68a49ed5cfc896f7d30e84b6e5b1e226345c499c1996b1d4e2228ee",
+    "step4_2_hrdem2m_build_mosaic_candidate.py": "2f8fc21d16ede316ae892c5efbc26987d84fb3f369e098e6f05b9e14172c9513",
+    "step4_2_hrdem2m_anomaly_register.py": "f53b48a7883f9f0572efa23a34ba7bff8427b3e2278d9d0e3862c3e405026bda",
+    "step4_2_hrdem2m_fixed_batch_300.py": "a134a8523471c3ba5b6e587ef5f41ffec553bca6855348838067682a31e6e68b",
+    "step4_2_hrdem2m_fixed_mask_batch_300.py": "d299ca8a196cbd63e8aff3d8844d0193c5bf450c22efbb678ed8b899ba257a2e"
+  },
+  "input_hashes_verified_before_and_after": true,
+  "final_technical_validation_passed": true,
+  "final_dem_published": false,
+  "absolute_vertical_accuracy_validated": false,
+  "negative_source_physical_validity_resolved": false,
+  "hazard_model_validated": false
+}

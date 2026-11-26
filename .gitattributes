@@ -17,3 +17,12 @@
 
 # HRDEM coverage footprint used in processing provenance
 /data/processed/elevation/hrdem_1m_dtm_coverage_highway99.gpkg -text
+
+# Step 4.2 - HRDEM 2m and multiresolution SHA-256 integrity
+/step4_2_hrdem2m_*.py -text
+/step4_2_dem_multires_*.py -text
+/results/diagnostics/hrdem2m_*/** -text
+/results/diagnostics/dem_multires_*/** -text
+/data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/** -text
+/data/processed/elevation/dem_highway99_multires_reference_v1/** -text
+/data/processed/elevation/hrdem_2m_dtm_coverage_highway99_corrected.gpkg -text

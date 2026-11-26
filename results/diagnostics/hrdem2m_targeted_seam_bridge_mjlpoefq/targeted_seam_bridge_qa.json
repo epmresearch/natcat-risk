@@ -1,0 +1,615 @@
+{
+  "summary": {
+    "extraction_configuration_sha256": "6e3e412e3d81794d69ce0ab7257445ae8a966ccbd0c6c9054cfa3e25442da30f",
+    "mask_configuration_sha256": "d7e7d5608bc5a0b3ad0685ffe157cc5029561eed470845262f59d706d154e3c5",
+    "tested_seams": 20,
+    "passed_seams": 20,
+    "exact_equal_seams": 20,
+    "staging_unchanged": true,
+    "targeted_seam_bridge_qa_passed": true,
+    "absolute_vertical_accuracy_validated": false,
+    "final_dem_published": false
+  },
+  "seams": [
+    {
+      "tile": [
+        485000,
+        5490000
+      ],
+      "neighbor": [
+        486000,
+        5490000
+      ],
+      "direction": "east",
+      "screening_classification": "localized_high_residual",
+      "seam_p95_m": 7.094189453125001,
+      "localization_ratio": 14.135661920073503,
+      "bridge_bounds": [
+        485976,
+        5490000,
+        486024,
+        5491000
+      ],
+      "common_valid": 9111,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 9087,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "fc38f07da2b853eee09f79d44703e8686bf0bec9c835a0a10aa4842c31b6ea10",
+      "passed": true
+    },
+    {
+      "tile": [
+        485000,
+        5474000
+      ],
+      "neighbor": [
+        485000,
+        5475000
+      ],
+      "direction": "north",
+      "screening_classification": "localized_high_residual",
+      "seam_p95_m": 3.4644775390624987,
+      "localization_ratio": 7.177894629961808,
+      "bridge_bounds": [
+        485000,
+        5474976,
+        486000,
+        5475024
+      ],
+      "common_valid": 9605,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 9594,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "a487d1fb7f2014d3ea30fd25240f5c6c6f60a2d2a188738410d9d7d8def1bd3b",
+      "passed": true
+    },
+    {
+      "tile": [
+        483000,
+        5503000
+      ],
+      "neighbor": [
+        484000,
+        5503000
+      ],
+      "direction": "east",
+      "screening_classification": "localized_high_residual",
+      "seam_p95_m": 3.424465179443326,
+      "localization_ratio": 7.108491835991256,
+      "bridge_bounds": [
+        483976,
+        5503000,
+        484024,
+        5504000
+      ],
+      "common_valid": 12000,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 12000,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "543d597e16dbb41d3f443e243c614871893555022a5ad9f68e19e132d76fac9d",
+      "passed": true
+    },
+    {
+      "tile": [
+        484000,
+        5505000
+      ],
+      "neighbor": [
+        485000,
+        5505000
+      ],
+      "direction": "east",
+      "screening_classification": "localized_high_residual",
+      "seam_p95_m": 3.0615570068359284,
+      "localization_ratio": 3.043187181867262,
+      "bridge_bounds": [
+        484976,
+        5505000,
+        485024,
+        5506000
+      ],
+      "common_valid": 12000,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 12000,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "060f3e144361d4257fc39a42b86fe4ac9e13dfbcde0ed1743202bd6fb63c7ea6",
+      "passed": true
+    },
+    {
+      "tile": [
+        485000,
+        5489000
+      ],
+      "neighbor": [
+        485000,
+        5490000
+      ],
+      "direction": "north",
+      "screening_classification": "localized_high_residual",
+      "seam_p95_m": 2.0819885253906216,
+      "localization_ratio": 8.673206700328521,
+      "bridge_bounds": [
+        485000,
+        5489976,
+        486000,
+        5490024
+      ],
+      "common_valid": 9776,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 9761,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "f6504423db5eea05413cdc718355b617edbd440e29e7f942a92dc3a81792359a",
+      "passed": true
+    },
+    {
+      "tile": [
+        483000,
+        5470000
+      ],
+      "neighbor": [
+        484000,
+        5470000
+      ],
+      "direction": "east",
+      "screening_classification": "localized_high_residual",
+      "seam_p95_m": 2.0637969970703125,
+      "localization_ratio": 5.3495930676640135,
+      "bridge_bounds": [
+        483976,
+        5470000,
+        484024,
+        5471000
+      ],
+      "common_valid": 6563,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 6518,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "82f0f19a4919a3ad0e06624eac0fdf41a0485b4069520cb5c389771bb4718a92",
+      "passed": true
+    },
+    {
+      "tile": [
+        483000,
+        5467000
+      ],
+      "neighbor": [
+        483000,
+        5468000
+      ],
+      "direction": "north",
+      "screening_classification": "localized_high_residual",
+      "seam_p95_m": 1.89324951171875,
+      "localization_ratio": 6.062224044636122,
+      "bridge_bounds": [
+        483000,
+        5467976,
+        484000,
+        5468024
+      ],
+      "common_valid": 7959,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 7942,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "f6bda7725044609eaad7c1cb5c9ca5f26b5a74f61c54882af12c25295e2d03ce",
+      "passed": true
+    },
+    {
+      "tile": [
+        484000,
+        5488000
+      ],
+      "neighbor": [
+        485000,
+        5488000
+      ],
+      "direction": "east",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 7.181542968749999,
+      "localization_ratio": 1.526177437020811,
+      "bridge_bounds": [
+        484976,
+        5488000,
+        485024,
+        5489000
+      ],
+      "common_valid": 11383,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 11311,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "70948bb4884898204b5a7e39d20b40bddb34ae3d628b3dce19979c90ea317d5d",
+      "passed": true
+    },
+    {
+      "tile": [
+        485000,
+        5475000
+      ],
+      "neighbor": [
+        485000,
+        5476000
+      ],
+      "direction": "north",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 1.7261352539062422,
+      "localization_ratio": 2.150823239515495,
+      "bridge_bounds": [
+        485000,
+        5475976,
+        486000,
+        5476024
+      ],
+      "common_valid": 6446,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 6436,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "6d014675296ec72f7323b208d32b95ec696d6848d32346af71162740177b7dd9",
+      "passed": true
+    },
+    {
+      "tile": [
+        485000,
+        5472000
+      ],
+      "neighbor": [
+        486000,
+        5472000
+      ],
+      "direction": "east",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 1.5065460205078114,
+      "localization_ratio": 2.973617802248222,
+      "bridge_bounds": [
+        485976,
+        5472000,
+        486024,
+        5473000
+      ],
+      "common_valid": 3044,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 3003,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "e212cdba34c36387dcb68425e7b17ddf0f7518c6fc42be32e14b8b4fb9d4081e",
+      "passed": true
+    },
+    {
+      "tile": [
+        487000,
+        5530000
+      ],
+      "neighbor": [
+        488000,
+        5530000
+      ],
+      "direction": "east",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 1.483213043212887,
+      "localization_ratio": 1.334231707886203,
+      "bridge_bounds": [
+        487976,
+        5530000,
+        488024,
+        5531000
+      ],
+      "common_valid": 12000,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 12000,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "295ec25e65eee9f83e130216332fca6db82121fbe15fccf4831b7d93243fce07",
+      "passed": true
+    },
+    {
+      "tile": [
+        484000,
+        5487000
+      ],
+      "neighbor": [
+        485000,
+        5487000
+      ],
+      "direction": "east",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 1.4611083984374993,
+      "localization_ratio": 1.496702220519044,
+      "bridge_bounds": [
+        484976,
+        5487000,
+        485024,
+        5488000
+      ],
+      "common_valid": 1455,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 1381,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "a61f973dc5e6838565f8d6361b20f4491eb387d76ea54968d2c0e96521912890",
+      "passed": true
+    },
+    {
+      "tile": [
+        490000,
+        5503000
+      ],
+      "neighbor": [
+        490000,
+        5504000
+      ],
+      "direction": "north",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 1.4215621948242172,
+      "localization_ratio": 0.5805655942548704,
+      "bridge_bounds": [
+        490000,
+        5503976,
+        491000,
+        5504024
+      ],
+      "common_valid": 11197,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 11169,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "76ae87df65bed953cf926abed4d181a2d6ffe6cc3e370de486a7fe0037ae2d67",
+      "passed": true
+    },
+    {
+      "tile": [
+        489000,
+        5503000
+      ],
+      "neighbor": [
+        490000,
+        5503000
+      ],
+      "direction": "east",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 1.255728912353514,
+      "localization_ratio": 1.232928501924031,
+      "bridge_bounds": [
+        489976,
+        5503000,
+        490024,
+        5504000
+      ],
+      "common_valid": 12000,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 12000,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "33e84713b6b6762bb688625605078d850851de1a4b249522cf617f1dd20b9165",
+      "passed": true
+    },
+    {
+      "tile": [
+        483000,
+        5521000
+      ],
+      "neighbor": [
+        483000,
+        5522000
+      ],
+      "direction": "north",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 1.1530272006988525,
+      "localization_ratio": 1.734129795322236,
+      "bridge_bounds": [
+        483000,
+        5521976,
+        484000,
+        5522024
+      ],
+      "common_valid": 11113,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 1557,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "16104f6c2c37f01000994673fd1d5ec55d4989cbc251e8492e8737a6793d2f2f",
+      "passed": true
+    },
+    {
+      "tile": [
+        483000,
+        5484000
+      ],
+      "neighbor": [
+        483000,
+        5485000
+      ],
+      "direction": "north",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 1.1185791015624997,
+      "localization_ratio": 1.4412770515285636,
+      "bridge_bounds": [
+        483000,
+        5484976,
+        484000,
+        5485024
+      ],
+      "common_valid": 7563,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 7544,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "d0f4cb7f2d3acaae6edcf37f55fda8dc38b2177cd0861560852f723ad239ef79",
+      "passed": true
+    },
+    {
+      "tile": [
+        483000,
+        5499000
+      ],
+      "neighbor": [
+        484000,
+        5499000
+      ],
+      "direction": "east",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 1.0565137863159175,
+      "localization_ratio": 1.652559893698893,
+      "bridge_bounds": [
+        483976,
+        5499000,
+        484024,
+        5500000
+      ],
+      "common_valid": 11861,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 11861,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "18ff16e4b9f80740c286d25b7a6ac9688e534065ff5370ed0f452376c6f93fef",
+      "passed": true
+    },
+    {
+      "tile": [
+        486000,
+        5506000
+      ],
+      "neighbor": [
+        487000,
+        5506000
+      ],
+      "direction": "east",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 1.0299472808837884,
+      "localization_ratio": 0.8324527431079141,
+      "bridge_bounds": [
+        486976,
+        5506000,
+        487024,
+        5507000
+      ],
+      "common_valid": 11652,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 11652,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "db4b9e71f3bb4eea26da83dff570c063ab2baf66a460175b9267c68f8b447082",
+      "passed": true
+    },
+    {
+      "tile": [
+        488000,
+        5528000
+      ],
+      "neighbor": [
+        489000,
+        5528000
+      ],
+      "direction": "east",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 1.0284576416015607,
+      "localization_ratio": 1.4271618322453306,
+      "bridge_bounds": [
+        488976,
+        5528000,
+        489024,
+        5529000
+      ],
+      "common_valid": 12000,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 12000,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "7dfd3cd0f26912de6aa0057765820849b0a42f0023de73a7be0578a6123f46e4",
+      "passed": true
+    },
+    {
+      "tile": [
+        487000,
+        5500000
+      ],
+      "neighbor": [
+        488000,
+        5500000
+      ],
+      "direction": "east",
+      "screening_classification": "high_residual_nonlocalized",
+      "seam_p95_m": 1.0220657348632793,
+      "localization_ratio": 1.1875232415637818,
+      "bridge_bounds": [
+        487976,
+        5500000,
+        488024,
+        5501000
+      ],
+      "common_valid": 12000,
+      "validity_mismatch": 0,
+      "maximum_abs_difference_m": 0.0,
+      "over_0_001m": 0,
+      "unmasked_exact_equal": true,
+      "masked_valid_pixels": 12000,
+      "masked_valid_missing_from_bridge": 0,
+      "masked_over_0_001m": 0,
+      "bridge_sha256": "15cbb9ef14568df37ad01625696c5b2a7dbcca98271d6f8e08a2351162cb5554",
+      "passed": true
+    }
+  ]
+}

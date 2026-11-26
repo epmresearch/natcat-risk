@@ -1,0 +1,360 @@
+{
+  "publication_method": "HRDEM2M_RESEARCH_INPUT_PUBLICATION_V1",
+  "version": "fixed_v1",
+  "release_status": "technically_validated_research_input",
+  "final_dem_published": true,
+  "absolute_vertical_accuracy_validated": false,
+  "negative_source_physical_validity_resolved": false,
+  "hazard_model_validated": false,
+  "integrated_multiresolution_dem": false,
+  "source_products": [
+    "https://canelevation-dem.s3.ca-central-1.amazonaws.com/hrdem-mosaic-2m/2_3-mosaic-2m-dtm.tif",
+    "https://canelevation-dem.s3.ca-central-1.amazonaws.com/hrdem-mosaic-2m/2_4-mosaic-2m-dtm.tif"
+  ],
+  "extraction_configuration_sha256": "6e3e412e3d81794d69ce0ab7257445ae8a966ccbd0c6c9054cfa3e25442da30f",
+  "mask_configuration_sha256": "d7e7d5608bc5a0b3ad0685ffe157cc5029561eed470845262f59d706d154e3c5",
+  "configuration": {
+    "method_id": "HRDEM2M_FIXED_BILINEAR_V1",
+    "input_sha256": {
+      "results/diagnostics/hrdem2m_scale_control_1zla68yg/production_plan_qa.json": "ff1a248ede1d3dfcff918098be2e531c3c81112ffcc66697385c4c940421c6f7",
+      "data/processed/elevation/hrdem_2m_dtm_coverage_highway99_corrected.gpkg": "f49fa31dfc9ff0e78c504897465a1b50348939f256950c092d474024c979d2e2",
+      "results/diagnostics/step4_2_hrdem2m_boundary_virtual.vrt": "a2e81830c68a49ed5cfc896f7d30e84b6e5b1e226345c499c1996b1d4e2228ee",
+      "results/diagnostics/hrdem2m_scale_control_1zla68yg/scale_comparison_qa.json": "1c065a2c5df40c468fdafebd30a52cecdb7b79cf0385dac8c12b2b4aa4e88ffb",
+      "results/diagnostics/hrdem2m_scale_control_1zla68yg/native_bilinear_reference_qa.json": "f205d3eaac0150d1f074ad34e4e8af148fbf165631353dbe69f885cf207bf45b",
+      "results/diagnostics/hrdem2m_scale_control_1zla68yg/warp_commands.json": "5e2bf5ea8b84259cc3d96109cd75d87ec03a62df58c191ccab74bf596b76d605",
+      "results/diagnostics/hrdem2m_scale_control_1zla68yg/pilot_2_3_narrow_fixed.tif": "a0918204906e5fee27270ade715c6c6c301a432a93459bdabeb991ab555673f3",
+      "results/diagnostics/hrdem2m_scale_control_1zla68yg/pilot_2_4_narrow_fixed.tif": "ebdcf86047e19c6e53beb655212a1d0dbab254c1cc06cae6adbdd0f197492e83",
+      "results/diagnostics/hrdem2m_scale_control_1zla68yg/pilot_cross_boundary_narrow_fixed.tif": "561fed1a54f2859d4914abf84a52fb426f88e28b0127f50eec1110728f417398"
+    },
+    "script_sha256": "a134a8523471c3ba5b6e587ef5f41ffec553bca6855348838067682a31e6e68b",
+    "gdal_python_version": "3.10.3",
+    "gdal_cli_version": "GDAL 3.10.3, released 2025/04/01",
+    "warp_options": [
+      "-of",
+      "GTiff",
+      "-t_srs",
+      "EPSG:26910",
+      "-tr",
+      "2",
+      "2",
+      "-tap",
+      "-r",
+      "bilinear",
+      "-et",
+      "0",
+      "-ovr",
+      "NONE",
+      "-ot",
+      "Float32",
+      "-srcnodata",
+      "-32767",
+      "-dstnodata",
+      "-32767",
+      "-wo",
+      "XSCALE=1",
+      "-wo",
+      "YSCALE=1",
+      "-co",
+      "TILED=YES",
+      "-co",
+      "COMPRESS=DEFLATE",
+      "-co",
+      "PREDICTOR=3",
+      "-co",
+      "BIGTIFF=IF_SAFER"
+    ],
+    "http_config": {
+      "GDAL_DISABLE_READDIR_ON_OPEN": "YES",
+      "GDAL_HTTP_MAX_RETRY": "3",
+      "GDAL_HTTP_RETRY_DELAY": "2",
+      "GDAL_HTTP_TIMEOUT": "45"
+    },
+    "pilot_tiles": [
+      [
+        484000,
+        5471000
+      ],
+      [
+        484000,
+        5472000
+      ],
+      [
+        492000,
+        5517000
+      ],
+      [
+        482000,
+        5481000
+      ],
+      [
+        493000,
+        5517000
+      ],
+      [
+        483000,
+        5481000
+      ],
+      [
+        480000,
+        5463000
+      ],
+      [
+        505000,
+        5556000
+      ]
+    ],
+    "candidate_count": 671,
+    "absolute_vertical_accuracy_validated": false
+  },
+  "mask_configuration": {
+    "mask_method": "HRDEM2M_FIXED_PIXEL_CENTER_MASK_V1",
+    "extraction_configuration_sha256": "6e3e412e3d81794d69ce0ab7257445ae8a966ccbd0c6c9054cfa3e25442da30f",
+    "footprint_sha256": "f49fa31dfc9ff0e78c504897465a1b50348939f256950c092d474024c979d2e2",
+    "extraction_pilot_qa_sha256": "9c879ddf7acdad5cc1f32be309b21d307575a2a18d410d34617753fa9d2b411a",
+    "seam_edge_qa_sha256": "246022e43a12cc2af78328d6b2071ff4ae1f8580201fffb427510adf5c7492e5",
+    "mask_script_sha256": "d299ca8a196cbd63e8aff3d8844d0193c5bf450c22efbb678ed8b899ba257a2e",
+    "gdal_version": "3.10.3",
+    "mask_rule": "GDAL_PIXEL_CENTER_FOOTPRINT_RASTERIZATION_ALL_TOUCHED_FALSE",
+    "resolution_m": 2,
+    "crs": "EPSG:26910",
+    "nodata": -32767.0,
+    "absolute_vertical_accuracy_validated": false
+  },
+  "footprint": {
+    "project_path": "data/processed/elevation/hrdem_2m_dtm_coverage_highway99_corrected.gpkg",
+    "sha256": "f49fa31dfc9ff0e78c504897465a1b50348939f256950c092d474024c979d2e2"
+  },
+  "mosaic_sha256": "5ce4ffa9e13af91a72d19a799ac8dce2dfe1d1b9dea184eeb3908670aa27d6ae",
+  "register_sha256": "e516be189e73f4b8c4b6c48d2905baad857d02fe7dd103fe0ddf09069b8d164d",
+  "technical_validation": {
+    "grid_pixels": 728500000,
+    "valid_pixels": 116196821,
+    "nodata_pixels": 612303179,
+    "footprint_pixels": 116231518,
+    "nodata_inside_footprint": 34697,
+    "valid_outside_footprint": 0,
+    "footprint_coverage_percent": 99.97014837232015,
+    "minimum": {
+      "value_m": -29.66854476928711,
+      "center_epsg26910": [
+        489111,
+        5506031
+      ],
+      "tile": [
+        489000,
+        5506000
+      ]
+    },
+    "maximum": {
+      "value_m": 1752.513427734375,
+      "center_epsg26910": [
+        494867,
+        5522391
+      ],
+      "tile": [
+        494000,
+        5522000
+      ]
+    },
+    "negative_pixels": 5045476,
+    "negative_tiles": 119,
+    "negative_counts_below_m": {
+      "-1": 4633262,
+      "-5": 606,
+      "-10": 415,
+      "-20": 119
+    },
+    "deep_negative_points_matching_mosaic": 606,
+    "register_layer_counts": {
+      "flagged_seams": 20,
+      "insufficient_seams": 92,
+      "tiles_with_internal_nodata": 273,
+      "negative_elevation_tiles": 119,
+      "deep_negative_pixels": 606
+    }
+  },
+  "grid": {
+    "crs": "EPSG:26910",
+    "resolution_m": 2,
+    "dtype": "Float32",
+    "nodata": -32767,
+    "width": 15500,
+    "height": 47000,
+    "bounds_epsg26910": [
+      475000,
+      5463000,
+      506000,
+      5557000
+    ],
+    "geotransform": [
+      475000,
+      2,
+      0,
+      5557000,
+      0,
+      -2
+    ]
+  },
+  "qa_script_hashes": {
+    "step4_2_hrdem2m_build_mosaic_candidate.py": {
+      "path": "step4_2_hrdem2m_build_mosaic_candidate.py",
+      "sha256": "2f8fc21d16ede316ae892c5efbc26987d84fb3f369e098e6f05b9e14172c9513"
+    },
+    "step4_2_hrdem2m_anomaly_register.py": {
+      "path": "step4_2_hrdem2m_anomaly_register.py",
+      "sha256": "f53b48a7883f9f0572efa23a34ba7bff8427b3e2278d9d0e3862c3e405026bda"
+    },
+    "step4_2_hrdem2m_fixed_batch_300.py": {
+      "path": "step4_2_hrdem2m_fixed_batch_300.py",
+      "sha256": "a134a8523471c3ba5b6e587ef5f41ffec553bca6855348838067682a31e6e68b"
+    },
+    "step4_2_hrdem2m_fixed_mask_batch_300.py": {
+      "path": "step4_2_hrdem2m_fixed_mask_batch_300.py",
+      "sha256": "d299ca8a196cbd63e8aff3d8844d0193c5bf450c22efbb678ed8b899ba257a2e"
+    },
+    "step4_2_hrdem2m_final_validation.py": {
+      "path": "step4_2_hrdem2m_final_validation.py",
+      "sha256": "dd5721d192ad778946b2742190704f88655234e9bd792c265ccf5a69b85570e1"
+    },
+    "step4_2_hrdem2m_publish.py": {
+      "path": "step4_2_hrdem2m_publish.py",
+      "sha256": "9bb966983e7cb214120def6f49a9e1fec28242ff65f0b597240402501de502df"
+    }
+  },
+  "publication_script_sha256": "9bb966983e7cb214120def6f49a9e1fec28242ff65f0b597240402501de502df",
+  "protected_1m_sha256": {
+    "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/hrdem_1m_dtm_highway99_fixed_v1.tif": "eedd95b99c4c0a56067a1c15dcce413cd8ef64b56d68b7145ec159a94643ffb6",
+    "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/hrdem_1m_dtm_highway99_anomaly_register.gpkg": "e2e8840013db83074fc614d3a12d299ee6d199e09465172bf59ffb9e489c76ae"
+  },
+  "file_inventory": {
+    "hrdem_2m_dtm_highway99_fixed_v1.tif": {
+      "original_project_path": "results/diagnostics/hrdem2m_mosaic_candidate_b2mzrrzw/hrdem2m_fixed_masked_mosaic_candidate.tif",
+      "sha256": "5ce4ffa9e13af91a72d19a799ac8dce2dfe1d1b9dea184eeb3908670aa27d6ae",
+      "bytes": 275181679
+    },
+    "hrdem_2m_dtm_highway99_anomaly_register.gpkg": {
+      "original_project_path": "results/diagnostics/hrdem2m_anomaly_register_erxmut33/anomaly_register.gpkg",
+      "sha256": "e516be189e73f4b8c4b6c48d2905baad857d02fe7dd103fe0ddf09069b8d164d",
+      "bytes": 397312
+    },
+    "qa/global_extraction_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_global_extraction_qa_uvxf80ty/global_extraction_qa.json",
+      "sha256": "b93bab8cfc395ea2224a8fba582adfcac26ef4ce377d7951d8df2f52460e4f4b",
+      "bytes": 295324
+    },
+    "qa/global_masking_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_global_masking_qa_opn0z04b/global_masking_qa.json",
+      "sha256": "e1e7a19327013e5a8117f14a0a6029162533e218c5173f09acefa25d95a670d1",
+      "bytes": 517750
+    },
+    "qa/global_seam_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_global_seam_qa_lp3mi24_/global_seam_qa.json",
+      "sha256": "8ad3e101092df5e49f63697cb42b1febea3e42d1f061f8c7c02d0c4858d72b4a",
+      "bytes": 788802
+    },
+    "qa/targeted_seam_bridge_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_targeted_seam_bridge_mjlpoefq/targeted_seam_bridge_qa.json",
+      "sha256": "e574c11f64013960062162fb476885d7f5c5e8acde973426e759c1ab3b55e3b9",
+      "bytes": 16864
+    },
+    "qa/targeted_native_source_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_targeted_native_source_x08sit7j/targeted_native_source_qa.json",
+      "sha256": "eead7d311482ce9a70179d0f54fa316ae008f73e3d0367360bd1e8955e146fcf",
+      "bytes": 21566
+    },
+    "qa/negative_source_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_negative_source_qa_7f428dzp/negative_source_qa.json",
+      "sha256": "7f803d604250d734506ae6a5c54b28bc90f705ee2e2003e5d64869c0112cb637",
+      "bytes": 46222
+    },
+    "qa/anomaly_register_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_anomaly_register_erxmut33/anomaly_register_qa.json",
+      "sha256": "0fc0954e89a5757c38232b89ef0855a52b1618839d989970193cdb3955c1af67",
+      "bytes": 1799
+    },
+    "qa/mosaic_candidate_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_mosaic_candidate_b2mzrrzw/mosaic_candidate_qa.json",
+      "sha256": "cdbfb5b1673e1d674da76ed5b9066661acf1adaae4c5693cdd9a0c6d61ef199f",
+      "bytes": 1991
+    },
+    "qa/final_validation_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_final_validation_ij5c2ve2/final_validation_qa.json",
+      "sha256": "c6d8716b541202b9c54a55995f989c71d95641b049d0c014bf4391dab7253a70",
+      "bytes": 4816
+    },
+    "qa/scale_comparison_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_scale_control_1zla68yg/scale_comparison_qa.json",
+      "sha256": "1c065a2c5df40c468fdafebd30a52cecdb7b79cf0385dac8c12b2b4aa4e88ffb",
+      "bytes": 5917
+    },
+    "qa/native_bilinear_reference_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_scale_control_1zla68yg/native_bilinear_reference_qa.json",
+      "sha256": "f205d3eaac0150d1f074ad34e4e8af148fbf165631353dbe69f885cf207bf45b",
+      "bytes": 5377
+    },
+    "qa/pilot_extraction_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_fixed_batch_staging/pilot_extraction_qa.json",
+      "sha256": "9c879ddf7acdad5cc1f32be309b21d307575a2a18d410d34617753fa9d2b411a",
+      "bytes": 2396
+    },
+    "qa/pilot_seam_edge_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_pilot_seam_edge_gn4y2wf_/pilot_seam_edge_qa.json",
+      "sha256": "246022e43a12cc2af78328d6b2071ff4ae1f8580201fffb427510adf5c7492e5",
+      "bytes": 1570
+    },
+    "qa/pilot_mask_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_fixed_masked_staging/pilot_mask_qa.json",
+      "sha256": "64cb5397ed33b373180f69d2ae92dd35473c384d65a3073d20f57b717a6e7c71",
+      "bytes": 596
+    },
+    "provenance/source_vrt_snapshot.vrt": {
+      "original_project_path": "results/diagnostics/step4_2_hrdem2m_boundary_virtual.vrt",
+      "sha256": "a2e81830c68a49ed5cfc896f7d30e84b6e5b1e226345c499c1996b1d4e2228ee",
+      "bytes": 2239
+    },
+    "provenance/footprint_snapshot.gpkg": {
+      "original_project_path": "data/processed/elevation/hrdem_2m_dtm_coverage_highway99_corrected.gpkg",
+      "sha256": "f49fa31dfc9ff0e78c504897465a1b50348939f256950c092d474024c979d2e2",
+      "bytes": 1916928
+    },
+    "provenance/production_plan_qa.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_scale_control_1zla68yg/production_plan_qa.json",
+      "sha256": "ff1a248ede1d3dfcff918098be2e531c3c81112ffcc66697385c4c940421c6f7",
+      "bytes": 30723
+    },
+    "provenance/warp_commands.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_scale_control_1zla68yg/warp_commands.json",
+      "sha256": "5e2bf5ea8b84259cc3d96109cd75d87ec03a62df58c191ccab74bf596b76d605",
+      "bytes": 10831
+    },
+    "provenance/extraction_configuration.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_fixed_batch_staging/configuration.json",
+      "sha256": "4588b7a966f0cdf72a468eafed826f47494c4722708bea62224c3d126cfea845",
+      "bytes": 2751
+    },
+    "provenance/mask_configuration.json": {
+      "original_project_path": "results/diagnostics/hrdem2m_fixed_masked_staging/configuration.json",
+      "sha256": "312490ba7f3378459c7d5257e3669fd11a381bf94e2ab5561d04fc42c44e5d46",
+      "bytes": 773
+    },
+    "provenance/pilot_reference/pilot_2_3_narrow_fixed.tif": {
+      "original_project_path": "results/diagnostics/hrdem2m_scale_control_1zla68yg/pilot_2_3_narrow_fixed.tif",
+      "sha256": "a0918204906e5fee27270ade715c6c6c301a432a93459bdabeb991ab555673f3",
+      "bytes": 11262
+    },
+    "provenance/pilot_reference/pilot_2_4_narrow_fixed.tif": {
+      "original_project_path": "results/diagnostics/hrdem2m_scale_control_1zla68yg/pilot_2_4_narrow_fixed.tif",
+      "sha256": "ebdcf86047e19c6e53beb655212a1d0dbab254c1cc06cae6adbdd0f197492e83",
+      "bytes": 11721
+    },
+    "provenance/pilot_reference/pilot_cross_boundary_narrow_fixed.tif": {
+      "original_project_path": "results/diagnostics/hrdem2m_scale_control_1zla68yg/pilot_cross_boundary_narrow_fixed.tif",
+      "sha256": "561fed1a54f2859d4914abf84a52fb426f88e28b0127f50eec1110728f417398",
+      "bytes": 11035
+    }
+  },
+  "readme_sha256": "921e13d7eae5d68cc8c0f7b3d2c97d73b8ebfd47757dddf0b9fe1ad902979577",
+  "published_at_utc": "2026-11-26T07:32:38.959687+00:00",
+  "publication_qa_passed": true,
+  "existing_1m_unchanged": true
+}

@@ -1,0 +1,62 @@
+{
+  "configuration_sha256": "6e3e412e3d81794d69ce0ab7257445ae8a966ccbd0c6c9054cfa3e25442da30f",
+  "tests": [
+    {
+      "test": "north_seam",
+      "expected_valid": 30000,
+      "actual_valid": 30000,
+      "common_valid": 30000,
+      "validity_mismatch": 0,
+      "max_abs_diff_m": 0.0,
+      "over_0_001m": 0,
+      "exact_equal": true,
+      "passed": true
+    },
+    {
+      "test": "east_seam_2_4",
+      "expected_valid": 30000,
+      "actual_valid": 30000,
+      "common_valid": 30000,
+      "validity_mismatch": 0,
+      "max_abs_diff_m": 0.0,
+      "over_0_001m": 0,
+      "exact_equal": true,
+      "passed": true
+    },
+    {
+      "test": "east_seam_cross_mosaic",
+      "expected_valid": 30000,
+      "actual_valid": 30000,
+      "common_valid": 30000,
+      "validity_mismatch": 0,
+      "max_abs_diff_m": 0.0,
+      "over_0_001m": 0,
+      "exact_equal": true,
+      "passed": true
+    },
+    {
+      "test": "southern_edge_halo",
+      "expected_valid": 34,
+      "actual_valid": 34,
+      "common_valid": 34,
+      "validity_mismatch": 0,
+      "max_abs_diff_m": 0.0,
+      "over_0_001m": 0,
+      "exact_equal": true,
+      "passed": true
+    },
+    {
+      "test": "northern_edge_halo",
+      "expected_valid": 226194,
+      "actual_valid": 226194,
+      "common_valid": 226194,
+      "validity_mismatch": 0,
+      "max_abs_diff_m": 0.0,
+      "over_0_001m": 0,
+      "exact_equal": true,
+      "passed": true
+    }
+  ],
+  "staging_unchanged": true,
+  "pilot_seam_edge_qa_passed": true
+}

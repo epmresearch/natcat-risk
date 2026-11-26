@@ -1,0 +1,2322 @@
+{
+  "summary": {
+    "extraction_configuration_sha256": "6e3e412e3d81794d69ce0ab7257445ae8a966ccbd0c6c9054cfa3e25442da30f",
+    "mask_configuration_sha256": "d7e7d5608bc5a0b3ad0685ffe157cc5029561eed470845262f59d706d154e3c5",
+    "negative_pixels": 5045476,
+    "negative_tiles": 119,
+    "negative_counts_below_m": {
+      "-1": 4633262,
+      "-5": 606,
+      "-10": 415,
+      "-20": 119
+    },
+    "minimum": {
+      "tile": [
+        489000,
+        5506000
+      ],
+      "negative_pixels": 3496,
+      "counts_below_m": {
+        "-1": 570,
+        "-5": 448,
+        "-10": 315,
+        "-20": 119
+      },
+      "minimum_elevation_m": -29.66854476928711,
+      "minimum_center_epsg26910": [
+        489111,
+        5506031
+      ]
+    },
+    "deep_negative_sites": 2,
+    "deep_negative_pixels": 606,
+    "deep_negative_strict_pixels": 606,
+    "deep_negative_without_strict_support": 0,
+    "all_audits_over_0_001m": 0,
+    "shallow_control_regions": {
+      "2_4": [
+        487000,
+        5506000
+      ],
+      "2_3": [
+        482000,
+        5481000
+      ]
+    },
+    "staging_unchanged": true,
+    "negative_source_qa_passed": true,
+    "absolute_vertical_accuracy_validated": false,
+    "negative_source_physical_validity_resolved": false,
+    "final_dem_published": false
+  },
+  "negative_tiles": [
+    {
+      "tile": [
+        488000,
+        5507000
+      ],
+      "negative_pixels": 6,
+      "counts_below_m": {
+        "-1": 0,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -0.025495169684290886,
+      "minimum_center_epsg26910": [
+        488223,
+        5507005
+      ]
+    },
+    {
+      "tile": [
+        487000,
+        5506000
+      ],
+      "negative_pixels": 5574,
+      "counts_below_m": {
+        "-1": 730,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.1676167249679565,
+      "minimum_center_epsg26910": [
+        487797,
+        5506025
+      ]
+    },
+    {
+      "tile": [
+        488000,
+        5506000
+      ],
+      "negative_pixels": 10979,
+      "counts_below_m": {
+        "-1": 235,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.0678449869155884,
+      "minimum_center_epsg26910": [
+        488013,
+        5506043
+      ]
+    },
+    {
+      "tile": [
+        489000,
+        5506000
+      ],
+      "negative_pixels": 3496,
+      "counts_below_m": {
+        "-1": 570,
+        "-5": 448,
+        "-10": 315,
+        "-20": 119
+      },
+      "minimum_elevation_m": -29.66854476928711,
+      "minimum_center_epsg26910": [
+        489111,
+        5506031
+      ]
+    },
+    {
+      "tile": [
+        486000,
+        5505000
+      ],
+      "negative_pixels": 42184,
+      "counts_below_m": {
+        "-1": 255,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.1347249746322632,
+      "minimum_center_epsg26910": [
+        486607,
+        5505021
+      ]
+    },
+    {
+      "tile": [
+        487000,
+        5505000
+      ],
+      "negative_pixels": 56697,
+      "counts_below_m": {
+        "-1": 23747,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.916062831878662,
+      "minimum_center_epsg26910": [
+        487757,
+        5505025
+      ]
+    },
+    {
+      "tile": [
+        488000,
+        5505000
+      ],
+      "negative_pixels": 1698,
+      "counts_below_m": {
+        "-1": 1,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.02122962474823,
+      "minimum_center_epsg26910": [
+        488597,
+        5505027
+      ]
+    },
+    {
+      "tile": [
+        489000,
+        5505000
+      ],
+      "negative_pixels": 24102,
+      "counts_below_m": {
+        "-1": 13427,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.995223879814148,
+      "minimum_center_epsg26910": [
+        489447,
+        5505409
+      ]
+    },
+    {
+      "tile": [
+        486000,
+        5504000
+      ],
+      "negative_pixels": 66141,
+      "counts_below_m": {
+        "-1": 30499,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.4841951131820679,
+      "minimum_center_epsg26910": [
+        486903,
+        5504001
+      ]
+    },
+    {
+      "tile": [
+        487000,
+        5504000
+      ],
+      "negative_pixels": 113693,
+      "counts_below_m": {
+        "-1": 89545,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.063897132873535,
+      "minimum_center_epsg26910": [
+        487105,
+        5504159
+      ]
+    },
+    {
+      "tile": [
+        488000,
+        5504000
+      ],
+      "negative_pixels": 60616,
+      "counts_below_m": {
+        "-1": 50626,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.0958049297332764,
+      "minimum_center_epsg26910": [
+        488389,
+        5504429
+      ]
+    },
+    {
+      "tile": [
+        489000,
+        5504000
+      ],
+      "negative_pixels": 8471,
+      "counts_below_m": {
+        "-1": 7835,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.9266821146011353,
+      "minimum_center_epsg26910": [
+        489057,
+        5504911
+      ]
+    },
+    {
+      "tile": [
+        484000,
+        5503000
+      ],
+      "negative_pixels": 1893,
+      "counts_below_m": {
+        "-1": 1800,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.018033742904663,
+      "minimum_center_epsg26910": [
+        484951,
+        5503045
+      ]
+    },
+    {
+      "tile": [
+        485000,
+        5503000
+      ],
+      "negative_pixels": 39112,
+      "counts_below_m": {
+        "-1": 38202,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.111910820007324,
+      "minimum_center_epsg26910": [
+        485843,
+        5503209
+      ]
+    },
+    {
+      "tile": [
+        486000,
+        5503000
+      ],
+      "negative_pixels": 95886,
+      "counts_below_m": {
+        "-1": 80192,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.0910885334014893,
+      "minimum_center_epsg26910": [
+        486969,
+        5503125
+      ]
+    },
+    {
+      "tile": [
+        487000,
+        5503000
+      ],
+      "negative_pixels": 192902,
+      "counts_below_m": {
+        "-1": 177976,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.2361233234405518,
+      "minimum_center_epsg26910": [
+        487335,
+        5503021
+      ]
+    },
+    {
+      "tile": [
+        488000,
+        5503000
+      ],
+      "negative_pixels": 123889,
+      "counts_below_m": {
+        "-1": 112354,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.009037971496582,
+      "minimum_center_epsg26910": [
+        488083,
+        5503977
+      ]
+    },
+    {
+      "tile": [
+        489000,
+        5503000
+      ],
+      "negative_pixels": 327,
+      "counts_below_m": {
+        "-1": 0,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -0.5000800490379333,
+      "minimum_center_epsg26910": [
+        489001,
+        5503905
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5502000
+      ],
+      "negative_pixels": 1512,
+      "counts_below_m": {
+        "-1": 1158,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.010918140411377,
+      "minimum_center_epsg26910": [
+        483761,
+        5502379
+      ]
+    },
+    {
+      "tile": [
+        484000,
+        5502000
+      ],
+      "negative_pixels": 21686,
+      "counts_below_m": {
+        "-1": 21005,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.0393881797790527,
+      "minimum_center_epsg26910": [
+        484197,
+        5502709
+      ]
+    },
+    {
+      "tile": [
+        487000,
+        5502000
+      ],
+      "negative_pixels": 112787,
+      "counts_below_m": {
+        "-1": 112542,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.2940807342529297,
+      "minimum_center_epsg26910": [
+        487667,
+        5502905
+      ]
+    },
+    {
+      "tile": [
+        488000,
+        5502000
+      ],
+      "negative_pixels": 77427,
+      "counts_below_m": {
+        "-1": 76048,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.0024378299713135,
+      "minimum_center_epsg26910": [
+        488497,
+        5502907
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5501000
+      ],
+      "negative_pixels": 2934,
+      "counts_below_m": {
+        "-1": 1549,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.292912483215332,
+      "minimum_center_epsg26910": [
+        481783,
+        5501421
+      ]
+    },
+    {
+      "tile": [
+        486000,
+        5501000
+      ],
+      "negative_pixels": 616,
+      "counts_below_m": {
+        "-1": 616,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.2014222145080566,
+      "minimum_center_epsg26910": [
+        486999,
+        5501393
+      ]
+    },
+    {
+      "tile": [
+        487000,
+        5501000
+      ],
+      "negative_pixels": 118371,
+      "counts_below_m": {
+        "-1": 116087,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.2051196098327637,
+      "minimum_center_epsg26910": [
+        487035,
+        5501453
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5500000
+      ],
+      "negative_pixels": 179,
+      "counts_below_m": {
+        "-1": 168,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.133322834968567,
+      "minimum_center_epsg26910": [
+        483997,
+        5500025
+      ]
+    },
+    {
+      "tile": [
+        484000,
+        5500000
+      ],
+      "negative_pixels": 49766,
+      "counts_below_m": {
+        "-1": 47837,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.067199468612671,
+      "minimum_center_epsg26910": [
+        484029,
+        5500009
+      ]
+    },
+    {
+      "tile": [
+        485000,
+        5500000
+      ],
+      "negative_pixels": 87119,
+      "counts_below_m": {
+        "-1": 85381,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.1055331230163574,
+      "minimum_center_epsg26910": [
+        485979,
+        5500903
+      ]
+    },
+    {
+      "tile": [
+        486000,
+        5500000
+      ],
+      "negative_pixels": 85411,
+      "counts_below_m": {
+        "-1": 83967,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.164384365081787,
+      "minimum_center_epsg26910": [
+        486527,
+        5500981
+      ]
+    },
+    {
+      "tile": [
+        487000,
+        5500000
+      ],
+      "negative_pixels": 4499,
+      "counts_below_m": {
+        "-1": 4176,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.0484042167663574,
+      "minimum_center_epsg26910": [
+        487059,
+        5500975
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5499000
+      ],
+      "negative_pixels": 50138,
+      "counts_below_m": {
+        "-1": 29510,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.0981826782226562,
+      "minimum_center_epsg26910": [
+        483877,
+        5499289
+      ]
+    },
+    {
+      "tile": [
+        484000,
+        5499000
+      ],
+      "negative_pixels": 9755,
+      "counts_below_m": {
+        "-1": 9326,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.0588879585266113,
+      "minimum_center_epsg26910": [
+        484089,
+        5499943
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5498000
+      ],
+      "negative_pixels": 355,
+      "counts_below_m": {
+        "-1": 236,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.0593905448913574,
+      "minimum_center_epsg26910": [
+        483999,
+        5498903
+      ]
+    },
+    {
+      "tile": [
+        484000,
+        5498000
+      ],
+      "negative_pixels": 55563,
+      "counts_below_m": {
+        "-1": 53935,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.252139091491699,
+      "minimum_center_epsg26910": [
+        484411,
+        5498329
+      ]
+    },
+    {
+      "tile": [
+        484000,
+        5497000
+      ],
+      "negative_pixels": 129501,
+      "counts_below_m": {
+        "-1": 128421,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.2260661125183105,
+      "minimum_center_epsg26910": [
+        484475,
+        5497091
+      ]
+    },
+    {
+      "tile": [
+        485000,
+        5497000
+      ],
+      "negative_pixels": 1625,
+      "counts_below_m": {
+        "-1": 815,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.1733558177948,
+      "minimum_center_epsg26910": [
+        485001,
+        5497255
+      ]
+    },
+    {
+      "tile": [
+        484000,
+        5496000
+      ],
+      "negative_pixels": 135967,
+      "counts_below_m": {
+        "-1": 135465,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.225543975830078,
+      "minimum_center_epsg26910": [
+        484529,
+        5496811
+      ]
+    },
+    {
+      "tile": [
+        485000,
+        5496000
+      ],
+      "negative_pixels": 11805,
+      "counts_below_m": {
+        "-1": 11099,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.141716718673706,
+      "minimum_center_epsg26910": [
+        485121,
+        5496463
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5495000
+      ],
+      "negative_pixels": 292,
+      "counts_below_m": {
+        "-1": 292,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.1156630516052246,
+      "minimum_center_epsg26910": [
+        483999,
+        5495037
+      ]
+    },
+    {
+      "tile": [
+        484000,
+        5495000
+      ],
+      "negative_pixels": 108582,
+      "counts_below_m": {
+        "-1": 105912,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.2193243503570557,
+      "minimum_center_epsg26910": [
+        484173,
+        5495457
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5494000
+      ],
+      "negative_pixels": 100635,
+      "counts_below_m": {
+        "-1": 100073,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.27422833442688,
+      "minimum_center_epsg26910": [
+        483551,
+        5494207
+      ]
+    },
+    {
+      "tile": [
+        484000,
+        5494000
+      ],
+      "negative_pixels": 23000,
+      "counts_below_m": {
+        "-1": 22391,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.222127676010132,
+      "minimum_center_epsg26910": [
+        484065,
+        5494353
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5493000
+      ],
+      "negative_pixels": 155184,
+      "counts_below_m": {
+        "-1": 154430,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.2969698905944824,
+      "minimum_center_epsg26910": [
+        483329,
+        5493353
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5492000
+      ],
+      "negative_pixels": 332,
+      "counts_below_m": {
+        "-1": 332,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.186434745788574,
+      "minimum_center_epsg26910": [
+        482999,
+        5492079
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5492000
+      ],
+      "negative_pixels": 169188,
+      "counts_below_m": {
+        "-1": 160744,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.276360273361206,
+      "minimum_center_epsg26910": [
+        483127,
+        5492611
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5491000
+      ],
+      "negative_pixels": 502,
+      "counts_below_m": {
+        "-1": 502,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.1794939041137695,
+      "minimum_center_epsg26910": [
+        482999,
+        5491769
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5491000
+      ],
+      "negative_pixels": 118454,
+      "counts_below_m": {
+        "-1": 116509,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.194690227508545,
+      "minimum_center_epsg26910": [
+        483051,
+        5491987
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5490000
+      ],
+      "negative_pixels": 700,
+      "counts_below_m": {
+        "-1": 694,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.131150007247925,
+      "minimum_center_epsg26910": [
+        482999,
+        5490969
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5490000
+      ],
+      "negative_pixels": 45625,
+      "counts_below_m": {
+        "-1": 44546,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.1642613410949707,
+      "minimum_center_epsg26910": [
+        483065,
+        5490311
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5489000
+      ],
+      "negative_pixels": 143187,
+      "counts_below_m": {
+        "-1": 139088,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.1907906532287598,
+      "minimum_center_epsg26910": [
+        482185,
+        5489189
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5489000
+      ],
+      "negative_pixels": 7835,
+      "counts_below_m": {
+        "-1": 6394,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.0631942749023438,
+      "minimum_center_epsg26910": [
+        483043,
+        5489807
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5488000
+      ],
+      "negative_pixels": 598,
+      "counts_below_m": {
+        "-1": 559,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.067598581314087,
+      "minimum_center_epsg26910": [
+        481999,
+        5488007
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5488000
+      ],
+      "negative_pixels": 123441,
+      "counts_below_m": {
+        "-1": 116655,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.1670663356781006,
+      "minimum_center_epsg26910": [
+        482105,
+        5488983
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5487000
+      ],
+      "negative_pixels": 118695,
+      "counts_below_m": {
+        "-1": 112172,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.0901010036468506,
+      "minimum_center_epsg26910": [
+        481697,
+        5487275
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5487000
+      ],
+      "negative_pixels": 9867,
+      "counts_below_m": {
+        "-1": 9530,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.091157913208008,
+      "minimum_center_epsg26910": [
+        482141,
+        5487999
+      ]
+    },
+    {
+      "tile": [
+        480000,
+        5486000
+      ],
+      "negative_pixels": 387,
+      "counts_below_m": {
+        "-1": 387,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.1181344985961914,
+      "minimum_center_epsg26910": [
+        480999,
+        5486449
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5486000
+      ],
+      "negative_pixels": 93468,
+      "counts_below_m": {
+        "-1": 92437,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.104337692260742,
+      "minimum_center_epsg26910": [
+        481001,
+        5486449
+      ]
+    },
+    {
+      "tile": [
+        480000,
+        5485000
+      ],
+      "negative_pixels": 70586,
+      "counts_below_m": {
+        "-1": 70145,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.137601375579834,
+      "minimum_center_epsg26910": [
+        480999,
+        5485755
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5485000
+      ],
+      "negative_pixels": 16642,
+      "counts_below_m": {
+        "-1": 16059,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.118227958679199,
+      "minimum_center_epsg26910": [
+        481101,
+        5485849
+      ]
+    },
+    {
+      "tile": [
+        480000,
+        5484000
+      ],
+      "negative_pixels": 669,
+      "counts_below_m": {
+        "-1": 667,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.166712522506714,
+      "minimum_center_epsg26910": [
+        480999,
+        5484439
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5484000
+      ],
+      "negative_pixels": 16580,
+      "counts_below_m": {
+        "-1": 15883,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.184344530105591,
+      "minimum_center_epsg26910": [
+        481027,
+        5484459
+      ]
+    },
+    {
+      "tile": [
+        480000,
+        5483000
+      ],
+      "negative_pixels": 17515,
+      "counts_below_m": {
+        "-1": 17515,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.173086404800415,
+      "minimum_center_epsg26910": [
+        480999,
+        5483873
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5483000
+      ],
+      "negative_pixels": 137116,
+      "counts_below_m": {
+        "-1": 136055,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.4170000553131104,
+      "minimum_center_epsg26910": [
+        481183,
+        5483477
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5482000
+      ],
+      "negative_pixels": 99435,
+      "counts_below_m": {
+        "-1": 95477,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.2618367671966553,
+      "minimum_center_epsg26910": [
+        481507,
+        5482999
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5482000
+      ],
+      "negative_pixels": 14041,
+      "counts_below_m": {
+        "-1": 13543,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.206845760345459,
+      "minimum_center_epsg26910": [
+        482025,
+        5482031
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5481000
+      ],
+      "negative_pixels": 57292,
+      "counts_below_m": {
+        "-1": 55992,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.2558231353759766,
+      "minimum_center_epsg26910": [
+        481909,
+        5481089
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5481000
+      ],
+      "negative_pixels": 7280,
+      "counts_below_m": {
+        "-1": 7099,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.262596368789673,
+      "minimum_center_epsg26910": [
+        482009,
+        5481079
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5480000
+      ],
+      "negative_pixels": 295,
+      "counts_below_m": {
+        "-1": 295,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.245326519012451,
+      "minimum_center_epsg26910": [
+        481909,
+        5480999
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5480000
+      ],
+      "negative_pixels": 64446,
+      "counts_below_m": {
+        "-1": 63321,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.259002685546875,
+      "minimum_center_epsg26910": [
+        482317,
+        5480491
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5479000
+      ],
+      "negative_pixels": 72732,
+      "counts_below_m": {
+        "-1": 71013,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.3973686695098877,
+      "minimum_center_epsg26910": [
+        482553,
+        5479203
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5478000
+      ],
+      "negative_pixels": 76225,
+      "counts_below_m": {
+        "-1": 74643,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.2221198081970215,
+      "minimum_center_epsg26910": [
+        482597,
+        5478061
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5477000
+      ],
+      "negative_pixels": 39550,
+      "counts_below_m": {
+        "-1": 38694,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.2862069606781006,
+      "minimum_center_epsg26910": [
+        482627,
+        5477473
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5476000
+      ],
+      "negative_pixels": 16207,
+      "counts_below_m": {
+        "-1": 15522,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.2638866901397705,
+      "minimum_center_epsg26910": [
+        482661,
+        5476809
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5475000
+      ],
+      "negative_pixels": 8299,
+      "counts_below_m": {
+        "-1": 7800,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.270242691040039,
+      "minimum_center_epsg26910": [
+        482861,
+        5475753
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5475000
+      ],
+      "negative_pixels": 1175,
+      "counts_below_m": {
+        "-1": 1049,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.9933151006698608,
+      "minimum_center_epsg26910": [
+        483001,
+        5475165
+      ]
+    },
+    {
+      "tile": [
+        477000,
+        5474000
+      ],
+      "negative_pixels": 38479,
+      "counts_below_m": {
+        "-1": 38403,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.4569690227508545,
+      "minimum_center_epsg26910": [
+        477887,
+        5474019
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5474000
+      ],
+      "negative_pixels": 27159,
+      "counts_below_m": {
+        "-1": 26760,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.8924484252929688,
+      "minimum_center_epsg26910": [
+        482929,
+        5474463
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5474000
+      ],
+      "negative_pixels": 7576,
+      "counts_below_m": {
+        "-1": 7137,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.249671697616577,
+      "minimum_center_epsg26910": [
+        483015,
+        5474935
+      ]
+    },
+    {
+      "tile": [
+        477000,
+        5473000
+      ],
+      "negative_pixels": 154111,
+      "counts_below_m": {
+        "-1": 152226,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.4546594619750977,
+      "minimum_center_epsg26910": [
+        477903,
+        5473565
+      ]
+    },
+    {
+      "tile": [
+        478000,
+        5473000
+      ],
+      "negative_pixels": 195,
+      "counts_below_m": {
+        "-1": 195,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.3926384449005127,
+      "minimum_center_epsg26910": [
+        478001,
+        5473719
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5473000
+      ],
+      "negative_pixels": 55196,
+      "counts_below_m": {
+        "-1": 53656,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.8721438646316528,
+      "minimum_center_epsg26910": [
+        482985,
+        5473991
+      ]
+    },
+    {
+      "tile": [
+        476000,
+        5472000
+      ],
+      "negative_pixels": 849,
+      "counts_below_m": {
+        "-1": 745,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.375202178955078,
+      "minimum_center_epsg26910": [
+        476965,
+        5472029
+      ]
+    },
+    {
+      "tile": [
+        477000,
+        5472000
+      ],
+      "negative_pixels": 154051,
+      "counts_below_m": {
+        "-1": 152936,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.4439635276794434,
+      "minimum_center_epsg26910": [
+        477873,
+        5472429
+      ]
+    },
+    {
+      "tile": [
+        478000,
+        5472000
+      ],
+      "negative_pixels": 210,
+      "counts_below_m": {
+        "-1": 210,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.4448559284210205,
+      "minimum_center_epsg26910": [
+        478001,
+        5472997
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5472000
+      ],
+      "negative_pixels": 8568,
+      "counts_below_m": {
+        "-1": 8227,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.7869929075241089,
+      "minimum_center_epsg26910": [
+        481867,
+        5472033
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5472000
+      ],
+      "negative_pixels": 35405,
+      "counts_below_m": {
+        "-1": 33816,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.8160827159881592,
+      "minimum_center_epsg26910": [
+        482361,
+        5472881
+      ]
+    },
+    {
+      "tile": [
+        476000,
+        5471000
+      ],
+      "negative_pixels": 81178,
+      "counts_below_m": {
+        "-1": 79402,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.4150002002716064,
+      "minimum_center_epsg26910": [
+        476997,
+        5471541
+      ]
+    },
+    {
+      "tile": [
+        477000,
+        5471000
+      ],
+      "negative_pixels": 535,
+      "counts_below_m": {
+        "-1": 535,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.4150002002716064,
+      "minimum_center_epsg26910": [
+        477001,
+        5471541
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5471000
+      ],
+      "negative_pixels": 19689,
+      "counts_below_m": {
+        "-1": 18917,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.840493083000183,
+      "minimum_center_epsg26910": [
+        481693,
+        5471851
+      ]
+    },
+    {
+      "tile": [
+        475000,
+        5470000
+      ],
+      "negative_pixels": 21997,
+      "counts_below_m": {
+        "-1": 20006,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.369290590286255,
+      "minimum_center_epsg26910": [
+        475931,
+        5470033
+      ]
+    },
+    {
+      "tile": [
+        476000,
+        5470000
+      ],
+      "negative_pixels": 139723,
+      "counts_below_m": {
+        "-1": 138246,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.4358537197113037,
+      "minimum_center_epsg26910": [
+        476897,
+        5470903
+      ]
+    },
+    {
+      "tile": [
+        477000,
+        5470000
+      ],
+      "negative_pixels": 216,
+      "counts_below_m": {
+        "-1": 216,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.3846216201782227,
+      "minimum_center_epsg26910": [
+        477001,
+        5470683
+      ]
+    },
+    {
+      "tile": [
+        480000,
+        5470000
+      ],
+      "negative_pixels": 2917,
+      "counts_below_m": {
+        "-1": 2536,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.7766289710998535,
+      "minimum_center_epsg26910": [
+        480813,
+        5470127
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5470000
+      ],
+      "negative_pixels": 8582,
+      "counts_below_m": {
+        "-1": 7825,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.7806458473205566,
+      "minimum_center_epsg26910": [
+        481243,
+        5470911
+      ]
+    },
+    {
+      "tile": [
+        475000,
+        5469000
+      ],
+      "negative_pixels": 16466,
+      "counts_below_m": {
+        "-1": 14474,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.386883020401001,
+      "minimum_center_epsg26910": [
+        475853,
+        5469963
+      ]
+    },
+    {
+      "tile": [
+        476000,
+        5469000
+      ],
+      "negative_pixels": 146889,
+      "counts_below_m": {
+        "-1": 143920,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.4037973880767822,
+      "minimum_center_epsg26910": [
+        476639,
+        5469613
+      ]
+    },
+    {
+      "tile": [
+        477000,
+        5469000
+      ],
+      "negative_pixels": 88,
+      "counts_below_m": {
+        "-1": 88,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.340740203857422,
+      "minimum_center_epsg26910": [
+        477001,
+        5469923
+      ]
+    },
+    {
+      "tile": [
+        478000,
+        5469000
+      ],
+      "negative_pixels": 4174,
+      "counts_below_m": {
+        "-1": 1351,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.850833773612976,
+      "minimum_center_epsg26910": [
+        478891,
+        5469351
+      ]
+    },
+    {
+      "tile": [
+        479000,
+        5469000
+      ],
+      "negative_pixels": 26367,
+      "counts_below_m": {
+        "-1": 17508,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.824486494064331,
+      "minimum_center_epsg26910": [
+        479987,
+        5469809
+      ]
+    },
+    {
+      "tile": [
+        480000,
+        5469000
+      ],
+      "negative_pixels": 30378,
+      "counts_below_m": {
+        "-1": 23105,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.8493579626083374,
+      "minimum_center_epsg26910": [
+        480121,
+        5469739
+      ]
+    },
+    {
+      "tile": [
+        475000,
+        5468000
+      ],
+      "negative_pixels": 31490,
+      "counts_below_m": {
+        "-1": 30623,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.3761208057403564,
+      "minimum_center_epsg26910": [
+        475971,
+        5468677
+      ]
+    },
+    {
+      "tile": [
+        476000,
+        5468000
+      ],
+      "negative_pixels": 107969,
+      "counts_below_m": {
+        "-1": 107690,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.417515277862549,
+      "minimum_center_epsg26910": [
+        476341,
+        5468263
+      ]
+    },
+    {
+      "tile": [
+        478000,
+        5468000
+      ],
+      "negative_pixels": 17254,
+      "counts_below_m": {
+        "-1": 15642,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.9659173488616943,
+      "minimum_center_epsg26910": [
+        478871,
+        5468065
+      ]
+    },
+    {
+      "tile": [
+        479000,
+        5468000
+      ],
+      "negative_pixels": 43089,
+      "counts_below_m": {
+        "-1": 41809,
+        "-5": 158,
+        "-10": 100,
+        "-20": 0
+      },
+      "minimum_elevation_m": -19.36311149597168,
+      "minimum_center_epsg26910": [
+        479379,
+        5468391
+      ]
+    },
+    {
+      "tile": [
+        475000,
+        5467000
+      ],
+      "negative_pixels": 40712,
+      "counts_below_m": {
+        "-1": 40125,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.4431655406951904,
+      "minimum_center_epsg26910": [
+        475727,
+        5467489
+      ]
+    },
+    {
+      "tile": [
+        476000,
+        5467000
+      ],
+      "negative_pixels": 170,
+      "counts_below_m": {
+        "-1": 170,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -2.3475148677825928,
+      "minimum_center_epsg26910": [
+        476081,
+        5467999
+      ]
+    },
+    {
+      "tile": [
+        478000,
+        5467000
+      ],
+      "negative_pixels": 14108,
+      "counts_below_m": {
+        "-1": 14017,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.9616129398345947,
+      "minimum_center_epsg26910": [
+        478709,
+        5467827
+      ]
+    },
+    {
+      "tile": [
+        479000,
+        5467000
+      ],
+      "negative_pixels": 8456,
+      "counts_below_m": {
+        "-1": 7290,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.919619083404541,
+      "minimum_center_epsg26910": [
+        479397,
+        5467549
+      ]
+    },
+    {
+      "tile": [
+        480000,
+        5467000
+      ],
+      "negative_pixels": 2948,
+      "counts_below_m": {
+        "-1": 0,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -0.8812190294265747,
+      "minimum_center_epsg26910": [
+        480469,
+        5467269
+      ]
+    },
+    {
+      "tile": [
+        479000,
+        5466000
+      ],
+      "negative_pixels": 131,
+      "counts_below_m": {
+        "-1": 8,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.458871603012085,
+      "minimum_center_epsg26910": [
+        479999,
+        5466631
+      ]
+    },
+    {
+      "tile": [
+        480000,
+        5466000
+      ],
+      "negative_pixels": 7414,
+      "counts_below_m": {
+        "-1": 1694,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -1.8591675758361816,
+      "minimum_center_epsg26910": [
+        480463,
+        5466425
+      ]
+    },
+    {
+      "tile": [
+        480000,
+        5465000
+      ],
+      "negative_pixels": 880,
+      "counts_below_m": {
+        "-1": 0,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -0.05372770503163338,
+      "minimum_center_epsg26910": [
+        480585,
+        5465763
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5465000
+      ],
+      "negative_pixels": 1456,
+      "counts_below_m": {
+        "-1": 0,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -0.07964466512203217,
+      "minimum_center_epsg26910": [
+        481927,
+        5465309
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5465000
+      ],
+      "negative_pixels": 27702,
+      "counts_below_m": {
+        "-1": 0,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -0.08068004995584488,
+      "minimum_center_epsg26910": [
+        482185,
+        5465031
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5465000
+      ],
+      "negative_pixels": 4327,
+      "counts_below_m": {
+        "-1": 0,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -0.02688673697412014,
+      "minimum_center_epsg26910": [
+        483001,
+        5465177
+      ]
+    },
+    {
+      "tile": [
+        480000,
+        5464000
+      ],
+      "negative_pixels": 5,
+      "counts_below_m": {
+        "-1": 0,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -0.012858198024332523,
+      "minimum_center_epsg26910": [
+        480999,
+        5464477
+      ]
+    },
+    {
+      "tile": [
+        481000,
+        5464000
+      ],
+      "negative_pixels": 15242,
+      "counts_below_m": {
+        "-1": 0,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -0.05616344138979912,
+      "minimum_center_epsg26910": [
+        481159,
+        5464461
+      ]
+    },
+    {
+      "tile": [
+        482000,
+        5464000
+      ],
+      "negative_pixels": 330,
+      "counts_below_m": {
+        "-1": 0,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -0.07990506291389465,
+      "minimum_center_epsg26910": [
+        482171,
+        5464999
+      ]
+    },
+    {
+      "tile": [
+        483000,
+        5464000
+      ],
+      "negative_pixels": 56,
+      "counts_below_m": {
+        "-1": 0,
+        "-5": 0,
+        "-10": 0,
+        "-20": 0
+      },
+      "minimum_elevation_m": -0.025545494630932808,
+      "minimum_center_epsg26910": [
+        483001,
+        5464999
+      ]
+    }
+  ],
+  "source_audits": [
+    {
+      "tile": [
+        487000,
+        5506000
+      ],
+      "kind": "shallow_control_2_4",
+      "selected_pixels": 256,
+      "strict_pixels": 256,
+      "without_strict_support": 0,
+      "source_regions": [
+        "2_4"
+      ],
+      "source_window": [
+        19291,
+        239900,
+        415,
+        188
+      ],
+      "direct_source_vrt_exact": true,
+      "maximum_abs_difference_m": 5.685571768943021e-08,
+      "over_0_001m": 0,
+      "minimum": {
+        "value_m": -1.1297575235366821,
+        "center_epsg26910": [
+          487831,
+          5506001
+        ],
+        "native_reference_m": -1.1297574955890277
+      },
+      "numerical_fidelity_passed": true
+    },
+    {
+      "tile": [
+        489000,
+        5506000
+      ],
+      "kind": "deep_negative",
+      "selected_pixels": 448,
+      "strict_pixels": 448,
+      "without_strict_support": 0,
+      "source_regions": [
+        "2_4"
+      ],
+      "source_window": [
+        20160,
+        240303,
+        24,
+        28
+      ],
+      "direct_source_vrt_exact": true,
+      "maximum_abs_difference_m": 9.532795175459796e-07,
+      "over_0_001m": 0,
+      "minimum": {
+        "value_m": -29.66854476928711,
+        "center_epsg26910": [
+          489111,
+          5506031
+        ],
+        "native_reference_m": -29.668544569365576
+      },
+      "numerical_fidelity_passed": true
+    },
+    {
+      "tile": [
+        482000,
+        5481000
+      ],
+      "kind": "shallow_control_2_3",
+      "selected_pixels": 255,
+      "strict_pixels": 255,
+      "without_strict_support": 0,
+      "source_regions": [
+        "2_3"
+      ],
+      "source_window": [
+        11635,
+        250056,
+        131,
+        108
+      ],
+      "direct_source_vrt_exact": true,
+      "maximum_abs_difference_m": 1.1874379124421353e-07,
+      "over_0_001m": 0,
+      "minimum": {
+        "value_m": -2.2616894245147705,
+        "center_epsg26910": [
+          482009,
+          5481077
+        ],
+        "native_reference_m": -2.2616893533171756
+      },
+      "numerical_fidelity_passed": true
+    },
+    {
+      "tile": [
+        479000,
+        5468000
+      ],
+      "kind": "deep_negative",
+      "selected_pixels": 158,
+      "strict_pixels": 158,
+      "without_strict_support": 0,
+      "source_regions": [
+        "2_3"
+      ],
+      "source_window": [
+        7756,
+        255227,
+        17,
+        20
+      ],
+      "direct_source_vrt_exact": true,
+      "maximum_abs_difference_m": 8.93879729346736e-07,
+      "over_0_001m": 0,
+      "minimum": {
+        "value_m": -19.36311149597168,
+        "center_epsg26910": [
+          479379,
+          5468391
+        ],
+        "native_reference_m": -19.363110771900125
+      },
+      "numerical_fidelity_passed": true
+    }
+  ]
+}

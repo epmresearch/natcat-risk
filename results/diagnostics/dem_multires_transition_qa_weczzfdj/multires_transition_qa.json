@@ -1,0 +1,872 @@
+{
+  "method_id": "MULTIRES_PRIORITY_SOURCE_TRANSITION_QA_V1",
+  "script_sha256": "a323793382cb77236bd5b2f68db684ad91fb107fbf222bd5a81cde0b502400bb",
+  "created_utc": "2026-11-26T07:52:44.033221+00:00",
+  "crs": "EPSG:26910",
+  "accounting_grid_resolution_m": 1,
+  "accounting_bounds": [
+    475000,
+    5463000,
+    508000,
+    5557000
+  ],
+  "input_sha256": {
+    "hrdem1m": "eedd95b99c4c0a56067a1c15dcce413cd8ef64b56d68b7145ec159a94643ffb6",
+    "hrdem2m": "5ce4ffa9e13af91a72d19a799ac8dce2dfe1d1b9dea184eeb3908670aa27d6ae",
+    "mrdem30_masked": "b8085012ab7d85a1f2028098345c579e20ee025f24b2189bd300fb2d90c1520d",
+    "mrdem30_uncut": "699db6fb323101e6a845cc44d06418e9e0e0d166a207eff707f115f4edec9084",
+    "mrdem30_qa": "2d047d8cf4678520672cc1160943acbc160e514775d90e8f4135047d57a3efc2",
+    "aoi": "6ffd4654a1bab09e0ec860e341250560d196a49570128b03b35ac681b895b843",
+    "coverage_qa": "60b726149550cc3f50e01cad1f0e146228afcf0b40b20b931a48a423f4e7bf18",
+    "overlap_qa": "1fb278da43959fbbb7452daf3e692cef9d3e30f6a56a2be9e3107790e3c009f4",
+    "coverage_script": "a4fa78f3760c9f446f8bf6670e1efdb06eb79294948ff8174bf0176152c585e2",
+    "overlap_script": "2f0112e5ad7b641918d50de0d16a373e9e6b2df6837a13cdf5f2e3ca25d85426"
+  },
+  "input_paths": {
+    "hrdem1m": "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/hrdem_1m_dtm_highway99_fixed_v1.tif",
+    "hrdem2m": "data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/hrdem_2m_dtm_highway99_fixed_v1.tif",
+    "mrdem30_masked": "data/processed/elevation/mrdem30_dtm_highway99_aoi_utm10_masked_exact.tif",
+    "mrdem30_uncut": "results/diagnostics/step4_2_mrdem30_exact_bbox.tif",
+    "mrdem30_qa": "results/diagnostics/step4_2_mrdem30_consistent_mask_qa.json",
+    "aoi": "data/processed/study_area/highway99_terrain_search_5000m.geojson",
+    "coverage_qa": "results/diagnostics/dem_multires_coverage_qa_xce4r42_/multires_coverage_qa.json",
+    "overlap_qa": "results/diagnostics/dem_multires_overlap_qa_cp_t07sl/multires_overlap_qa.json",
+    "coverage_script": "step4_2_dem_multires_coverage_qa.py",
+    "overlap_script": "step4_2_dem_multires_overlap_qa.py"
+  },
+  "selection_rule": "AOI centre, valid HRDEM1m > HRDEM2m > MRDEM30m uncut; containing cell",
+  "aoi_accounting_pixels": 1043616657,
+  "uncovered_accounting_pixels": 0,
+  "selected_source_pixels": {
+    "1": 464090223,
+    "2": 698372,
+    "30": 578828062
+  },
+  "total_transition_edges": 772181,
+  "transition_pairs": {
+    "1_to_2": {
+      "transition_edges": 375077,
+      "accounting_grid_edge_length_km": 375.077,
+      "direction_counts": {
+        "east": 218741,
+        "south": 156336
+      },
+      "coarse_context_available_edges": 374719,
+      "coarse_context_missing_edges": 358,
+      "same_native_coarse_cell_edges": 194997,
+      "jump_all": {
+        "count": 375077,
+        "mean_signed_m": -0.013061671142199466,
+        "mae_m": 0.2148290424652813,
+        "rmse_m": 0.47561180612434584,
+        "minimum_signed_m": -21.7435302734375,
+        "maximum_signed_m": 25.1280517578125,
+        "abs_p50_interval_m": [
+          0,
+          0.1
+        ],
+        "abs_p95_interval_m": [
+          0.5,
+          1
+        ],
+        "abs_p99_interval_m": [
+          1,
+          2
+        ],
+        "counts_over_m": {
+          "0.1": 166621,
+          "0.5": 44226,
+          "1": 13475,
+          "2": 2946,
+          "5": 275,
+          "10": 43,
+          "20": 3,
+          "50": 0,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.1": 44.423145114203216,
+          "0.5": 11.791178877937064,
+          "1": 3.5925956536924417,
+          "2": 0.7854387232488262,
+          "5": 0.07331827864678453,
+          "10": 0.011464312661133581,
+          "20": 0.0007998357670558312,
+          "50": 0.0,
+          "100": 0.0
+        },
+        "maximum_absolute": {
+          "direction": "south",
+          "fine_center_epsg26910": [
+            487281.5,
+            5508092.5
+          ],
+          "coarse_center_epsg26910": [
+            487281.5,
+            5508091.5
+          ],
+          "fine_source_resolution_m": 1,
+          "coarse_source_resolution_m": 2,
+          "fine_elevation_m": 313.7812805175781,
+          "coarse_elevation_m": 338.9093322753906,
+          "coarse_at_fine_endpoint_m": 320.60333251953125,
+          "edge_center_epsg26910": [
+            487281.5,
+            5508092.0
+          ],
+          "signed_difference_m": 25.1280517578125,
+          "absolute_difference_m": 25.1280517578125
+        }
+      },
+      "jump_on_coarse_context_support": {
+        "count": 374719,
+        "mean_signed_m": -0.01298393097560895,
+        "mae_m": 0.21472401989521653,
+        "rmse_m": 0.4754100373275633,
+        "minimum_signed_m": -21.7435302734375,
+        "maximum_signed_m": 25.1280517578125,
+        "abs_p50_interval_m": [
+          0,
+          0.1
+        ],
+        "abs_p95_interval_m": [
+          0.5,
+          1
+        ],
+        "abs_p99_interval_m": [
+          1,
+          2
+        ],
+        "counts_over_m": {
+          "0.1": 166439,
+          "0.5": 44155,
+          "1": 13444,
+          "2": 2939,
+          "5": 275,
+          "10": 43,
+          "20": 3,
+          "50": 0,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.1": 44.417016484352274,
+          "0.5": 11.783496433327374,
+          "1": 3.5877550911483005,
+          "2": 0.7843210512410633,
+          "5": 0.07338832565202191,
+          "10": 0.011475265465588882,
+          "20": 0.0008005999162038754,
+          "50": 0.0,
+          "100": 0.0
+        },
+        "maximum_absolute": {
+          "direction": "south",
+          "fine_center_epsg26910": [
+            487281.5,
+            5508092.5
+          ],
+          "coarse_center_epsg26910": [
+            487281.5,
+            5508091.5
+          ],
+          "fine_source_resolution_m": 1,
+          "coarse_source_resolution_m": 2,
+          "fine_elevation_m": 313.7812805175781,
+          "coarse_elevation_m": 338.9093322753906,
+          "coarse_at_fine_endpoint_m": 320.60333251953125,
+          "edge_center_epsg26910": [
+            487281.5,
+            5508092.0
+          ],
+          "signed_difference_m": 25.1280517578125,
+          "absolute_difference_m": 25.1280517578125
+        }
+      },
+      "coarse_native_step_on_coarse_context_support": {
+        "count": 374719,
+        "mean_signed_m": 0.027786731384487062,
+        "mae_m": 0.14984093883614025,
+        "rmse_m": 0.39428646088157504,
+        "minimum_signed_m": -21.76495361328125,
+        "maximum_signed_m": 18.305999755859375,
+        "abs_p50_interval_m": [
+          0,
+          0.1
+        ],
+        "abs_p95_interval_m": [
+          0.5,
+          1
+        ],
+        "abs_p99_interval_m": [
+          1,
+          2
+        ],
+        "counts_over_m": {
+          "0.1": 97252,
+          "0.5": 38968,
+          "1": 12934,
+          "2": 2077,
+          "5": 91,
+          "10": 8,
+          "20": 1,
+          "50": 0,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.1": 25.953314350219763,
+          "0.5": 10.399259178210873,
+          "1": 3.4516531053936417,
+          "2": 0.5542820086518164,
+          "5": 0.02428486412485089,
+          "10": 0.002134933109877001,
+          "20": 0.00026686663873462513,
+          "50": 0.0,
+          "100": 0.0
+        },
+        "maximum_absolute": {
+          "direction": "east",
+          "fine_center_epsg26910": [
+            485999.5,
+            5490250.5
+          ],
+          "coarse_center_epsg26910": [
+            486000.5,
+            5490250.5
+          ],
+          "fine_source_resolution_m": 1,
+          "coarse_source_resolution_m": 2,
+          "fine_elevation_m": 695.5481567382812,
+          "coarse_elevation_m": 673.8046264648438,
+          "coarse_at_fine_endpoint_m": 695.569580078125,
+          "edge_center_epsg26910": [
+            486000.0,
+            5490250.5
+          ],
+          "signed_difference_m": -21.76495361328125,
+          "absolute_difference_m": 21.76495361328125
+        }
+      },
+      "cross_source_offset_at_fine_endpoint": {
+        "count": 374719,
+        "mean_signed_m": -0.040770662360096015,
+        "mae_m": 0.20536827337032362,
+        "rmse_m": 0.439881024996681,
+        "minimum_signed_m": -16.490478515625,
+        "maximum_signed_m": 16.088172912597656,
+        "abs_p50_interval_m": [
+          0,
+          0.1
+        ],
+        "abs_p95_interval_m": [
+          0.5,
+          1
+        ],
+        "abs_p99_interval_m": [
+          1,
+          2
+        ],
+        "counts_over_m": {
+          "0.1": 164803,
+          "0.5": 42816,
+          "1": 11676,
+          "2": 2406,
+          "5": 222,
+          "10": 32,
+          "20": 0,
+          "50": 0,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.1": 43.98042266338243,
+          "0.5": 11.42616200406171,
+          "1": 3.1159348738654833,
+          "2": 0.642081132795508,
+          "5": 0.05924439379908678,
+          "10": 0.008539732439508004,
+          "20": 0.0,
+          "50": 0.0,
+          "100": 0.0
+        },
+        "maximum_absolute": {
+          "direction": "east",
+          "fine_center_epsg26910": [
+            492928.5,
+            5526553.5
+          ],
+          "coarse_center_epsg26910": [
+            492929.5,
+            5526553.5
+          ],
+          "fine_source_resolution_m": 1,
+          "coarse_source_resolution_m": 2,
+          "fine_elevation_m": 1044.101318359375,
+          "coarse_elevation_m": 1027.61083984375,
+          "coarse_at_fine_endpoint_m": 1027.61083984375,
+          "edge_center_epsg26910": [
+            492929.0,
+            5526553.5
+          ],
+          "signed_difference_m": -16.490478515625,
+          "absolute_difference_m": 16.490478515625
+        }
+      }
+    },
+    "1_to_30": {
+      "transition_edges": 23078,
+      "accounting_grid_edge_length_km": 23.078,
+      "direction_counts": {
+        "east": 11829,
+        "south": 11249
+      },
+      "coarse_context_available_edges": 23078,
+      "coarse_context_missing_edges": 0,
+      "same_native_coarse_cell_edges": 21569,
+      "jump_all": {
+        "count": 23078,
+        "mean_signed_m": -0.4361160068078743,
+        "mae_m": 4.378396467939377,
+        "rmse_m": 6.752709608774156,
+        "minimum_signed_m": -58.1241455078125,
+        "maximum_signed_m": 62.99517822265625,
+        "abs_p50_interval_m": [
+          2,
+          5
+        ],
+        "abs_p95_interval_m": [
+          10,
+          20
+        ],
+        "abs_p99_interval_m": [
+          20,
+          50
+        ],
+        "counts_over_m": {
+          "0.1": 21886,
+          "0.5": 17939,
+          "1": 15585,
+          "2": 12918,
+          "5": 7607,
+          "10": 2754,
+          "20": 402,
+          "50": 13,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.1": 94.83490770430713,
+          "0.5": 77.73203917150533,
+          "1": 67.53184851373602,
+          "2": 55.97538781523529,
+          "5": 32.96212843400642,
+          "10": 11.933443105988387,
+          "20": 1.7419187104601785,
+          "50": 0.0563307045671202,
+          "100": 0.0
+        },
+        "maximum_absolute": {
+          "direction": "east",
+          "fine_center_epsg26910": [
+            492916.5,
+            5526105.5
+          ],
+          "coarse_center_epsg26910": [
+            492917.5,
+            5526105.5
+          ],
+          "fine_source_resolution_m": 1,
+          "coarse_source_resolution_m": 30,
+          "fine_elevation_m": 821.5619506835938,
+          "coarse_elevation_m": 884.55712890625,
+          "coarse_at_fine_endpoint_m": 884.55712890625,
+          "edge_center_epsg26910": [
+            492917.0,
+            5526105.5
+          ],
+          "signed_difference_m": 62.99517822265625,
+          "absolute_difference_m": 62.99517822265625
+        }
+      },
+      "jump_on_coarse_context_support": {
+        "count": 23078,
+        "mean_signed_m": -0.4361160068078743,
+        "mae_m": 4.378396467939377,
+        "rmse_m": 6.752709608774156,
+        "minimum_signed_m": -58.1241455078125,
+        "maximum_signed_m": 62.99517822265625,
+        "abs_p50_interval_m": [
+          2,
+          5
+        ],
+        "abs_p95_interval_m": [
+          10,
+          20
+        ],
+        "abs_p99_interval_m": [
+          20,
+          50
+        ],
+        "counts_over_m": {
+          "0.1": 21886,
+          "0.5": 17939,
+          "1": 15585,
+          "2": 12918,
+          "5": 7607,
+          "10": 2754,
+          "20": 402,
+          "50": 13,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.1": 94.83490770430713,
+          "0.5": 77.73203917150533,
+          "1": 67.53184851373602,
+          "2": 55.97538781523529,
+          "5": 32.96212843400642,
+          "10": 11.933443105988387,
+          "20": 1.7419187104601785,
+          "50": 0.0563307045671202,
+          "100": 0.0
+        },
+        "maximum_absolute": {
+          "direction": "east",
+          "fine_center_epsg26910": [
+            492916.5,
+            5526105.5
+          ],
+          "coarse_center_epsg26910": [
+            492917.5,
+            5526105.5
+          ],
+          "fine_source_resolution_m": 1,
+          "coarse_source_resolution_m": 30,
+          "fine_elevation_m": 821.5619506835938,
+          "coarse_elevation_m": 884.55712890625,
+          "coarse_at_fine_endpoint_m": 884.55712890625,
+          "edge_center_epsg26910": [
+            492917.0,
+            5526105.5
+          ],
+          "signed_difference_m": 62.99517822265625,
+          "absolute_difference_m": 62.99517822265625
+        }
+      },
+      "coarse_native_step_on_coarse_context_support": {
+        "count": 23078,
+        "mean_signed_m": 0.12851030360472637,
+        "mae_m": 0.2963508356392106,
+        "rmse_m": 1.8027616727121727,
+        "minimum_signed_m": -24.191650390625,
+        "maximum_signed_m": 38.36186218261719,
+        "abs_p50_interval_m": [
+          0,
+          0.1
+        ],
+        "abs_p95_interval_m": [
+          0.1,
+          0.5
+        ],
+        "abs_p99_interval_m": [
+          10,
+          20
+        ],
+        "counts_over_m": {
+          "0.1": 1457,
+          "0.5": 1085,
+          "1": 878,
+          "2": 761,
+          "5": 537,
+          "10": 243,
+          "20": 30,
+          "50": 0,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.1": 6.313372042638011,
+          "0.5": 4.701447265794263,
+          "1": 3.8044891238408876,
+          "2": 3.297512782736806,
+          "5": 2.326891411734119,
+          "10": 1.052950862293093,
+          "20": 0.12999393361643125,
+          "50": 0.0,
+          "100": 0.0
+        },
+        "maximum_absolute": {
+          "direction": "east",
+          "fine_center_epsg26910": [
+            483959.5,
+            5522192.5
+          ],
+          "coarse_center_epsg26910": [
+            483960.5,
+            5522192.5
+          ],
+          "fine_source_resolution_m": 1,
+          "coarse_source_resolution_m": 30,
+          "fine_elevation_m": 60.32919692993164,
+          "coarse_elevation_m": 113.02991485595703,
+          "coarse_at_fine_endpoint_m": 74.66805267333984,
+          "edge_center_epsg26910": [
+            483960.0,
+            5522192.5
+          ],
+          "signed_difference_m": 38.36186218261719,
+          "absolute_difference_m": 38.36186218261719
+        }
+      },
+      "cross_source_offset_at_fine_endpoint": {
+        "count": 23078,
+        "mean_signed_m": -0.5646263104126007,
+        "mae_m": 4.412326663265423,
+        "rmse_m": 6.81694959532387,
+        "minimum_signed_m": -58.1241455078125,
+        "maximum_signed_m": 62.99517822265625,
+        "abs_p50_interval_m": [
+          2,
+          5
+        ],
+        "abs_p95_interval_m": [
+          10,
+          20
+        ],
+        "abs_p99_interval_m": [
+          20,
+          50
+        ],
+        "counts_over_m": {
+          "0.1": 21810,
+          "0.5": 17720,
+          "1": 15589,
+          "2": 12956,
+          "5": 7677,
+          "10": 2827,
+          "20": 414,
+          "50": 16,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.1": 94.5055897391455,
+          "0.5": 76.78308345610539,
+          "1": 67.54918103821822,
+          "2": 56.140046797816105,
+          "5": 33.26544761244475,
+          "10": 12.24976167778837,
+          "20": 1.793916283906751,
+          "50": 0.06933009792876332,
+          "100": 0.0
+        },
+        "maximum_absolute": {
+          "direction": "east",
+          "fine_center_epsg26910": [
+            492916.5,
+            5526105.5
+          ],
+          "coarse_center_epsg26910": [
+            492917.5,
+            5526105.5
+          ],
+          "fine_source_resolution_m": 1,
+          "coarse_source_resolution_m": 30,
+          "fine_elevation_m": 821.5619506835938,
+          "coarse_elevation_m": 884.55712890625,
+          "coarse_at_fine_endpoint_m": 884.55712890625,
+          "edge_center_epsg26910": [
+            492917.0,
+            5526105.5
+          ],
+          "signed_difference_m": 62.99517822265625,
+          "absolute_difference_m": 62.99517822265625
+        }
+      }
+    },
+    "2_to_30": {
+      "transition_edges": 374026,
+      "accounting_grid_edge_length_km": 374.026,
+      "direction_counts": {
+        "east": 205168,
+        "south": 168858
+      },
+      "coarse_context_available_edges": 374026,
+      "coarse_context_missing_edges": 0,
+      "same_native_coarse_cell_edges": 348916,
+      "jump_all": {
+        "count": 374026,
+        "mean_signed_m": 0.6153498463459781,
+        "mae_m": 4.36567573534795,
+        "rmse_m": 7.164365501396188,
+        "minimum_signed_m": -76.89440155029297,
+        "maximum_signed_m": 70.15045166015625,
+        "abs_p50_interval_m": [
+          2,
+          5
+        ],
+        "abs_p95_interval_m": [
+          10,
+          20
+        ],
+        "abs_p99_interval_m": [
+          20,
+          50
+        ],
+        "counts_over_m": {
+          "0.1": 347587,
+          "0.5": 277960,
+          "1": 236556,
+          "2": 194855,
+          "5": 115471,
+          "10": 48078,
+          "20": 9169,
+          "50": 149,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.1": 92.93124007421945,
+          "0.5": 74.3156892836327,
+          "1": 63.24587060792565,
+          "2": 52.09664568773294,
+          "5": 30.872452717190782,
+          "10": 12.854186607348153,
+          "20": 2.4514338575393153,
+          "50": 0.03983680278911092,
+          "100": 0.0
+        },
+        "maximum_absolute": {
+          "direction": "east",
+          "fine_center_epsg26910": [
+            487349.5,
+            5507579.5
+          ],
+          "coarse_center_epsg26910": [
+            487350.5,
+            5507579.5
+          ],
+          "fine_source_resolution_m": 2,
+          "coarse_source_resolution_m": 30,
+          "fine_elevation_m": 155.62416076660156,
+          "coarse_elevation_m": 78.7297592163086,
+          "coarse_at_fine_endpoint_m": 109.42589569091797,
+          "edge_center_epsg26910": [
+            487350.0,
+            5507579.5
+          ],
+          "signed_difference_m": -76.89440155029297,
+          "absolute_difference_m": 76.89440155029297
+        }
+      },
+      "jump_on_coarse_context_support": {
+        "count": 374026,
+        "mean_signed_m": 0.6153498463459781,
+        "mae_m": 4.36567573534795,
+        "rmse_m": 7.164365501396188,
+        "minimum_signed_m": -76.89440155029297,
+        "maximum_signed_m": 70.15045166015625,
+        "abs_p50_interval_m": [
+          2,
+          5
+        ],
+        "abs_p95_interval_m": [
+          10,
+          20
+        ],
+        "abs_p99_interval_m": [
+          20,
+          50
+        ],
+        "counts_over_m": {
+          "0.1": 347587,
+          "0.5": 277960,
+          "1": 236556,
+          "2": 194855,
+          "5": 115471,
+          "10": 48078,
+          "20": 9169,
+          "50": 149,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.1": 92.93124007421945,
+          "0.5": 74.3156892836327,
+          "1": 63.24587060792565,
+          "2": 52.09664568773294,
+          "5": 30.872452717190782,
+          "10": 12.854186607348153,
+          "20": 2.4514338575393153,
+          "50": 0.03983680278911092,
+          "100": 0.0
+        },
+        "maximum_absolute": {
+          "direction": "east",
+          "fine_center_epsg26910": [
+            487349.5,
+            5507579.5
+          ],
+          "coarse_center_epsg26910": [
+            487350.5,
+            5507579.5
+          ],
+          "fine_source_resolution_m": 2,
+          "coarse_source_resolution_m": 30,
+          "fine_elevation_m": 155.62416076660156,
+          "coarse_elevation_m": 78.7297592163086,
+          "coarse_at_fine_endpoint_m": 109.42589569091797,
+          "edge_center_epsg26910": [
+            487350.0,
+            5507579.5
+          ],
+          "signed_difference_m": -76.89440155029297,
+          "absolute_difference_m": 76.89440155029297
+        }
+      },
+      "coarse_native_step_on_coarse_context_support": {
+        "count": 374026,
+        "mean_signed_m": 0.149540014349663,
+        "mae_m": 0.3397039347845836,
+        "rmse_m": 2.052550863825539,
+        "minimum_signed_m": -36.111785888671875,
+        "maximum_signed_m": 40.19866943359375,
+        "abs_p50_interval_m": [
+          0,
+          0.1
+        ],
+        "abs_p95_interval_m": [
+          0.5,
+          1
+        ],
+        "abs_p99_interval_m": [
+          10,
+          20
+        ],
+        "counts_over_m": {
+          "0.1": 23020,
+          "0.5": 18899,
+          "1": 15634,
+          "2": 13503,
+          "5": 9268,
+          "10": 4475,
+          "20": 803,
+          "50": 0,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.1": 6.154652350371364,
+          "0.5": 5.052857287996022,
+          "1": 4.179923320838658,
+          "2": 3.610176832626609,
+          "5": 2.477902605701208,
+          "10": 1.1964408891360494,
+          "20": 0.21469095731312796,
+          "50": 0.0,
+          "100": 0.0
+        },
+        "maximum_absolute": {
+          "direction": "south",
+          "fine_center_epsg26910": [
+            486474.5,
+            5492909.5
+          ],
+          "coarse_center_epsg26910": [
+            486474.5,
+            5492910.5
+          ],
+          "fine_source_resolution_m": 2,
+          "coarse_source_resolution_m": 30,
+          "fine_elevation_m": 1006.23974609375,
+          "coarse_elevation_m": 1020.66796875,
+          "coarse_at_fine_endpoint_m": 980.4692993164062,
+          "edge_center_epsg26910": [
+            486474.5,
+            5492910.0
+          ],
+          "signed_difference_m": 40.19866943359375,
+          "absolute_difference_m": 40.19866943359375
+        }
+      },
+      "cross_source_offset_at_fine_endpoint": {
+        "count": 374026,
+        "mean_signed_m": 0.46580983199631515,
+        "mae_m": 4.289852158916446,
+        "rmse_m": 6.999908965633276,
+        "minimum_signed_m": -60.709716796875,
+        "maximum_signed_m": 67.9622802734375,
+        "abs_p50_interval_m": [
+          2,
+          5
+        ],
+        "abs_p95_interval_m": [
+          10,
+          20
+        ],
+        "abs_p99_interval_m": [
+          20,
+          50
+        ],
+        "counts_over_m": {
+          "0.1": 346593,
+          "0.5": 274984,
+          "1": 235368,
+          "2": 194281,
+          "5": 114520,
+          "10": 46944,
+          "20": 8410,
+          "50": 104,
+          "100": 0
+        },
+        "percent_over_m": {
+          "0.1": 92.66548314823034,
+          "0.5": 73.52002267222065,
+          "1": 62.92824562998294,
+          "2": 51.94318042061247,
+          "5": 30.618192318181087,
+          "10": 12.550999128402838,
+          "20": 2.2485067882981395,
+          "50": 0.027805553624614333,
+          "100": 0.0
+        },
+        "maximum_absolute": {
+          "direction": "east",
+          "fine_center_epsg26910": [
+            492917.5,
+            5526119.5
+          ],
+          "coarse_center_epsg26910": [
+            492918.5,
+            5526119.5
+          ],
+          "fine_source_resolution_m": 2,
+          "coarse_source_resolution_m": 30,
+          "fine_elevation_m": 816.5948486328125,
+          "coarse_elevation_m": 884.55712890625,
+          "coarse_at_fine_endpoint_m": 884.55712890625,
+          "edge_center_epsg26910": [
+            492918.0,
+            5526119.5
+          ],
+          "signed_difference_m": 67.9622802734375,
+          "absolute_difference_m": 67.9622802734375
+        }
+      }
+    }
+  },
+  "metrics_definition": {
+    "jump": "coarse selected elevation minus fine selected elevation at adjacent accounting-centre endpoints",
+    "coarse_native_step": "coarse source at coarse endpoint minus that same source at fine endpoint",
+    "source_offset": "coarse source at fine endpoint minus fine selected elevation at fine endpoint",
+    "decomposition": "jump = coarse_native_step + source_offset on coarse-context-supported edges",
+    "edge_length": "sum of cardinal 1 m shared cell edges; not vector perimeter length or independent samples"
+  },
+  "coverage_inventory_reconciled": true,
+  "input_files_unchanged": true,
+  "source_transition_diagnostic_completed": true,
+  "cross_source_elevation_agreement_accepted": false,
+  "source_transitions_accepted_for_terrain_derivatives": false,
+  "absolute_vertical_accuracy_validated": false,
+  "final_integrated_dem_created": false,
+  "limitations": [
+    "Adjacent centres are 1 m apart, but this is an accounting grid, not uniformly resolved 1 m terrain.",
+    "The cross-source jump includes natural local relief, coarse-cell placement and source differences; it is not itself a measurement error.",
+    "Coarse-context offset uses nearest containing native cell, not an interpolated matched point or block mean.",
+    "Samples are spatially dependent, especially multiple edges referring to the same 30 m native cell.",
+    "Source priority precludes the fine source at the coarse endpoint; the counterfactual fine gradient is unavailable.",
+    "Diagonal edges are not counted. No correction, smoothing, slope, or hazard model is produced.",
+    "Thresholds are descriptive, not pass/fail or independently justified hazard tolerances."
+  ]
+}

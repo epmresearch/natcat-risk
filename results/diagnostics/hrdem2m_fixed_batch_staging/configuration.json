@@ -1,0 +1,93 @@
+{
+  "method_id": "HRDEM2M_FIXED_BILINEAR_V1",
+  "input_sha256": {
+    "results/diagnostics/hrdem2m_scale_control_1zla68yg/production_plan_qa.json": "ff1a248ede1d3dfcff918098be2e531c3c81112ffcc66697385c4c940421c6f7",
+    "data/processed/elevation/hrdem_2m_dtm_coverage_highway99_corrected.gpkg": "f49fa31dfc9ff0e78c504897465a1b50348939f256950c092d474024c979d2e2",
+    "results/diagnostics/step4_2_hrdem2m_boundary_virtual.vrt": "a2e81830c68a49ed5cfc896f7d30e84b6e5b1e226345c499c1996b1d4e2228ee",
+    "results/diagnostics/hrdem2m_scale_control_1zla68yg/scale_comparison_qa.json": "1c065a2c5df40c468fdafebd30a52cecdb7b79cf0385dac8c12b2b4aa4e88ffb",
+    "results/diagnostics/hrdem2m_scale_control_1zla68yg/native_bilinear_reference_qa.json": "f205d3eaac0150d1f074ad34e4e8af148fbf165631353dbe69f885cf207bf45b",
+    "results/diagnostics/hrdem2m_scale_control_1zla68yg/warp_commands.json": "5e2bf5ea8b84259cc3d96109cd75d87ec03a62df58c191ccab74bf596b76d605",
+    "results/diagnostics/hrdem2m_scale_control_1zla68yg/pilot_2_3_narrow_fixed.tif": "a0918204906e5fee27270ade715c6c6c301a432a93459bdabeb991ab555673f3",
+    "results/diagnostics/hrdem2m_scale_control_1zla68yg/pilot_2_4_narrow_fixed.tif": "ebdcf86047e19c6e53beb655212a1d0dbab254c1cc06cae6adbdd0f197492e83",
+    "results/diagnostics/hrdem2m_scale_control_1zla68yg/pilot_cross_boundary_narrow_fixed.tif": "561fed1a54f2859d4914abf84a52fb426f88e28b0127f50eec1110728f417398"
+  },
+  "script_sha256": "a134a8523471c3ba5b6e587ef5f41ffec553bca6855348838067682a31e6e68b",
+  "gdal_python_version": "3.10.3",
+  "gdal_cli_version": "GDAL 3.10.3, released 2025/04/01",
+  "warp_options": [
+    "-of",
+    "GTiff",
+    "-t_srs",
+    "EPSG:26910",
+    "-tr",
+    "2",
+    "2",
+    "-tap",
+    "-r",
+    "bilinear",
+    "-et",
+    "0",
+    "-ovr",
+    "NONE",
+    "-ot",
+    "Float32",
+    "-srcnodata",
+    "-32767",
+    "-dstnodata",
+    "-32767",
+    "-wo",
+    "XSCALE=1",
+    "-wo",
+    "YSCALE=1",
+    "-co",
+    "TILED=YES",
+    "-co",
+    "COMPRESS=DEFLATE",
+    "-co",
+    "PREDICTOR=3",
+    "-co",
+    "BIGTIFF=IF_SAFER"
+  ],
+  "http_config": {
+    "GDAL_DISABLE_READDIR_ON_OPEN": "YES",
+    "GDAL_HTTP_MAX_RETRY": "3",
+    "GDAL_HTTP_RETRY_DELAY": "2",
+    "GDAL_HTTP_TIMEOUT": "45"
+  },
+  "pilot_tiles": [
+    [
+      484000,
+      5471000
+    ],
+    [
+      484000,
+      5472000
+    ],
+    [
+      492000,
+      5517000
+    ],
+    [
+      482000,
+      5481000
+    ],
+    [
+      493000,
+      5517000
+    ],
+    [
+      483000,
+      5481000
+    ],
+    [
+      480000,
+      5463000
+    ],
+    [
+      505000,
+      5556000
+    ]
+  ],
+  "candidate_count": 671,
+  "absolute_vertical_accuracy_validated": false
+}

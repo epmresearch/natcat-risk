@@ -1,0 +1,125 @@
+{
+  "configuration_sha256": "6e3e412e3d81794d69ce0ab7257445ae8a966ccbd0c6c9054cfa3e25442da30f",
+  "tile_states": [
+    {
+      "tile": [
+        484000,
+        5471000
+      ],
+      "state": "COMPLETE",
+      "valid_pixels": 241078
+    },
+    {
+      "tile": [
+        484000,
+        5472000
+      ],
+      "state": "COMPLETE",
+      "valid_pixels": 250000
+    },
+    {
+      "tile": [
+        492000,
+        5517000
+      ],
+      "state": "COMPLETE",
+      "valid_pixels": 250000
+    },
+    {
+      "tile": [
+        482000,
+        5481000
+      ],
+      "state": "COMPLETE",
+      "valid_pixels": 250000
+    },
+    {
+      "tile": [
+        493000,
+        5517000
+      ],
+      "state": "COMPLETE",
+      "valid_pixels": 250000
+    },
+    {
+      "tile": [
+        483000,
+        5481000
+      ],
+      "state": "COMPLETE",
+      "valid_pixels": 250000
+    },
+    {
+      "tile": [
+        480000,
+        5463000
+      ],
+      "state": "COMPLETE",
+      "valid_pixels": 34
+    },
+    {
+      "tile": [
+        505000,
+        5556000
+      ],
+      "state": "COMPLETE",
+      "valid_pixels": 226194
+    }
+  ],
+  "reference_comparisons": [
+    {
+      "site": "pilot_2_3",
+      "tiles": [
+        [
+          484000,
+          5471000
+        ],
+        [
+          484000,
+          5472000
+        ]
+      ],
+      "common_valid": 4096,
+      "validity_mismatch": 0,
+      "max_abs_diff_m": 0.0,
+      "over_0_001m": 0,
+      "all_raw_values_exact": true,
+      "passed": true
+    },
+    {
+      "site": "pilot_2_4",
+      "tiles": [
+        [
+          492000,
+          5517000
+        ]
+      ],
+      "common_valid": 4096,
+      "validity_mismatch": 0,
+      "max_abs_diff_m": 0.0,
+      "over_0_001m": 0,
+      "all_raw_values_exact": true,
+      "passed": true
+    },
+    {
+      "site": "pilot_cross_boundary",
+      "tiles": [
+        [
+          482000,
+          5481000
+        ]
+      ],
+      "common_valid": 4096,
+      "validity_mismatch": 0,
+      "max_abs_diff_m": 0.0,
+      "over_0_001m": 0,
+      "all_raw_values_exact": true,
+      "passed": true
+    }
+  ],
+  "production_pilot_passed": true,
+  "masking_validated": false,
+  "seam_qa_completed": false,
+  "absolute_vertical_accuracy_validated": false,
+  "final_dem_published": false
+}

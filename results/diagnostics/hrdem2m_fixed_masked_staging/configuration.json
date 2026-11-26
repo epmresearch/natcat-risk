@@ -1,0 +1,14 @@
+{
+  "mask_method": "HRDEM2M_FIXED_PIXEL_CENTER_MASK_V1",
+  "extraction_configuration_sha256": "6e3e412e3d81794d69ce0ab7257445ae8a966ccbd0c6c9054cfa3e25442da30f",
+  "footprint_sha256": "f49fa31dfc9ff0e78c504897465a1b50348939f256950c092d474024c979d2e2",
+  "extraction_pilot_qa_sha256": "9c879ddf7acdad5cc1f32be309b21d307575a2a18d410d34617753fa9d2b411a",
+  "seam_edge_qa_sha256": "246022e43a12cc2af78328d6b2071ff4ae1f8580201fffb427510adf5c7492e5",
+  "mask_script_sha256": "d299ca8a196cbd63e8aff3d8844d0193c5bf450c22efbb678ed8b899ba257a2e",
+  "gdal_version": "3.10.3",
+  "mask_rule": "GDAL_PIXEL_CENTER_FOOTPRINT_RASTERIZATION_ALL_TOUCHED_FALSE",
+  "resolution_m": 2,
+  "crs": "EPSG:26910",
+  "nodata": -32767.0,
+  "absolute_vertical_accuracy_validated": false
+}

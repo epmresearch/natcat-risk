@@ -68,3 +68,7 @@ Thumbs.db
 *.ovr
 *.qgz~
 *.qgs~
+
+# Step 4.2 - HRDEM 2m intermediate artifacts
+/results/diagnostics/hrdem2m_fixed_batch_staging/
+/results/diagnostics/hrdem2m_fixed_masked_staging/

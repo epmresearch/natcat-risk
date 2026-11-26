@@ -1,0 +1,14 @@
+{
+  "mask_configuration_sha256": "d7e7d5608bc5a0b3ad0685ffe157cc5029561eed470845262f59d706d154e3c5",
+  "extraction_configuration_sha256": "6e3e412e3d81794d69ce0ab7257445ae8a966ccbd0c6c9054cfa3e25442da30f",
+  "pilot_tile_count": 8,
+  "source_staging_unchanged": true,
+  "total_footprint_pixels": 1493434,
+  "total_masked_valid_pixels": 1493375,
+  "total_nodata_inside_footprint": 59,
+  "total_removed_valid_outside_footprint": 223931,
+  "total_valid_outside_footprint": 0,
+  "all_retained_values_bitwise_equal": true,
+  "pilot_mask_qa_passed": true,
+  "final_dem_published": false
+}

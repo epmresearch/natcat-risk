@@ -1,0 +1,265 @@
+{
+  "method_id": "MULTIRES_REFERENCE_PUBLICATION_V1",
+  "release_id": "dem_highway99_multires_reference_v1",
+  "publication_script_sha256": "c8fc223b7dac9f515ce63ad235c08f5e5a488e93e85274e32c1c8eccfce541d9",
+  "product_role": "Technically validated multiresolution reference elevation with mandatory source provenance",
+  "crs": "EPSG:26910",
+  "accounting_grid_spacing_m": 1,
+  "bounds_epsg26910": [
+    475000,
+    5463000,
+    508000,
+    5557000
+  ],
+  "geotransform": [
+    475000,
+    1,
+    0,
+    5557000,
+    0,
+    -1
+  ],
+  "width": 33000,
+  "height": 94000,
+  "total_grid_pixels": 3102000000,
+  "aoi_pixels": 1043616657,
+  "coverage_percent": 100.0,
+  "reference_dem_dtype": "Float32",
+  "reference_dem_nodata": -32767.0,
+  "source_provenance_dtype": "Byte",
+  "source_provenance_nodata": 0,
+  "source_codes": {
+    "0": "Outside AOI / NoData",
+    "1": "HRDEM 1 m",
+    "2": "HRDEM 2 m",
+    "30": "MRDEM 30 m uncut"
+  },
+  "source_pixel_counts": {
+    "0": 2058383343,
+    "1": 464090223,
+    "2": 698372,
+    "30": 578828062
+  },
+  "source_elevation_statistics": {
+    "1": {
+      "count": 464090223,
+      "minimum_m": -30.402355194091797,
+      "maximum_m": 1752.6998291015625,
+      "negative_pixels": 20054860
+    },
+    "2": {
+      "count": 698372,
+      "minimum_m": -2.4448559284210205,
+      "maximum_m": 1598.323486328125,
+      "negative_pixels": 129852
+    },
+    "30": {
+      "count": 578828062,
+      "minimum_m": -11.730072975158691,
+      "maximum_m": 2170.8447265625,
+      "negative_pixels": 77660138
+    }
+  },
+  "source_assignment": "AOI pixel centre, valid HRDEM 1m > HRDEM 2m > MRDEM 30m uncut; containing native cell",
+  "mosaic_sha256": "54ab737d96fe940e70cb607ea75899a19830ec4fbce92f1bf6784974d0765063",
+  "source_provenance_sha256": "775e42da007c5a5d6b23e043610c37d3f9a2644d74ffa35524b1724e435b8393",
+  "register_sha256": "fb7e72e3c423208a18f95331500e878a053c380ca16e6a5cadcd7f6d561316f5",
+  "transition_edges": 772181,
+  "transition_register_features": 50875,
+  "transition_register_counts": {
+    "1_to_2": 43,
+    "1_to_30": 2754,
+    "2_to_30": 48078
+  },
+  "transition_register_threshold_m_strict_gt": 10.0,
+  "documented_vertical_reference": "CGVD2013",
+  "source_vertical_reference_evidence_urls": {
+    "hrdem_mosaic": "https://open.canada.ca/data/en/dataset/0fe65119-e96e-4a57-8bfe-9d9245fba06b",
+    "mrdem": "https://open.canada.ca/data/en/dataset/18752265-bda3-498c-a4ba-9dfe68cb98da"
+  },
+  "local_height_realization_independently_verified": false,
+  "final_technical_validation_passed": true,
+  "cross_source_elevation_agreement_accepted": false,
+  "source_transitions_accepted_for_terrain_derivatives": false,
+  "terrain_derivatives_from_mosaic_approved": false,
+  "absolute_vertical_accuracy_validated": false,
+  "hazard_model_validated": false,
+  "limitations": [
+    "Reference elevation only: 1 m grid spacing is not uniform native resolution.",
+    "Coarse source values repeated without interpolation; source code raster is required.",
+    "Substantial source-transition jumps have been recorded; no correction or smoothing applied.",
+    "Do not compute terrain derivatives directly on this mixed-resolution mosaic.",
+    "Derivatives require source-native, valid neighbourhood processing and separate QA.",
+    "Original source anomaly registers remain applicable; no negative elevations changed.",
+    "Complete AOI coverage is not proof of accurate or hazard-ready elevation.",
+    "The cross-source register contains only edges with absolute jump strictly greater than 10 m. Other edges are not certified safe.",
+    "Flagged jumps may reflect terrain variation, source resolution and processing; they are not proven errors.",
+    "Source-specific anomaly registers and transition diagnostics must accompany the reference DEM.",
+    "Candidate GeoTIFF metadata is retained byte-for-byte; publication_manifest.json defines the local v1 release status.",
+    "Original HRDEM rasters remain in their separately published directories; their hashes are recorded here."
+  ],
+  "input_paths": {
+    "hrdem1m": "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/hrdem_1m_dtm_highway99_fixed_v1.tif",
+    "hrdem2m": "data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/hrdem_2m_dtm_highway99_fixed_v1.tif",
+    "mrdem30_masked": "data/processed/elevation/mrdem30_dtm_highway99_aoi_utm10_masked_exact.tif",
+    "mrdem30_uncut": "results/diagnostics/step4_2_mrdem30_exact_bbox.tif",
+    "mrdem30_qa": "results/diagnostics/step4_2_mrdem30_consistent_mask_qa.json",
+    "aoi": "data/processed/study_area/highway99_terrain_search_5000m.geojson",
+    "coverage_qa": "results/diagnostics/dem_multires_coverage_qa_xce4r42_/multires_coverage_qa.json",
+    "overlap_qa": "results/diagnostics/dem_multires_overlap_qa_cp_t07sl/multires_overlap_qa.json",
+    "transition_qa": "results/diagnostics/dem_multires_transition_qa_weczzfdj/multires_transition_qa.json",
+    "coverage_script": "step4_2_dem_multires_coverage_qa.py",
+    "overlap_script": "step4_2_dem_multires_overlap_qa.py",
+    "transition_script": "step4_2_dem_multires_transition_qa.py",
+    "hrdem1m_register": "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/hrdem_1m_dtm_highway99_anomaly_register.gpkg",
+    "hrdem2m_register": "data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/hrdem_2m_dtm_highway99_anomaly_register.gpkg",
+    "candidate_qa": "results/diagnostics/dem_multires_mosaic_candidate_7ed8t26a/mosaic_candidate_qa.json",
+    "candidate_script": "step4_2_dem_multires_build_candidate.py",
+    "reference_dem": "results/diagnostics/dem_multires_mosaic_candidate_7ed8t26a/dem_highway99_multires_reference_candidate.tif",
+    "source_provenance": "results/diagnostics/dem_multires_mosaic_candidate_7ed8t26a/dem_highway99_multires_source_candidate.tif",
+    "final_validation_qa": "results/diagnostics/dem_multires_final_validation_lpz6xn6d/final_validation_qa.json",
+    "final_validation_script": "step4_2_dem_multires_final_validation.py",
+    "transition_register": "results/diagnostics/dem_multires_final_validation_lpz6xn6d/dem_highway99_multires_transition_register.gpkg",
+    "publication_script": "step4_2_dem_multires_publish.py",
+    "hrdem1m_publication_manifest": "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/publication_manifest.json",
+    "hrdem2m_publication_manifest": "data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/publication_manifest.json"
+  },
+  "input_sha256": {
+    "hrdem1m": "eedd95b99c4c0a56067a1c15dcce413cd8ef64b56d68b7145ec159a94643ffb6",
+    "hrdem2m": "5ce4ffa9e13af91a72d19a799ac8dce2dfe1d1b9dea184eeb3908670aa27d6ae",
+    "mrdem30_masked": "b8085012ab7d85a1f2028098345c579e20ee025f24b2189bd300fb2d90c1520d",
+    "mrdem30_uncut": "699db6fb323101e6a845cc44d06418e9e0e0d166a207eff707f115f4edec9084",
+    "mrdem30_qa": "2d047d8cf4678520672cc1160943acbc160e514775d90e8f4135047d57a3efc2",
+    "aoi": "6ffd4654a1bab09e0ec860e341250560d196a49570128b03b35ac681b895b843",
+    "coverage_qa": "60b726149550cc3f50e01cad1f0e146228afcf0b40b20b931a48a423f4e7bf18",
+    "overlap_qa": "1fb278da43959fbbb7452daf3e692cef9d3e30f6a56a2be9e3107790e3c009f4",
+    "transition_qa": "5a1f067715ee190d9487b9b0d2be50b5d20b47e0152fecc1f6e72063e8dfb1f5",
+    "coverage_script": "a4fa78f3760c9f446f8bf6670e1efdb06eb79294948ff8174bf0176152c585e2",
+    "overlap_script": "2f0112e5ad7b641918d50de0d16a373e9e6b2df6837a13cdf5f2e3ca25d85426",
+    "transition_script": "a323793382cb77236bd5b2f68db684ad91fb107fbf222bd5a81cde0b502400bb",
+    "hrdem1m_register": "e2e8840013db83074fc614d3a12d299ee6d199e09465172bf59ffb9e489c76ae",
+    "hrdem2m_register": "e516be189e73f4b8c4b6c48d2905baad857d02fe7dd103fe0ddf09069b8d164d",
+    "candidate_qa": "4998ec77f1ede4f550dae196de73df9b3c669eaf33233c106c5f1824058ef9b6",
+    "candidate_script": "e2ee6dd8261811d7cfb8dfd1a9748f7a8f98e4d72d5e0e4a2df6855d79c65d46",
+    "reference_dem": "54ab737d96fe940e70cb607ea75899a19830ec4fbce92f1bf6784974d0765063",
+    "source_provenance": "775e42da007c5a5d6b23e043610c37d3f9a2644d74ffa35524b1724e435b8393",
+    "transition_register": "fb7e72e3c423208a18f95331500e878a053c380ca16e6a5cadcd7f6d561316f5",
+    "final_validation_script": "1c245f57a1f4296c95068fbe213f80fc780437849555a6b7e83e9768c968bbd8",
+    "hrdem2m_publication_manifest": "658655b3c1fa8627cf40853e1c568069e13bbdc6a6fd8bd702455be52cf6e41a",
+    "publication_script": "c8fc223b7dac9f515ce63ad235c08f5e5a488e93e85274e32c1c8eccfce541d9",
+    "final_validation_qa": "c0fd77e86af91e3232cf2ad956fa302f898bef78e2ae167e611a9590670cb2f1",
+    "hrdem1m_publication_manifest": "c1488d3e4448dea5988f8a8d82cbd6c243552dd9b1522c0361664aa5b47f9003"
+  },
+  "file_inventory": {
+    "dem_highway99_multires_reference_v1.tif": {
+      "original_project_path": "results/diagnostics/dem_multires_mosaic_candidate_7ed8t26a/dem_highway99_multires_reference_candidate.tif",
+      "sha256": "54ab737d96fe940e70cb607ea75899a19830ec4fbce92f1bf6784974d0765063",
+      "bytes": 1054828661
+    },
+    "dem_highway99_multires_source_provenance_v1.tif": {
+      "original_project_path": "results/diagnostics/dem_multires_mosaic_candidate_7ed8t26a/dem_highway99_multires_source_candidate.tif",
+      "sha256": "775e42da007c5a5d6b23e043610c37d3f9a2644d74ffa35524b1724e435b8393",
+      "bytes": 9956761
+    },
+    "dem_highway99_multires_transition_register.gpkg": {
+      "original_project_path": "results/diagnostics/dem_multires_final_validation_lpz6xn6d/dem_highway99_multires_transition_register.gpkg",
+      "sha256": "fb7e72e3c423208a18f95331500e878a053c380ca16e6a5cadcd7f6d561316f5",
+      "bytes": 10416128
+    },
+    "qa/mrdem30_consistent_mask_qa.json": {
+      "original_project_path": "results/diagnostics/step4_2_mrdem30_consistent_mask_qa.json",
+      "sha256": "2d047d8cf4678520672cc1160943acbc160e514775d90e8f4135047d57a3efc2",
+      "bytes": 2343
+    },
+    "qa/multires_coverage_qa.json": {
+      "original_project_path": "results/diagnostics/dem_multires_coverage_qa_xce4r42_/multires_coverage_qa.json",
+      "sha256": "60b726149550cc3f50e01cad1f0e146228afcf0b40b20b931a48a423f4e7bf18",
+      "bytes": 4912
+    },
+    "qa/multires_overlap_qa.json": {
+      "original_project_path": "results/diagnostics/dem_multires_overlap_qa_cp_t07sl/multires_overlap_qa.json",
+      "sha256": "1fb278da43959fbbb7452daf3e692cef9d3e30f6a56a2be9e3107790e3c009f4",
+      "bytes": 15375
+    },
+    "qa/multires_transition_qa.json": {
+      "original_project_path": "results/diagnostics/dem_multires_transition_qa_weczzfdj/multires_transition_qa.json",
+      "sha256": "5a1f067715ee190d9487b9b0d2be50b5d20b47e0152fecc1f6e72063e8dfb1f5",
+      "bytes": 27220
+    },
+    "qa/mosaic_candidate_qa.json": {
+      "original_project_path": "results/diagnostics/dem_multires_mosaic_candidate_7ed8t26a/mosaic_candidate_qa.json",
+      "sha256": "4998ec77f1ede4f550dae196de73df9b3c669eaf33233c106c5f1824058ef9b6",
+      "bytes": 6077
+    },
+    "qa/final_validation_qa.json": {
+      "original_project_path": "results/diagnostics/dem_multires_final_validation_lpz6xn6d/final_validation_qa.json",
+      "sha256": "c0fd77e86af91e3232cf2ad956fa302f898bef78e2ae167e611a9590670cb2f1",
+      "bytes": 8499
+    },
+    "provenance/highway99_terrain_search_5000m.geojson": {
+      "original_project_path": "data/processed/study_area/highway99_terrain_search_5000m.geojson",
+      "sha256": "6ffd4654a1bab09e0ec860e341250560d196a49570128b03b35ac681b895b843",
+      "bytes": 58762
+    },
+    "provenance/mrdem30_exact_bbox.tif": {
+      "original_project_path": "results/diagnostics/step4_2_mrdem30_exact_bbox.tif",
+      "sha256": "699db6fb323101e6a845cc44d06418e9e0e0d166a207eff707f115f4edec9084",
+      "bytes": 8558595
+    },
+    "provenance/hrdem1m_publication_manifest.json": {
+      "original_project_path": "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/publication_manifest.json",
+      "sha256": "c1488d3e4448dea5988f8a8d82cbd6c243552dd9b1522c0361664aa5b47f9003",
+      "bytes": 15239
+    },
+    "provenance/hrdem2m_publication_manifest.json": {
+      "original_project_path": "data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/publication_manifest.json",
+      "sha256": "658655b3c1fa8627cf40853e1c568069e13bbdc6a6fd8bd702455be52cf6e41a",
+      "bytes": 15162
+    },
+    "source_anomaly_registers/hrdem_1m_dtm_highway99_anomaly_register.gpkg": {
+      "original_project_path": "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/hrdem_1m_dtm_highway99_anomaly_register.gpkg",
+      "sha256": "e2e8840013db83074fc614d3a12d299ee6d199e09465172bf59ffb9e489c76ae",
+      "bytes": 1409024
+    },
+    "source_anomaly_registers/hrdem_2m_dtm_highway99_anomaly_register.gpkg": {
+      "original_project_path": "data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/hrdem_2m_dtm_highway99_anomaly_register.gpkg",
+      "sha256": "e516be189e73f4b8c4b6c48d2905baad857d02fe7dd103fe0ddf09069b8d164d",
+      "bytes": 397312
+    },
+    "provenance/scripts/step4_2_dem_multires_coverage_qa.py": {
+      "original_project_path": "step4_2_dem_multires_coverage_qa.py",
+      "sha256": "a4fa78f3760c9f446f8bf6670e1efdb06eb79294948ff8174bf0176152c585e2",
+      "bytes": 16109
+    },
+    "provenance/scripts/step4_2_dem_multires_overlap_qa.py": {
+      "original_project_path": "step4_2_dem_multires_overlap_qa.py",
+      "sha256": "2f0112e5ad7b641918d50de0d16a373e9e6b2df6837a13cdf5f2e3ca25d85426",
+      "bytes": 13818
+    },
+    "provenance/scripts/step4_2_dem_multires_transition_qa.py": {
+      "original_project_path": "step4_2_dem_multires_transition_qa.py",
+      "sha256": "a323793382cb77236bd5b2f68db684ad91fb107fbf222bd5a81cde0b502400bb",
+      "bytes": 15617
+    },
+    "provenance/scripts/step4_2_dem_multires_build_candidate.py": {
+      "original_project_path": "step4_2_dem_multires_build_candidate.py",
+      "sha256": "e2ee6dd8261811d7cfb8dfd1a9748f7a8f98e4d72d5e0e4a2df6855d79c65d46",
+      "bytes": 17452
+    },
+    "provenance/scripts/step4_2_dem_multires_final_validation.py": {
+      "original_project_path": "step4_2_dem_multires_final_validation.py",
+      "sha256": "1c245f57a1f4296c95068fbe213f80fc780437849555a6b7e83e9768c968bbd8",
+      "bytes": 15420
+    },
+    "provenance/scripts/step4_2_dem_multires_publish.py": {
+      "original_project_path": "step4_2_dem_multires_publish.py",
+      "sha256": "c8fc223b7dac9f515ce63ad235c08f5e5a488e93e85274e32c1c8eccfce541d9",
+      "bytes": 15657
+    }
+  },
+  "final_integrated_dem_published": true,
+  "publication_qa_passed": true,
+  "readme_sha256": "3d7d6c1fce7e41c9ba639e558430f9a01ea05c04a89ac100a31c51786730ed89",
+  "published_at_utc": "2026-11-26T08:13:29.775023+00:00",
+  "input_files_unchanged": true
+}

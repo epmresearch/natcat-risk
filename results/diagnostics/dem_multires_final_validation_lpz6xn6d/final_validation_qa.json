@@ -1,0 +1,194 @@
+{
+  "method_id": "MULTIRES_REFERENCE_FINAL_TECHNICAL_VALIDATION_V1",
+  "script_sha256": "1c245f57a1f4296c95068fbe213f80fc780437849555a6b7e83e9768c968bbd8",
+  "created_utc": "2026-11-26T08:08:14.169031+00:00",
+  "crs": "EPSG:26910",
+  "accounting_resolution_m": 1,
+  "bounds_epsg26910": [
+    475000,
+    5463000,
+    508000,
+    5557000
+  ],
+  "total_grid_pixels": 3102000000,
+  "aoi_pixels": 1043616657,
+  "source_pixel_counts": {
+    "0": 2058383343,
+    "1": 464090223,
+    "2": 698372,
+    "30": 578828062
+  },
+  "source_elevation_statistics": {
+    "1": {
+      "count": 464090223,
+      "minimum_m": -30.402355194091797,
+      "maximum_m": 1752.6998291015625,
+      "negative_pixels": 20054860
+    },
+    "2": {
+      "count": 698372,
+      "minimum_m": -2.4448559284210205,
+      "maximum_m": 1598.323486328125,
+      "negative_pixels": 129852
+    },
+    "30": {
+      "count": 578828062,
+      "minimum_m": -11.730072975158691,
+      "maximum_m": 2170.8447265625,
+      "negative_pixels": 77660138
+    }
+  },
+  "uncovered_aoi_pixels": 0,
+  "valid_outside_aoi_pixels": 0,
+  "coverage_percent": 100.0,
+  "all_grid_pixels_scanned": true,
+  "source_counts_and_statistics_reconciled": true,
+  "transition_statistics_reproduced_from_candidate": true,
+  "total_transition_edges": 772181,
+  "transition_pairs": {
+    "1_to_2": {
+      "count": 375077,
+      "direction_counts": {
+        "east": 218741,
+        "south": 156336
+      },
+      "mean_signed_m": -0.013061671142199466,
+      "mae_m": 0.2148290424652813,
+      "rmse_m": 0.47561180612434584,
+      "minimum_signed_m": -21.7435302734375,
+      "maximum_signed_m": 25.1280517578125,
+      "counts_over_m": {
+        "0.1": 166621,
+        "0.5": 44226,
+        "1": 13475,
+        "2": 2946,
+        "5": 275,
+        "10": 43,
+        "20": 3,
+        "50": 0,
+        "100": 0
+      }
+    },
+    "1_to_30": {
+      "count": 23078,
+      "direction_counts": {
+        "east": 11829,
+        "south": 11249
+      },
+      "mean_signed_m": -0.4361160068078743,
+      "mae_m": 4.378396467939377,
+      "rmse_m": 6.752709608774156,
+      "minimum_signed_m": -58.1241455078125,
+      "maximum_signed_m": 62.99517822265625,
+      "counts_over_m": {
+        "0.1": 21886,
+        "0.5": 17939,
+        "1": 15585,
+        "2": 12918,
+        "5": 7607,
+        "10": 2754,
+        "20": 402,
+        "50": 13,
+        "100": 0
+      }
+    },
+    "2_to_30": {
+      "count": 374026,
+      "direction_counts": {
+        "east": 205168,
+        "south": 168858
+      },
+      "mean_signed_m": 0.6153498463459781,
+      "mae_m": 4.36567573534795,
+      "rmse_m": 7.164365501396188,
+      "minimum_signed_m": -76.89440155029297,
+      "maximum_signed_m": 70.15045166015625,
+      "counts_over_m": {
+        "0.1": 347587,
+        "0.5": 277960,
+        "1": 236556,
+        "2": 194855,
+        "5": 115471,
+        "10": 48078,
+        "20": 9169,
+        "50": 149,
+        "100": 0
+      }
+    }
+  },
+  "register": {
+    "path": "results/diagnostics/dem_multires_final_validation_lpz6xn6d/dem_highway99_multires_transition_register.gpkg",
+    "sha256": "fb7e72e3c423208a18f95331500e878a053c380ca16e6a5cadcd7f6d561316f5",
+    "bytes": 10416128,
+    "layer": "source_transition_jump_gt10m",
+    "threshold_abs_jump_m_strict_gt": 10.0,
+    "counts": {
+      "1_to_2": 43,
+      "1_to_30": 2754,
+      "2_to_30": 48078
+    },
+    "features": 50875,
+    "geometry_and_attributes_verified": true,
+    "threshold_is_diagnostic_not_hazard_or_accuracy_criterion": true
+  },
+  "input_paths": {
+    "hrdem1m": "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/hrdem_1m_dtm_highway99_fixed_v1.tif",
+    "hrdem2m": "data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/hrdem_2m_dtm_highway99_fixed_v1.tif",
+    "mrdem30_masked": "data/processed/elevation/mrdem30_dtm_highway99_aoi_utm10_masked_exact.tif",
+    "mrdem30_uncut": "results/diagnostics/step4_2_mrdem30_exact_bbox.tif",
+    "mrdem30_qa": "results/diagnostics/step4_2_mrdem30_consistent_mask_qa.json",
+    "aoi": "data/processed/study_area/highway99_terrain_search_5000m.geojson",
+    "coverage_qa": "results/diagnostics/dem_multires_coverage_qa_xce4r42_/multires_coverage_qa.json",
+    "overlap_qa": "results/diagnostics/dem_multires_overlap_qa_cp_t07sl/multires_overlap_qa.json",
+    "transition_qa": "results/diagnostics/dem_multires_transition_qa_weczzfdj/multires_transition_qa.json",
+    "coverage_script": "step4_2_dem_multires_coverage_qa.py",
+    "overlap_script": "step4_2_dem_multires_overlap_qa.py",
+    "transition_script": "step4_2_dem_multires_transition_qa.py",
+    "hrdem1m_register": "data/processed/elevation/hrdem_1m_dtm_highway99_fixed_v1/hrdem_1m_dtm_highway99_anomaly_register.gpkg",
+    "hrdem2m_register": "data/processed/elevation/hrdem_2m_dtm_highway99_fixed_v1/hrdem_2m_dtm_highway99_anomaly_register.gpkg",
+    "candidate_qa": "results/diagnostics/dem_multires_mosaic_candidate_7ed8t26a/mosaic_candidate_qa.json",
+    "candidate_script": "step4_2_dem_multires_build_candidate.py",
+    "reference_dem": "results/diagnostics/dem_multires_mosaic_candidate_7ed8t26a/dem_highway99_multires_reference_candidate.tif",
+    "source_provenance": "results/diagnostics/dem_multires_mosaic_candidate_7ed8t26a/dem_highway99_multires_source_candidate.tif"
+  },
+  "input_sha256": {
+    "hrdem1m": "eedd95b99c4c0a56067a1c15dcce413cd8ef64b56d68b7145ec159a94643ffb6",
+    "hrdem2m": "5ce4ffa9e13af91a72d19a799ac8dce2dfe1d1b9dea184eeb3908670aa27d6ae",
+    "mrdem30_masked": "b8085012ab7d85a1f2028098345c579e20ee025f24b2189bd300fb2d90c1520d",
+    "mrdem30_uncut": "699db6fb323101e6a845cc44d06418e9e0e0d166a207eff707f115f4edec9084",
+    "mrdem30_qa": "2d047d8cf4678520672cc1160943acbc160e514775d90e8f4135047d57a3efc2",
+    "aoi": "6ffd4654a1bab09e0ec860e341250560d196a49570128b03b35ac681b895b843",
+    "coverage_qa": "60b726149550cc3f50e01cad1f0e146228afcf0b40b20b931a48a423f4e7bf18",
+    "overlap_qa": "1fb278da43959fbbb7452daf3e692cef9d3e30f6a56a2be9e3107790e3c009f4",
+    "transition_qa": "5a1f067715ee190d9487b9b0d2be50b5d20b47e0152fecc1f6e72063e8dfb1f5",
+    "coverage_script": "a4fa78f3760c9f446f8bf6670e1efdb06eb79294948ff8174bf0176152c585e2",
+    "overlap_script": "2f0112e5ad7b641918d50de0d16a373e9e6b2df6837a13cdf5f2e3ca25d85426",
+    "transition_script": "a323793382cb77236bd5b2f68db684ad91fb107fbf222bd5a81cde0b502400bb",
+    "hrdem1m_register": "e2e8840013db83074fc614d3a12d299ee6d199e09465172bf59ffb9e489c76ae",
+    "hrdem2m_register": "e516be189e73f4b8c4b6c48d2905baad857d02fe7dd103fe0ddf09069b8d164d",
+    "candidate_qa": "4998ec77f1ede4f550dae196de73df9b3c669eaf33233c106c5f1824058ef9b6",
+    "candidate_script": "e2ee6dd8261811d7cfb8dfd1a9748f7a8f98e4d72d5e0e4a2df6855d79c65d46",
+    "reference_dem": "54ab737d96fe940e70cb607ea75899a19830ec4fbce92f1bf6784974d0765063",
+    "source_provenance": "775e42da007c5a5d6b23e043610c37d3f9a2644d74ffa35524b1724e435b8393"
+  },
+  "input_files_unchanged": true,
+  "final_technical_validation_passed": true,
+  "scientific_use": "Reference elevation with mandatory source provenance only",
+  "cross_source_elevation_agreement_accepted": false,
+  "source_transitions_accepted_for_terrain_derivatives": false,
+  "absolute_vertical_accuracy_validated": false,
+  "hazard_model_validated": false,
+  "final_integrated_dem_published": false,
+  "limitations": [
+    "Reference elevation only: 1 m grid spacing is not uniform native resolution.",
+    "Coarse source values repeated without interpolation; source code raster is required.",
+    "Substantial source-transition jumps have been recorded; no correction or smoothing applied.",
+    "Do not compute terrain derivatives directly on this mixed-resolution mosaic.",
+    "Derivatives require source-native, valid neighbourhood processing and separate QA.",
+    "Original source anomaly registers remain applicable; no negative elevations changed.",
+    "Complete AOI coverage is not proof of accurate or hazard-ready elevation.",
+    "The cross-source register contains only edges with absolute jump strictly greater than 10 m. Other edges are not certified safe.",
+    "Flagged jumps may reflect terrain variation, source resolution and processing; they are not proven errors.",
+    "Source-specific anomaly registers and transition diagnostics must accompany the reference DEM."
+  ]
+}

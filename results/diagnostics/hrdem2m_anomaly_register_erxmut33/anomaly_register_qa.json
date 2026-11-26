@@ -1,0 +1,36 @@
+{
+  "method_id": "HRDEM2M_ANOMALY_REGISTER_V1",
+  "script_sha256": "f53b48a7883f9f0572efa23a34ba7bff8427b3e2278d9d0e3862c3e405026bda",
+  "extraction_configuration_sha256": "6e3e412e3d81794d69ce0ab7257445ae8a966ccbd0c6c9054cfa3e25442da30f",
+  "mask_configuration_sha256": "d7e7d5608bc5a0b3ad0685ffe157cc5029561eed470845262f59d706d154e3c5",
+  "crs": "EPSG:26910",
+  "layer_counts": {
+    "flagged_seams": 20,
+    "insufficient_seams": 92,
+    "tiles_with_internal_nodata": 273,
+    "negative_elevation_tiles": 119,
+    "deep_negative_pixels": 606
+  },
+  "total_features": 1110,
+  "input_qa_paths": {
+    "masking": "hrdem2m_global_masking_qa_opn0z04b/global_masking_qa.json",
+    "screening": "hrdem2m_global_seam_qa_lp3mi24_/global_seam_qa.json",
+    "bridge": "hrdem2m_targeted_seam_bridge_mjlpoefq/targeted_seam_bridge_qa.json",
+    "native": "hrdem2m_targeted_native_source_x08sit7j/targeted_native_source_qa.json",
+    "negative": "hrdem2m_negative_source_qa_7f428dzp/negative_source_qa.json"
+  },
+  "input_qa_sha256": {
+    "masking": "e1e7a19327013e5a8117f14a0a6029162533e218c5173f09acefa25d95a670d1",
+    "screening": "8ad3e101092df5e49f63697cb42b1febea3e42d1f061f8c7c02d0c4858d72b4a",
+    "bridge": "e574c11f64013960062162fb476885d7f5c5e8acde973426e759c1ab3b55e3b9",
+    "native": "eead7d311482ce9a70179d0f54fa316ae008f73e3d0367360bd1e8955e146fcf",
+    "negative": "7f803d604250d734506ae6a5c54b28bc90f705ee2e2003e5d64869c0112cb637"
+  },
+  "register_sha256": "e516be189e73f4b8c4b6c48d2905baad857d02fe7dd103fe0ddf09069b8d164d",
+  "staging_unchanged": true,
+  "all_geometry_validated": true,
+  "register_completed": true,
+  "absolute_vertical_accuracy_validated": false,
+  "negative_source_physical_validity_resolved": false,
+  "final_dem_published": false
+}
